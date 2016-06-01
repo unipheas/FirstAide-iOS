@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		1AB775DF1BEA42563494D382 /* Pods_PCSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3801FDCD9986FFE68258BAB /* Pods_PCSATests.framework */; };
 		7071D8241CFAEDEC00667AAD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7071D8231CFAEDEC00667AAD /* Podfile */; };
+		7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071D8251CFB141D00667AAD /* MainViewController.swift */; };
 		70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA34EB1CFACC2B000BE4E6 /* AppDelegate.swift */; };
-		70EA34EE1CFACC2B000BE4E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA34ED1CFACC2B000BE4E6 /* ViewController.swift */; };
+		70EA34EE1CFACC2B000BE4E6 /* SpashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */; };
 		70EA34F11CFACC2B000BE4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34EF1CFACC2B000BE4E6 /* Main.storyboard */; };
 		70EA34F31CFACC2B000BE4E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34F21CFACC2B000BE4E6 /* Assets.xcassets */; };
 		70EA34F61CFACC2B000BE4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34F41CFACC2B000BE4E6 /* LaunchScreen.storyboard */; };
@@ -41,9 +42,10 @@
 		05776F1764C0E43A2EB49A92 /* Pods-PCSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSA.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSA/Pods-PCSA.release.xcconfig"; sourceTree = "<group>"; };
 		6917B996CDAC0375C28FAA18 /* Pods-PCSAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSAUITests/Pods-PCSAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7071D8231CFAEDEC00667AAD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		7071D8251CFB141D00667AAD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70EA34E81CFACC2B000BE4E6 /* PCSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA34EB1CFACC2B000BE4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70EA34ED1CFACC2B000BE4E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashViewController.swift; sourceTree = "<group>"; };
 		70EA34F01CFACC2B000BE4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70EA34F21CFACC2B000BE4E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70EA34F51CFACC2B000BE4E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,11 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				70EA34EB1CFACC2B000BE4E6 /* AppDelegate.swift */,
-				70EA34ED1CFACC2B000BE4E6 /* ViewController.swift */,
+				70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */,
 				70EA34EF1CFACC2B000BE4E6 /* Main.storyboard */,
 				70EA34F21CFACC2B000BE4E6 /* Assets.xcassets */,
 				70EA34F41CFACC2B000BE4E6 /* LaunchScreen.storyboard */,
 				70EA34F71CFACC2B000BE4E6 /* Info.plist */,
+				7071D8251CFB141D00667AAD /* MainViewController.swift */,
 			);
 			path = PCSA;
 			sourceTree = "<group>";
@@ -434,7 +437,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70EA34EE1CFACC2B000BE4E6 /* ViewController.swift in Sources */,
+				7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */,
+				70EA34EE1CFACC2B000BE4E6 /* SpashViewController.swift in Sources */,
 				70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
