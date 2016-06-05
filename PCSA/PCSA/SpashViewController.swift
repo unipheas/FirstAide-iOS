@@ -13,7 +13,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        performSelector(#selector(SplashViewController.showMainController), withObject: nil, afterDelay: 2)
+        performSelector(#selector(SplashViewController.showMainController), withObject: nil, afterDelay: 0)
     }
     
     func showMainController(){
