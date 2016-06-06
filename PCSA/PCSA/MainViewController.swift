@@ -10,8 +10,10 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: Properties
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    // MARK: State
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +21,7 @@ class MainViewController: UIViewController {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+//            revealViewController().rearViewRevealWidth = 100
         }
     }
 

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1AB775DF1BEA42563494D382 /* Pods_PCSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3801FDCD9986FFE68258BAB /* Pods_PCSATests.framework */; };
 		7022426B1D05D0EC00FE09E8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7022426A1D05D0EC00FE09E8 /* SWRevealViewController.m */; };
+		705DDEDB1D05FF3C0037ABDE /* AccordionMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDED91D05FF3C0037ABDE /* AccordionMenuTableViewController.swift */; };
+		705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDA1D05FF3C0037ABDE /* Parent.swift */; };
+		705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */; };
+		705DDEE01D060F820037ABDE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */; };
 		7071D8241CFAEDEC00667AAD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7071D8231CFAEDEC00667AAD /* Podfile */; };
 		7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071D8251CFB141D00667AAD /* MainViewController.swift */; };
 		70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C661D049548001C10B3 /* SimpleButton.swift */; };
@@ -49,6 +53,10 @@
 		702242681D05D0E800FE09E8 /* PCSA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCSA-Bridging-Header.h"; sourceTree = "<group>"; };
 		702242691D05D0EC00FE09E8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7022426A1D05D0EC00FE09E8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		705DDED91D05FF3C0037ABDE /* AccordionMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionMenuTableViewController.swift; sourceTree = "<group>"; };
+		705DDEDA1D05FF3C0037ABDE /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		7071D8231CFAEDEC00667AAD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7071D8251CFB141D00667AAD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		70A44C621D04909F001C10B3 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PCSA-fsuylgdzweopprdvwldllilpvsiv/Build/Products/Debug-iphoneos/PureLayout/PureLayout.framework"; sourceTree = "<group>"; };
@@ -122,6 +130,7 @@
 		702242651D05D08C00FE09E8 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				705DDED81D05FF1B0037ABDE /* AccordionTableSwift */,
 				702242671D05D0AD00FE09E8 /* SWRevealViewController */,
 				702242661D05D09800FE09E8 /* SimpleButton */,
 			);
@@ -153,14 +162,25 @@
 			children = (
 				70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */,
 				7071D8251CFB141D00667AAD /* MainViewController.swift */,
+				705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		705DDED81D05FF1B0037ABDE /* AccordionTableSwift */ = {
+			isa = PBXGroup;
+			children = (
+				705DDED91D05FF3C0037ABDE /* AccordionMenuTableViewController.swift */,
+				705DDEDA1D05FF3C0037ABDE /* Parent.swift */,
+			);
+			name = AccordionTableSwift;
 			sourceTree = "<group>";
 		};
 		70A44C681D04955B001C10B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				70A44C6D1D049618001C10B3 /* ThemedButton.swift */,
+				705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -502,12 +522,16 @@
 			files = (
 				70A44C6E1D049618001C10B3 /* ThemedButton.swift in Sources */,
 				7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */,
+				705DDEE01D060F820037ABDE /* MenuTableViewCell.swift in Sources */,
+				705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */,
 				70A44C6C1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift in Sources */,
 				7022426B1D05D0EC00FE09E8 /* SWRevealViewController.m in Sources */,
 				70EA34EE1CFACC2B000BE4E6 /* SpashViewController.swift in Sources */,
 				70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */,
 				70A44C6B1D0495AF001C10B3 /* SimpleButtonControlState.swift in Sources */,
+				705DDEDB1D05FF3C0037ABDE /* AccordionMenuTableViewController.swift in Sources */,
 				70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */,
+				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
