@@ -115,13 +115,20 @@
                             <constraint firstItem="uA8-69-XMS" firstAttribute="bottom" secondItem="COX-lm-wj7" secondAttribute="top" id="nqP-sc-icR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GBH-gc-21B"/>
+                    <navigationItem key="navigationItem" id="GBH-gc-21B">
+                        <barButtonItem key="leftBarButtonItem" image="MenuButton" id="Apf-NJ-d4S">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="menuButton" destination="Apf-NJ-d4S" id="F6p-1w-AfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ywk-30-bCV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="306"/>
+            <point key="canvasLocation" x="2293" y="306"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="INQ-pK-AF1">
@@ -158,12 +165,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="sbi-7h-4dK" kind="show" identifier="MainNav" id="lYy-zG-nai"/>
+                        <segue destination="eKR-IU-A77" kind="show" identifier="MainNav" id="yTk-7A-lgX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPK-GB-r4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="326"/>
+            <point key="canvasLocation" x="113" y="306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fW1-C5-sTE">
@@ -181,10 +188,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDX-6b-XU7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="306"/>
+            <point key="canvasLocation" x="1603" y="306"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="yZo-xU-uQV">
+            <objects>
+                <viewController id="eKR-IU-A77" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0fv-0d-uEd"/>
+                        <viewControllerLayoutGuide type="bottom" id="fKn-9V-IC9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Aeq-Z3-FlK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="x5M-YN-OuU" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Soi-ZI-eKn"/>
+                        <segue destination="sbi-7h-4dK" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="Waf-mH-RgV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zsZ-CQ-6VX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L7k-B1-3qX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M8k-PV-8ET" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="x5M-YN-OuU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Qg-Vk-Ot3"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofv-MP-Zfi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x19-F7-Dim">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="877" y="1097"/>
         </scene>
     </scenes>
     <resources>
         <image name="Logo" width="292" height="292"/>
+        <image name="MenuButton" width="22" height="22"/>
     </resources>
 </document>
