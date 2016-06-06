@@ -23,6 +23,9 @@ class MainViewController: UIViewController {
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
 //            revealViewController().rearViewRevealWidth = 100
         }
+        
+        self.navigationController!.navigationBar.barTintColor = UIColor.init(red: 48/255, green: 231/255, blue: 176/255, alpha: 1.0)
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
     override func didReceiveMemoryWarning() {
