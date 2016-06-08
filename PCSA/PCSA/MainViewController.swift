@@ -24,7 +24,8 @@ class MainViewController: UIViewController {
 //            revealViewController().rearViewRevealWidth = 100
         }
         
-        self.navigationController!.navigationBar.barTintColor = UIColor.init(red: 48/255, green: 231/255, blue: 176/255, alpha: 1.0)
+//        self.navigationController!.navigationBar.barTintColor = UIColor.init(red: 48/255, green: 231/255, blue: 176/255, alpha: 1.0)
+        UIUtil.initViewControllerViews(self)
         UIApplication.sharedApplication().statusBarStyle = .LightContent
     }
 
