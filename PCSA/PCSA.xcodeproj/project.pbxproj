@@ -29,6 +29,7 @@
 		70EA34F61CFACC2B000BE4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34F41CFACC2B000BE4E6 /* LaunchScreen.storyboard */; };
 		70EA35011CFACC2B000BE4E6 /* PCSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA35001CFACC2B000BE4E6 /* PCSATests.swift */; };
 		70EA350C1CFACC2B000BE4E6 /* PCSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA350B1CFACC2B000BE4E6 /* PCSAUITests.swift */; };
+		70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */; };
 		78DE29F5A10DED26ED676982 /* Pods_PCSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F260A636BAAD9A52B81400 /* Pods_PCSAUITests.framework */; };
 		C453578560B76180D916C783 /* Pods_PCSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E606191717154E519112C6E /* Pods_PCSA.framework */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		70EA35071CFACC2B000BE4E6 /* PCSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA350B1CFACC2B000BE4E6 /* PCSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSAUITests.swift; sourceTree = "<group>"; };
 		70EA350D1CFACC2B000BE4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOfTrustEditViewController.swift; sourceTree = "<group>"; };
 		82B8598E765A50DE420135B5 /* Pods-PCSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSATests/Pods-PCSATests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E606191717154E519112C6E /* Pods_PCSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A7478D8F96C6FAFD6AC88 /* Pods-PCSAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSAUITests/Pods-PCSAUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				7071D8251CFB141D00667AAD /* MainViewController.swift */,
 				705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */,
 				70298C111D0891D900D92BC8 /* CircleOfTrustViewController.swift */,
+				70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */,
 				70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */,
 				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
+				70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */,
 				70298C141D08B2E200D92BC8 /* NumberUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
