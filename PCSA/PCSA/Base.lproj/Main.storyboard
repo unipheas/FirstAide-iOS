@@ -174,13 +174,6 @@
                                 <rect key="frame" x="184" y="300" width="52" height="30"/>
                                 <state key="normal" title="Button1"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5u-2F-Fad">
-                                <rect key="frame" x="20" y="745" width="30" height="30"/>
-                                <state key="normal" title="Edit"/>
-                                <connections>
-                                    <segue destination="b4D-Ph-Znz" kind="show" id="Rnx-mk-2BG"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -194,14 +187,22 @@
                             <constraint firstItem="dkh-h2-MEV" firstAttribute="centerY" secondItem="pAM-SD-SSr" secondAttribute="centerY" id="KsR-1F-wmV"/>
                             <constraint firstItem="4jB-lR-sEx" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="1.6" id="Njy-Uo-n3S"/>
                             <constraint firstItem="dkh-h2-MEV" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" id="Th4-Wf-BIC"/>
-                            <constraint firstItem="iEF-iw-mPW" firstAttribute="top" secondItem="Y5u-2F-Fad" secondAttribute="bottom" constant="25" id="UAu-Ut-fzC"/>
                             <constraint firstItem="dkh-h2-MEV" firstAttribute="top" secondItem="0Pq-KX-dVA" secondAttribute="centerY" constant="70" identifier="northHeight" id="bN2-j6-aGi"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Y5u-2F-Fad" secondAttribute="leading" id="p0F-QD-9kJ"/>
                             <constraint firstItem="zSg-k0-2Eb" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="0.7" id="sl8-O1-DN6"/>
                             <constraint firstItem="tql-N3-5gP" firstAttribute="top" secondItem="0Pq-KX-dVA" secondAttribute="top" id="v3N-LC-Ffu"/>
                             <constraint firstItem="PbU-5Y-fqL" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="0.4" id="y26-cS-itp"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Circle Of Trusts" id="cVI-zk-ZSm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3i6-yV-tua">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="b4D-Ph-Znz" kind="show" id="OWH-G3-rAP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buttonHelpMe" destination="dkh-h2-MEV" id="CPd-vR-RLx"/>
                         <outlet property="buttonTrustee1" destination="tql-N3-5gP" id="uy7-h2-XRA"/>
@@ -231,27 +232,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xye-4h-XH5">
-                                <rect key="frame" x="0.0" y="74" width="600" height="716"/>
+                                <rect key="frame" x="0.0" y="74" width="600" height="672"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxI-dV-PTb">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxI-dV-PTb">
                                         <rect key="frame" x="20" y="245" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-ss-51d">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-ss-51d">
                                         <rect key="frame" x="20" y="190" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s34-tE-l6d">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s34-tE-l6d">
                                         <rect key="frame" x="20" y="25" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9y-Em-FfG">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9y-Em-FfG">
                                         <rect key="frame" x="20" y="300" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyS-Pn-lJN" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
                                         <rect key="frame" x="270" y="360" width="60" height="34"/>
@@ -259,16 +260,19 @@
                                             <constraint firstAttribute="width" constant="60" id="Flp-Nu-gx4"/>
                                         </constraints>
                                         <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="saveNumbers:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="U4X-BF-AqX"/>
+                                        </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGv-jG-adx">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGv-jG-adx">
                                         <rect key="frame" x="20" y="80" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-yd-mpY">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-yd-mpY">
                                         <rect key="frame" x="20" y="135" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -305,6 +309,14 @@
                             <constraint firstItem="vU1-pg-kBg" firstAttribute="top" secondItem="Xye-4h-XH5" secondAttribute="bottom" constant="10" id="aJk-At-pLz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textFieldNumber1" destination="s34-tE-l6d" id="gml-ms-NXR"/>
+                        <outlet property="textFieldNumber2" destination="TGv-jG-adx" id="dK4-WH-Mfk"/>
+                        <outlet property="textFieldNumber3" destination="X8o-yd-mpY" id="cwt-Eq-1hm"/>
+                        <outlet property="textFieldNumber4" destination="8GL-ss-51d" id="Ude-1F-Omj"/>
+                        <outlet property="textFieldNumber5" destination="OxI-dV-PTb" id="m4G-7a-cHJ"/>
+                        <outlet property="textFieldNumber6" destination="U9y-Em-FfG" id="oEP-fr-G5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1e1-ap-RiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
