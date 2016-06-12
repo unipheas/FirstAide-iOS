@@ -16,4 +16,22 @@ class UIUtil{
         let textAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
         viewController.navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
+    
+    class func showAlert(viewController: UIViewController,title:String, message:String, actions:[UIAlertAction]?) {
+        
+        // create the alert
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // add the actions (buttons)
+        if(actions == nil || actions!.count == 0){
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
+        }else{
+            for action in actions! {
+                alert.addAction(action)
+            }
+        }
+        
+        // show the alert
+        viewController.presentViewController(alert, animated: true, completion: nil)
+    }
 }

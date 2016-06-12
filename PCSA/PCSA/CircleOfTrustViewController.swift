@@ -38,21 +38,32 @@ class CircleOfTrustViewController: UIViewController {
         
         if(recipients.count > 0){
             if (messageComposer.canSendText()) {
-                //TODO ask for user to message type
-                let body = "Come and get me" // Create your message body here
-                // Obtain a configured MFMessageComposeViewController
-                let messageComposeVC = messageComposer.configuredMessageComposeViewController(recipients, textBody: body)
-                presentViewController(messageComposeVC, animated: true, completion: nil)
+                //ask for user to message type
+                let actions = [
+                    UIAlertAction(title: "Come get me", style: UIAlertActionStyle.Default, handler: { (action) in
+                        self.presentMessageSend(recipients, body: "Come and get me. I need help getting home Safely. Call ASAP to get my Location.Sent through First Aide's Circle of Trust.")
+                    }),
+                    UIAlertAction(title: "Call I need an interruption", style: UIAlertActionStyle.Default, handler: { (action) in
+                        self.presentMessageSend(recipients, body: "Call and pretend you need me. I need an interruption. Message sent through First Aide's Circle of Trust.")
+                    }),
+                    UIAlertAction(title: "I need to talk", style: UIAlertActionStyle.Default, handler: { (action) in
+                        self.presentMessageSend(recipients, body: "I need to talk. Message sent through First Aide's Circle of Trust.")
+                    }),
+                    UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil),
+                    ]
+                UIUtil.showAlert(self, title: "Select a request", message: "", actions: actions)
+                
+                
+                
                 
             } else {
                 // Let the user know if his/her device isn't able to send text messages
-                //            self.displayAlerViewWithTitle("Cannot Send Text Message", andMessage: "Your device is not able to send text messages.")
-                print("Does not support sending SMS")
+                UIUtil.showAlert(self, title: "Send Message", message: "Your device cannot send messages", actions: nil)
             }
             
         }
         else{
-            print("No numbers set. Tap Edit to add/edit numbers")
+            UIUtil.showAlert(self, title: "Numbers", message: "No numbers set. Tap Edit to add/edit numbers", actions: nil)
         }
     }
     
@@ -63,6 +74,12 @@ class CircleOfTrustViewController: UIViewController {
             updateImageViews(numbers)
         }
         
+    }
+    
+    func presentMessageSend(recipients:[String],body:String){
+        // Obtain a configured MFMessageComposeViewController
+        let messageComposeVC = messageComposer.configuredMessageComposeViewController(recipients, textBody: body)
+        presentViewController(messageComposeVC, animated: true, completion: nil)
     }
     
     //MARK: ViewController
