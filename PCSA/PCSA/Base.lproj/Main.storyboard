@@ -146,34 +146,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jB-lR-sEx">
-                                <rect key="frame" x="452" y="385" width="56" height="30"/>
-                                <state key="normal" title="Button4"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="4jB-lR-sEx">
+                                <rect key="frame" x="456" y="376" width="48" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="PbU-5Y-fqL">
+                                <rect key="frame" x="96" y="376" width="48" height="48"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-h2-MEV">
+                                <rect key="frame" x="276" y="376" width="48" height="48"/>
+                                <state key="normal" image="HelpMeButton"/>
+                                <connections>
+                                    <action selector="helpMe:" destination="f8H-9t-caz" eventType="touchUpInside" id="JDZ-0H-1ZL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbU-5Y-fqL">
-                                <rect key="frame" x="93" y="385" width="55" height="30"/>
-                                <state key="normal" title="Button3"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-h2-MEV">
-                                <rect key="frame" x="272" y="385" width="57" height="30"/>
-                                <state key="normal" title="Help Me"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-KX-dVA">
-                                <rect key="frame" x="363" y="300" width="55" height="30"/>
-                                <state key="normal" title="Button2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-D9-Ntg">
-                                <rect key="frame" x="363" y="476" width="55" height="30"/>
-                                <state key="normal" title="Button6"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSg-k0-2Eb">
-                                <rect key="frame" x="183" y="476" width="55" height="30"/>
-                                <state key="normal" title="Button5"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tql-N3-5gP">
-                                <rect key="frame" x="184" y="300" width="52" height="30"/>
-                                <state key="normal" title="Button1"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="0Pq-KX-dVA">
+                                <rect key="frame" x="366" y="282" width="48" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Jxu-D9-Ntg">
+                                <rect key="frame" x="366" y="461" width="48" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="zSg-k0-2Eb">
+                                <rect key="frame" x="186" y="461" width="48" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TrusteeDefault" translatesAutoresizingMaskIntoConstraints="NO" id="tql-N3-5gP">
+                                <rect key="frame" x="186" y="282" width="48" height="48"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -183,7 +180,7 @@
                             <constraint firstItem="zSg-k0-2Eb" firstAttribute="top" secondItem="Jxu-D9-Ntg" secondAttribute="top" id="CJa-a2-S4G"/>
                             <constraint firstItem="tql-N3-5gP" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="0.7" id="GKa-CE-u8J"/>
                             <constraint firstItem="0Pq-KX-dVA" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="1.3" id="J6x-0R-xwX"/>
-                            <constraint firstItem="Jxu-D9-Ntg" firstAttribute="top" secondItem="dkh-h2-MEV" secondAttribute="bottom" constant="61" identifier="southHeight" id="KKW-mX-MpF"/>
+                            <constraint firstItem="Jxu-D9-Ntg" firstAttribute="centerY" secondItem="dkh-h2-MEV" secondAttribute="bottom" constant="61" identifier="southHeight" id="KKW-mX-MpF"/>
                             <constraint firstItem="dkh-h2-MEV" firstAttribute="centerY" secondItem="pAM-SD-SSr" secondAttribute="centerY" id="KsR-1F-wmV"/>
                             <constraint firstItem="4jB-lR-sEx" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" multiplier="1.6" id="Njy-Uo-n3S"/>
                             <constraint firstItem="dkh-h2-MEV" firstAttribute="centerX" secondItem="pAM-SD-SSr" secondAttribute="centerX" id="Th4-Wf-BIC"/>
@@ -205,14 +202,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="buttonHelpMe" destination="dkh-h2-MEV" id="CPd-vR-RLx"/>
-                        <outlet property="buttonTrustee1" destination="tql-N3-5gP" id="uy7-h2-XRA"/>
-                        <outlet property="buttonTrustee2" destination="0Pq-KX-dVA" id="6mx-sp-FTz"/>
-                        <outlet property="buttonTrustee3" destination="PbU-5Y-fqL" id="u2N-Zx-zmA"/>
-                        <outlet property="buttonTrustee4" destination="4jB-lR-sEx" id="iSL-17-pUx"/>
-                        <outlet property="buttonTrustee5" destination="zSg-k0-2Eb" id="khc-ZZ-6No"/>
-                        <outlet property="buttonTrustee6" destination="Jxu-D9-Ntg" id="zxQ-91-A6l"/>
                         <outlet property="constraintNorthHeight" destination="bN2-j6-aGi" id="LqM-61-BeL"/>
                         <outlet property="constraintSouthHeight" destination="KKW-mX-MpF" id="ae2-7a-cYn"/>
+                        <outlet property="imageTrustee1" destination="tql-N3-5gP" id="Txd-UE-7Fk"/>
+                        <outlet property="imageTrustee2" destination="0Pq-KX-dVA" id="Hhd-3a-CXN"/>
+                        <outlet property="imageTrustee3" destination="PbU-5Y-fqL" id="EnR-PW-7Od"/>
+                        <outlet property="imageTrustee4" destination="4jB-lR-sEx" id="5uR-rj-hhm"/>
+                        <outlet property="imageTrustee5" destination="zSg-k0-2Eb" id="9Hw-eY-e1h"/>
+                        <outlet property="imageTrustee6" destination="Jxu-D9-Ntg" id="a3J-1y-dJW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlw-J7-mCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -237,63 +234,51 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxI-dV-PTb">
                                         <rect key="frame" x="20" y="245" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 4" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-ss-51d">
                                         <rect key="frame" x="20" y="190" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s34-tE-l6d">
                                         <rect key="frame" x="20" y="25" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 6" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9y-Em-FfG">
                                         <rect key="frame" x="20" y="300" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyS-Pn-lJN" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
-                                        <rect key="frame" x="270" y="360" width="60" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="Flp-Nu-gx4"/>
-                                        </constraints>
-                                        <state key="normal" title="Save"/>
-                                        <connections>
-                                            <action selector="saveNumbers:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="U4X-BF-AqX"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGv-jG-adx">
                                         <rect key="frame" x="20" y="80" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number 3" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8o-yd-mpY">
                                         <rect key="frame" x="20" y="135" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="TGv-jG-adx" firstAttribute="leading" secondItem="X8o-yd-mpY" secondAttribute="leading" id="3r1-dJ-Tre"/>
                                     <constraint firstItem="8GL-ss-51d" firstAttribute="top" secondItem="X8o-yd-mpY" secondAttribute="bottom" constant="25" id="6UG-6n-Ayf"/>
+                                    <constraint firstAttribute="bottom" secondItem="U9y-Em-FfG" secondAttribute="bottom" constant="44" id="KOw-ER-sXy"/>
                                     <constraint firstItem="X8o-yd-mpY" firstAttribute="leading" secondItem="8GL-ss-51d" secondAttribute="leading" id="Me3-b6-F8L"/>
                                     <constraint firstItem="U9y-Em-FfG" firstAttribute="top" secondItem="OxI-dV-PTb" secondAttribute="bottom" constant="25" id="R4Z-mY-EaH"/>
                                     <constraint firstItem="OxI-dV-PTb" firstAttribute="leading" secondItem="U9y-Em-FfG" secondAttribute="leading" id="SiA-YL-52z"/>
                                     <constraint firstItem="8GL-ss-51d" firstAttribute="trailing" secondItem="OxI-dV-PTb" secondAttribute="trailing" id="Ueg-2H-7DL"/>
                                     <constraint firstAttribute="trailing" secondItem="s34-tE-l6d" secondAttribute="trailing" constant="20" id="ZCd-c7-25r"/>
                                     <constraint firstItem="TGv-jG-adx" firstAttribute="trailing" secondItem="X8o-yd-mpY" secondAttribute="trailing" id="a3j-Xs-aif"/>
-                                    <constraint firstAttribute="bottom" secondItem="wyS-Pn-lJN" secondAttribute="bottom" constant="-44" id="apE-Em-Wix"/>
                                     <constraint firstItem="s34-tE-l6d" firstAttribute="top" secondItem="Xye-4h-XH5" secondAttribute="top" constant="25" id="cxA-gN-j42"/>
                                     <constraint firstItem="s34-tE-l6d" firstAttribute="leading" secondItem="TGv-jG-adx" secondAttribute="leading" id="dB3-YH-nre"/>
-                                    <constraint firstItem="wyS-Pn-lJN" firstAttribute="top" secondItem="U9y-Em-FfG" secondAttribute="bottom" constant="30" id="dMI-dD-0xS"/>
                                     <constraint firstItem="X8o-yd-mpY" firstAttribute="top" secondItem="TGv-jG-adx" secondAttribute="bottom" constant="25" id="dsX-eJ-RRJ"/>
                                     <constraint firstItem="8GL-ss-51d" firstAttribute="leading" secondItem="OxI-dV-PTb" secondAttribute="leading" id="gVi-xk-W6e"/>
                                     <constraint firstItem="s34-tE-l6d" firstAttribute="leading" secondItem="Xye-4h-XH5" secondAttribute="leading" constant="20" id="ljN-MX-OSU"/>
                                     <constraint firstItem="OxI-dV-PTb" firstAttribute="trailing" secondItem="U9y-Em-FfG" secondAttribute="trailing" id="mXc-QM-BtT"/>
                                     <constraint firstItem="TGv-jG-adx" firstAttribute="top" secondItem="s34-tE-l6d" secondAttribute="bottom" constant="25" id="nlp-Eg-lTr"/>
-                                    <constraint firstItem="U9y-Em-FfG" firstAttribute="centerX" secondItem="wyS-Pn-lJN" secondAttribute="centerX" id="om3-Fi-Yji"/>
                                     <constraint firstItem="s34-tE-l6d" firstAttribute="trailing" secondItem="TGv-jG-adx" secondAttribute="trailing" id="pg0-gj-2gD"/>
                                     <constraint firstItem="OxI-dV-PTb" firstAttribute="top" secondItem="8GL-ss-51d" secondAttribute="bottom" constant="25" id="tWs-O1-FM9"/>
                                     <constraint firstItem="X8o-yd-mpY" firstAttribute="trailing" secondItem="8GL-ss-51d" secondAttribute="trailing" id="uJF-mo-d2s"/>
@@ -309,6 +294,14 @@
                             <constraint firstItem="vU1-pg-kBg" firstAttribute="top" secondItem="Xye-4h-XH5" secondAttribute="bottom" constant="10" id="aJk-At-pLz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Edit Numbers" id="iXQ-AC-Sj6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Xqe-xj-o8A">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="M3z-KK-tJj" kind="unwind" identifier="exitSaveNumbers" unwindAction="unwindToNumberSave:" id="QXM-Nq-lLs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textFieldNumber1" destination="s34-tE-l6d" id="gml-ms-NXR"/>
                         <outlet property="textFieldNumber2" destination="TGv-jG-adx" id="dK4-WH-Mfk"/>
@@ -319,6 +312,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1e1-ap-RiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M3z-KK-tJj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3854" y="-353"/>
         </scene>
@@ -481,7 +475,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HelpMeButton" width="48" height="48"/>
         <image name="Logo" width="292" height="292"/>
         <image name="MenuButton" width="22" height="22"/>
+        <image name="TrusteeDefault" width="48" height="48"/>
     </resources>
 </document>

@@ -39,6 +39,7 @@ class CircleOfTrustEditViewController: UIViewController {
             }
         }
         updateTextFields(numbers)
+        addDoneButtonOnKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,15 +53,15 @@ class CircleOfTrustEditViewController: UIViewController {
         self.saveNumbers()
     }
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(segue.identifier == "exitSaveNumbers" ){
+            self.saveNumbers()
+        }
     }
-    */
+    
     
     //MARK: Data
     func saveNumbers(){
@@ -83,6 +84,32 @@ class CircleOfTrustEditViewController: UIViewController {
     func updateTextFields(numbers:[String]){
         for i in 0..<(numbers.count){
             textFields[i].text = numbers[i]
+        }
+    }
+
+    //MARK: Keyboard handling
+    func addDoneButtonOnKeyboard() {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.bounds.size.width, 50))
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: #selector(CircleOfTrustEditViewController.finishDecimalKeypad))
+        
+        var items: [UIBarButtonItem]? = [UIBarButtonItem]()
+        items?.append(flexSpace)
+        items?.append(done)
+        
+        doneToolbar.items = items
+        doneToolbar.sizeToFit()
+        
+        for i in 0...5{
+            textFields[i].inputAccessoryView=doneToolbar
+        }
+
+    }
+    
+    func finishDecimalKeypad() {
+        for i in 0...5{
+            textFields[i].resignFirstResponder()
         }
     }
 
