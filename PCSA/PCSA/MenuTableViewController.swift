@@ -8,9 +8,13 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     // MARK: Properties
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var imageLogo: UIImageView!
+    
+    
     // The number of elements in the data source
     var total = 0
     
@@ -31,16 +35,17 @@ class MenuTableViewController: UITableViewController {
     
     // The index of the last cell expanded and its parent.
     var lastCellExpanded : (Int, Int)!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.delegate=self
+        self.tableView.dataSource=self
         self.setInitialDataSource()
         self.lastCellExpanded = NoCellExpanded
-
+        
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -230,21 +235,21 @@ class MenuTableViewController: UITableViewController {
         item = self.dataSource[parent - 1]
         return (parent - 1, position == index, position - item.childs.count - 1)
     }
-
+    
     // MARK: - Table view data source
-
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.total
     }
-
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell : MenuTableViewCell!
         
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
@@ -259,13 +264,17 @@ class MenuTableViewController: UITableViewController {
         }
         
         return cell
-
+        
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
-        guard isParentCell else {
+        if isParentCell {
+            NSLog("indexPath.row = \(indexPath.row) actualPosition=\(actualPosition)")
+            self.presentComponentViewController(indexPath.row)
+            
+        }else {
             NSLog("A child was tapped!!!")
             
             // The value of the child is indexPath.row - actualPosition - 1
@@ -279,54 +288,74 @@ class MenuTableViewController: UITableViewController {
         self.tableView.endUpdates()
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//            return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        //            return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
         return 60.0
     }
-
+    
     /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
+     // Override to support conditional editing of the table view.
+     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+     // Return false if you do not want the specified item to be editable.
+     return true
+     }
+     */
+    
     /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
+     // Override to support editing the table view.
+     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+     if editingStyle == .Delete {
+     // Delete the row from the data source
+     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+     } else if editingStyle == .Insert {
+     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+     }
+     }
+     */
+    
     /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
+     // Override to support rearranging the table view.
+     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+     
+     }
+     */
+    
     /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     // Override to support conditional rearranging of the table view.
+     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+     // Return false if you do not want the item to be re-orderable.
+     return true
+     }
+     */
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+    func presentComponentViewController(index: Int){
+        var viewIdentifier:String
+        switch index {
+        case 1:
+            viewIdentifier = "CircleOfTrust"
+        default:
+            viewIdentifier = ""
+        }
+        
+        if(!viewIdentifier.isEmpty){
+            let viewController = self.storyboard?.instantiateViewControllerWithIdentifier(viewIdentifier)
+            let nav = revealViewController().frontViewController as! UINavigationController
+            nav.pushViewController(viewController!, animated: true)
+            revealViewController().revealToggleAnimated(true)
+        }
+        
     }
-    */
+    
 
+    
 }
