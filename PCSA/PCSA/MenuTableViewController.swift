@@ -43,7 +43,9 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.setInitialDataSource()
         self.lastCellExpanded = NoCellExpanded
         
+        let width = revealViewController().view.frame.width
         
+        revealViewController().rearViewRevealWidth = width * 0.8
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,43 +63,44 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     private func setInitialDataSource() {
         
         //TODO: Load data from plist and use MVVM
-        dataSource = [Parent(state: .Collapsed, childs: [String](), title: "Get Help Now"),
-                      Parent(state: .Collapsed, childs: [String](), title: "Circle of Trust"),
+        dataSource = [Parent(state: .Collapsed, childs: [String](), title: Constants.GET_HELP_NOW),
+                      Parent(state: .Collapsed, childs: [String](), title: Constants.CIRCLE_OF_TRUST),
                       Parent(state: .Collapsed, childs: [
-                        "Personal Security Strategies",
-                        "RADAR",
-                        "Coping with Unwanted Attention Strategies",
-                        "Tactics of Sexual Predators",
-                        "Bystander Intervention",
-                        "Safety Plan Basics",
-                        "Safety Plan Worksheet"], title: "Safety Tools"),
+                        Constants.PERSONAL_SECURITY_STRATEGIES,
+                        Constants.RADAR,
+                        Constants.COPING_WITH_UNWANTED,
+                        Constants.TACTICS_OF_SEXUAL_PREDATORS,
+                        Constants.BYSTANDER_INTERVENTION,
+                        Constants.SAFETY_PLAN_BASICS,
+                        Constants.SAFETY_PLAN_WORKSHEET
+                        ], title: Constants.SAFETY_TOOLS),
                       Parent(state: .Collapsed, childs: [
-                        "Benefits of Seeking Staff Support",
-                        "Available Services after a Sexual Assault",
-                        "Peace Corps’ Commitment to Victims of Sexual Assault",
-                        "What to do After an Assault",
-                        "Confidentiality",
-                        "Peace Corps Mythbusters: Assumptions and Facts"
-                        ], title: "Support Services"),
+                        Constants.BENEFITS_OF_SEEKING_STAFF,
+                        Constants.AVAILABLE_SERVICES_AFTER_SEXUAL_ASSAULT,
+                        Constants.PEACE_CORPS_COMMITMENT_TO_VICTIM,
+                        Constants.WHAT_TO_DO_AFTER_ASSAULT,
+                        Constants.CONFIDENTIALITY,
+                        Constants.PEACE_CORPS_MYTHBUSTERS
+                        ], title: Constants.SUPPORTING_SERVICES),
                       Parent(state: .Collapsed, childs: [
-                        "Was it Sexual Assault?",
-                        "Sexual Assault Common Questions",
-                        "Impact of Sexual Assault",
-                        "Sexual Harassment",
-                        "Helping a Friend or Community Member"
-                        ], title: "Sexual Assualt Awareness"),
+                        Constants.WAS_IT_SEXUAL_ASSAULT,
+                        Constants.SEXUAL_ASSAULT_COMMON_QUESTIONS,
+                        Constants.IMPACT_SEXUAL_ASSAULT,
+                        Constants.SEXUAL_HARRASSMENT,
+                        Constants.HELPING_FRIEND_OR_COMMUNITY_MEMBER
+                        ], title: Constants.SEXUAL_ASSAULT_AWARENESS),
                       Parent(state: .Collapsed, childs: [
-                        "Peace Corps Policy related to Sexual Assault",
-                        "Glossary",
-                        "Further Resources"
-                        ], title: "Policies and Glossary")
+                        Constants.PEACE_COPRS_POLICY_SEXUAL_ASSAULT,
+                        Constants.GLOSSARY,
+                        Constants.FURTHER_RESOURCES
+                        ], title: Constants.POLICIES_AND_GLOSSARY)
         ]
         self.total = dataSource.count;
     }
     
     /**
      Expand the cell at the index specified.
-     
+     	
      - parameter index: The index of the cell to expand.
      */
     private func expandItemAtIndex(index : Int, parent: Int) {

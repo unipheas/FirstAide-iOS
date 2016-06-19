@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AB775DF1BEA42563494D382 /* Pods_PCSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3801FDCD9986FFE68258BAB /* Pods_PCSATests.framework */; };
+		700C1CC81D16EA330070FACC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C1CC71D16EA330070FACC /* Constants.swift */; };
 		701F32F21D0C932C00795AEF /* MessageComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701F32F11D0C932C00795AEF /* MessageComposer.swift */; };
 		7022426B1D05D0EC00FE09E8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7022426A1D05D0EC00FE09E8 /* SWRevealViewController.m */; };
 		70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70298C0F1D088FF900D92BC8 /* UIUtil.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		05776F1764C0E43A2EB49A92 /* Pods-PCSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSA.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSA/Pods-PCSA.release.xcconfig"; sourceTree = "<group>"; };
 		6917B996CDAC0375C28FAA18 /* Pods-PCSAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSAUITests/Pods-PCSAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		700C1CC71D16EA330070FACC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		701F32F11D0C932C00795AEF /* MessageComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposer.swift; sourceTree = "<group>"; };
 		702242681D05D0E800FE09E8 /* PCSA-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCSA-Bridging-Header.h"; sourceTree = "<group>"; };
 		702242691D05D0EC00FE09E8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				70298C0F1D088FF900D92BC8 /* UIUtil.swift */,
 				70298C131D08B2E200D92BC8 /* NumberUtil.swift */,
 				701F32F11D0C932C00795AEF /* MessageComposer.swift */,
+				700C1CC71D16EA330070FACC /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
 				70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */,
 				70298C141D08B2E200D92BC8 /* NumberUtil.swift in Sources */,
+				700C1CC81D16EA330070FACC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

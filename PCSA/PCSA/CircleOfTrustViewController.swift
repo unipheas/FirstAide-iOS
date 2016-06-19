@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Contacts
 
 class CircleOfTrustViewController: UIViewController {
     
@@ -22,7 +23,7 @@ class CircleOfTrustViewController: UIViewController {
     @IBOutlet weak var imageTrustee5: UIImageView!
     @IBOutlet weak var imageTrustee6: UIImageView!
     
-    var numbers = [String]()
+    var phoneNumbers = [String]()
     var imageViews = [UIImageView]()
     let messageComposer = MessageComposer()
     
@@ -30,7 +31,7 @@ class CircleOfTrustViewController: UIViewController {
     @IBAction func helpMe(sender: AnyObject) {
         var recipients = [String]()
         
-        for number in numbers {
+        for number in phoneNumbers {
             if(number.characters.count > 0){
                 recipients.append(number)
             }
@@ -70,8 +71,8 @@ class CircleOfTrustViewController: UIViewController {
     @IBAction func unwindToNumberSave(sender:UIStoryboardSegue){
         if let sourceViewController = sender.sourceViewController as? CircleOfTrustEditViewController{
             //Since numbers update only when save button in CircleOfTrustEditViewController is pressed
-            numbers = sourceViewController.numbers
-            updateImageViews(numbers)
+            phoneNumbers = sourceViewController.numbers
+            updateImageViews(phoneNumbers)
         }
         
     }
@@ -98,15 +99,22 @@ class CircleOfTrustViewController: UIViewController {
         imageViews += [imageTrustee1,imageTrustee2,imageTrustee3,imageTrustee4,imageTrustee5,imageTrustee6]
         
         if let savedNumbers = loadNumbers() {
-            numbers += savedNumbers
+            phoneNumbers += savedNumbers
         }else{
             for _ in 0...5{
-                numbers.append("")
+                phoneNumbers.append("")
             }
         }
         
-        updateImageViews(numbers)
+        for imageView in imageViews{
+            imageView.layer.borderWidth = 1.0
+            imageView.layer.masksToBounds = false
+            imageView.layer.borderColor = UIColor.whiteColor().CGColor
+            imageView.layer.cornerRadius = imageView.frame.size.width/2
+            imageView.clipsToBounds = true
+        }
         
+        updateImageViews(phoneNumbers)
     }
     
     override func didReceiveMemoryWarning() {
@@ -131,11 +139,81 @@ class CircleOfTrustViewController: UIViewController {
     }
     
     func updateImageViews(numbers:[String]){
-        for i in 0..<(numbers.count){
-            if(numbers[i].characters.count > 0){
-                //TODO set images from contacts
-            }
-        }
+        //        for i in 0..<(numbers.count){
+        //            if(numbers[i].characters.count > 0){
+        //                //TODO set images from contacts
+        //            }
+        //        }
+        loadContactPhotos(numbers)
     }
+    
+    func loadContactPhotos(numbers:[String]){
+        var images=[NSData]()
+        let contactStroe = CNContactStore()
+        let keysToFetch = [
+            CNContactPhoneNumbersKey,
+            CNContactImageDataAvailableKey,
+            CNContactThumbnailImageDataKey]
+        contactStroe.requestAccessForEntityType(.Contacts, completionHandler: { (granted, error) -> Void in
+            if granted {
+                
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { // 1
+                    
+                    //retrieve images in background
+                    let predicate = CNContact.predicateForContactsInContainerWithIdentifier(contactStroe.defaultContainerIdentifier())
+                    var contacts: [CNContact]! = []
+                    do {
+                        contacts = try contactStroe.unifiedContactsMatchingPredicate(predicate, keysToFetch: keysToFetch)// [CNContact]
+                    }catch {
+                        
+                    }
+                    for contact in contacts {
+                        var phoneStr = ""
+                        var number: CNPhoneNumber!
+                        if contact.phoneNumbers.count > 0 {
+                            number = contact.phoneNumbers[0].value as! CNPhoneNumber
+                            phoneStr = number.stringValue
+                            for i in 0..<numbers.count{
+                                //                                NSLog("phone ori: \(number.stringValue) mod:\(phoneStr)")
+                                if(numbers[i] == phoneStr && contact.imageDataAvailable){
+                                    images.append(contact.thumbnailImageData!)
+                                }
+                            }
+                        }
+                    }
+                    NSLog("images.count \(images.count)")
+                    
+                    
+                    
+                    
+                    
+                    dispatch_async(dispatch_get_main_queue()) {
+                        // update UI main thread
+                        
+                        if(images.count > 0 ){
+                            for i in 0..<images.count{
+                                let image = UIImage(data:images[i],scale:1.0)
+                                let imageView = self.imageViews[i]
+                                imageView.image = image
+                                imageView.setNeedsDisplay()
+                            }
+                        }
+                        //reset other images
+                        if(images.count < self.phoneNumbers.count){
+                            for i in images.count..<self.phoneNumbers.count {
+                                let imageView = self.imageViews[i]
+                                imageView.image = UIImage(named: "TrusteeDefault")
+                                imageView.setNeedsDisplay()
+                            }
+                        }
+                        
+                    }
+                }
+                
+                
+            }
+        })
+    }
+    
     
 }
