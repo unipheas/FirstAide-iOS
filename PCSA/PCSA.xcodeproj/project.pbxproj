@@ -18,8 +18,11 @@
 		705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDA1D05FF3C0037ABDE /* Parent.swift */; };
 		705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */; };
 		705DDEE01D060F820037ABDE /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */; };
+		706996AC1D1F9C4600CD02A0 /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706996AB1D1F9C4600CD02A0 /* BorderedView.swift */; };
 		7071D8241CFAEDEC00667AAD /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7071D8231CFAEDEC00667AAD /* Podfile */; };
 		7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7071D8251CFB141D00667AAD /* MainViewController.swift */; };
+		709CC30F1D1F115C0088D0E6 /* SupportServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CC30E1D1F115C0088D0E6 /* SupportServiceViewController.swift */; };
+		709CC3111D1F16670088D0E6 /* AfterAssualtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709CC3101D1F16670088D0E6 /* AfterAssualtViewController.swift */; };
 		70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C661D049548001C10B3 /* SimpleButton.swift */; };
 		70A44C6B1D0495AF001C10B3 /* SimpleButtonControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C691D0495AF001C10B3 /* SimpleButtonControlState.swift */; };
 		70A44C6C1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C6A1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift */; };
@@ -68,8 +71,11 @@
 		705DDEDA1D05FF3C0037ABDE /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		706996AB1D1F9C4600CD02A0 /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		7071D8231CFAEDEC00667AAD /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7071D8251CFB141D00667AAD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		709CC30E1D1F115C0088D0E6 /* SupportServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportServiceViewController.swift; sourceTree = "<group>"; };
+		709CC3101D1F16670088D0E6 /* AfterAssualtViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfterAssualtViewController.swift; sourceTree = "<group>"; };
 		70A44C621D04909F001C10B3 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PCSA-fsuylgdzweopprdvwldllilpvsiv/Build/Products/Debug-iphoneos/PureLayout/PureLayout.framework"; sourceTree = "<group>"; };
 		70A44C641D0490A7001C10B3 /* SwiftyButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyButton.framework; path = "../../../../Library/Developer/Xcode/DerivedData/PCSA-fsuylgdzweopprdvwldllilpvsiv/Build/Products/Debug-iphoneos/SwiftyButton/SwiftyButton.framework"; sourceTree = "<group>"; };
 		70A44C661D049548001C10B3 /* SimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButton.swift; sourceTree = "<group>"; };
@@ -188,6 +194,8 @@
 				705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */,
 				70298C111D0891D900D92BC8 /* CircleOfTrustViewController.swift */,
 				70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */,
+				709CC30E1D1F115C0088D0E6 /* SupportServiceViewController.swift */,
+				709CC3101D1F16670088D0E6 /* AfterAssualtViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 			children = (
 				70A44C6D1D049618001C10B3 /* ThemedButton.swift */,
 				705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */,
+				706996AB1D1F9C4600CD02A0 /* BorderedView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -546,11 +555,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				709CC30F1D1F115C0088D0E6 /* SupportServiceViewController.swift in Sources */,
+				706996AC1D1F9C4600CD02A0 /* BorderedView.swift in Sources */,
 				70298C121D0891D900D92BC8 /* CircleOfTrustViewController.swift in Sources */,
 				70A44C6E1D049618001C10B3 /* ThemedButton.swift in Sources */,
 				7071D8261CFB141D00667AAD /* MainViewController.swift in Sources */,
 				705DDEE01D060F820037ABDE /* MenuTableViewCell.swift in Sources */,
 				701F32F21D0C932C00795AEF /* MessageComposer.swift in Sources */,
+				709CC3111D1F16670088D0E6 /* AfterAssualtViewController.swift in Sources */,
 				705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */,
 				70A44C6C1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift in Sources */,
 				7022426B1D05D0EC00FE09E8 /* SWRevealViewController.m in Sources */,
