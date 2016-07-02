@@ -14,6 +14,7 @@
 		70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70298C0F1D088FF900D92BC8 /* UIUtil.swift */; };
 		70298C121D0891D900D92BC8 /* CircleOfTrustViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70298C111D0891D900D92BC8 /* CircleOfTrustViewController.swift */; };
 		70298C141D08B2E200D92BC8 /* NumberUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70298C131D08B2E200D92BC8 /* NumberUtil.swift */; };
+		703FEB1F1D25A6CB00F5CB1C /* GetHelpNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FEB1E1D25A6CB00F5CB1C /* GetHelpNowViewController.swift */; };
 		705DDEDB1D05FF3C0037ABDE /* AccordionMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDED91D05FF3C0037ABDE /* AccordionMenuTableViewController.swift */; };
 		705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDA1D05FF3C0037ABDE /* Parent.swift */; };
 		705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */; };
@@ -67,6 +68,7 @@
 		70298C0F1D088FF900D92BC8 /* UIUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtil.swift; sourceTree = "<group>"; };
 		70298C111D0891D900D92BC8 /* CircleOfTrustViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOfTrustViewController.swift; sourceTree = "<group>"; };
 		70298C131D08B2E200D92BC8 /* NumberUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberUtil.swift; sourceTree = "<group>"; };
+		703FEB1E1D25A6CB00F5CB1C /* GetHelpNowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetHelpNowViewController.swift; sourceTree = "<group>"; };
 		705DDED91D05FF3C0037ABDE /* AccordionMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccordionMenuTableViewController.swift; sourceTree = "<group>"; };
 		705DDEDA1D05FF3C0037ABDE /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		705DDEDD1D0602D80037ABDE /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */,
 				709CC30E1D1F115C0088D0E6 /* SupportServiceViewController.swift */,
 				709CC3101D1F16670088D0E6 /* AfterAssualtViewController.swift */,
+				703FEB1E1D25A6CB00F5CB1C /* GetHelpNowViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				705DDEDB1D05FF3C0037ABDE /* AccordionMenuTableViewController.swift in Sources */,
 				70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */,
 				70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */,
+				703FEB1F1D25A6CB00F5CB1C /* GetHelpNowViewController.swift in Sources */,
 				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
 				70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */,
 				70298C141D08B2E200D92BC8 /* NumberUtil.swift in Sources */,

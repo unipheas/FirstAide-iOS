@@ -45,6 +45,10 @@ class Constants{
     static let PEACE_COPRS_POLICY_SEXUAL_ASSAULT = "Peace Corps Policy related to Sexual Assault"
     static let GLOSSARY = "Glossary"
     static let FURTHER_RESOURCES = "Further Resources"
-
+    
+    static let CONTACT_LOCATIONS = ["Uganda","Syria","Tunisia"]
+    static let PCMO_NUMBERS = ["111","222","333"]
+    static let SSM_NUMBERS = ["111","222","333"]
+    static let SARL_NUMBERS = ["111","222","333"]
     
 }
