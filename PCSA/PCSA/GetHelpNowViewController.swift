@@ -12,6 +12,7 @@ class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPicke
     
     //MARK: Properties
     @IBOutlet weak var postStaffView: UIView!
+    @IBOutlet weak var otherStaffView: UIView!
     
     @IBOutlet weak var locationText: UITextField!
     @IBOutlet weak var locationPicker: UIPickerView!
@@ -48,6 +49,12 @@ class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPicke
     //MARK: Actions
     
     @IBAction func selectNext(sender: AnyObject) {
+        otherStaffView.hidden=false;
+        postStaffView.hidden=true;
+    }
+    @IBAction func selectPrevious(sender: AnyObject) {
+        otherStaffView.hidden=true;
+        postStaffView.hidden=false;
     }
     
     @IBAction func pcmoCall(sender: UIButton) {
@@ -62,6 +69,24 @@ class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPicke
         startCall(sarlPhoneText.text!)
     }
 
+    @IBAction func pcSavesUSCall(sender: AnyObject) {
+        startCall(Constants.PC_SAVES_NON_US_PHONE_NUMBER)
+    }
+
+    
+    @IBAction func officeVictimCall(sender: AnyObject) {
+        startCall(Constants.OFFICE_VICTIM_PHONE_NUMBER)
+    }
+    
+    @IBAction func officeInspectionCall(sender: AnyObject) {
+        startCall(Constants.OFFICE_INSPECTION_PHONE_NUMBER)
+    }
+    
+    @IBAction func officeCivilCall(sender: AnyObject) {
+        startCall(Constants.OFFICE_CIVIL_PHONE_NUMBER)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -48,7 +48,12 @@ class Constants{
     
     static let CONTACT_LOCATIONS = ["Uganda","Syria","Tunisia"]
     static let PCMO_NUMBERS = ["111","222","333"]
-    static let SSM_NUMBERS = ["111","222","333"]
-    static let SARL_NUMBERS = ["111","222","333"]
+    static let SSM_NUMBERS = ["444","555","666"]
+    static let SARL_NUMBERS = ["777","888","999"]
+    
+    static let PC_SAVES_NON_US_PHONE_NUMBER = "001-408-844-4357"
+    static let OFFICE_VICTIM_PHONE_NUMBER = "(202)409-2701"
+    static let OFFICE_INSPECTION_PHONE_NUMBER = "(202)692-2915"
+    static let OFFICE_CIVIL_PHONE_NUMBER = "(202)692-2139"
     
 }
