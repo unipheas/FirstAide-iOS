@@ -28,6 +28,7 @@
 		70A44C6B1D0495AF001C10B3 /* SimpleButtonControlState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C691D0495AF001C10B3 /* SimpleButtonControlState.swift */; };
 		70A44C6C1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C6A1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift */; };
 		70A44C6E1D049618001C10B3 /* ThemedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A44C6D1D049618001C10B3 /* ThemedButton.swift */; };
+		70E0D0EC1D326C9A004BE126 /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E0D0EB1D326C9A004BE126 /* SlideView.swift */; };
 		70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA34EB1CFACC2B000BE4E6 /* AppDelegate.swift */; };
 		70EA34EE1CFACC2B000BE4E6 /* SpashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */; };
 		70EA34F11CFACC2B000BE4E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34EF1CFACC2B000BE4E6 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		70A44C691D0495AF001C10B3 /* SimpleButtonControlState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButtonControlState.swift; sourceTree = "<group>"; };
 		70A44C6A1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleButtonStateChangeValue.swift; sourceTree = "<group>"; };
 		70A44C6D1D049618001C10B3 /* ThemedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemedButton.swift; sourceTree = "<group>"; };
+		70E0D0EB1D326C9A004BE126 /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		70EA34E81CFACC2B000BE4E6 /* PCSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA34EB1CFACC2B000BE4E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70EA34ED1CFACC2B000BE4E6 /* SpashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpashViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				70A44C6D1D049618001C10B3 /* ThemedButton.swift */,
 				705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */,
 				706996AB1D1F9C4600CD02A0 /* BorderedView.swift */,
+				70E0D0EB1D326C9A004BE126 /* SlideView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				705DDEDE1D0602D80037ABDE /* MenuTableViewController.swift in Sources */,
 				70A44C6C1D0495AF001C10B3 /* SimpleButtonStateChangeValue.swift in Sources */,
 				7022426B1D05D0EC00FE09E8 /* SWRevealViewController.m in Sources */,
+				70E0D0EC1D326C9A004BE126 /* SlideView.swift in Sources */,
 				70EA34EE1CFACC2B000BE4E6 /* SpashViewController.swift in Sources */,
 				70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */,
 				70A44C6B1D0495AF001C10B3 /* SimpleButtonControlState.swift in Sources */,
