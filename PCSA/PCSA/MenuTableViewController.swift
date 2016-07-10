@@ -344,6 +344,8 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     func presentComponentViewController(index: Int){
         var viewIdentifier:String
         switch index {
+        case 0:
+            viewIdentifier = "GetHelpNow"
         case 1:
             viewIdentifier = "CircleOfTrust"
         default:
