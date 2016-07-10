@@ -159,7 +159,7 @@
                                 <rect key="frame" x="20" y="80" width="560" height="721"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="liZ-w5-YTW">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="314"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="368"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8f-Xj-4bf" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
@@ -183,24 +183,34 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="aIR-Ep-Pjy"/>
                                                 </constraints>
+                                                <state key="normal" title="Coping with Unwanted Attention Strategies"/>
+                                                <connections>
+                                                    <segue destination="nst-xd-igV" kind="show" id="1hc-0h-OeW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uo4-c7-iAg" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="162" width="560" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="y66-oa-a37"/>
+                                                </constraints>
                                                 <state key="normal" title="Tactics of Sexual Predators"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU5-xD-0rU" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="162" width="560" height="44"/>
+                                                <rect key="frame" x="0.0" y="216" width="560" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="1xg-ed-gMT"/>
                                                 </constraints>
                                                 <state key="normal" title="Bystander Intervention"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn0-yX-NR1" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="216" width="560" height="44"/>
+                                                <rect key="frame" x="0.0" y="270" width="560" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="uh2-k3-6MB"/>
                                                 </constraints>
                                                 <state key="normal" title="Safety Plan Basics"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKK-mn-tXu" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="270" width="560" height="44"/>
+                                                <rect key="frame" x="0.0" y="324" width="560" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="IrT-Be-bmn"/>
                                                 </constraints>
@@ -213,6 +223,7 @@
                                             <constraint firstItem="AU5-xD-0rU" firstAttribute="width" secondItem="yJl-EC-Tge" secondAttribute="width" id="MQj-sD-rVe"/>
                                             <constraint firstItem="G8f-Xj-4bf" firstAttribute="width" secondItem="yJl-EC-Tge" secondAttribute="width" id="agp-Rk-K4K"/>
                                             <constraint firstItem="yKK-mn-tXu" firstAttribute="width" secondItem="yJl-EC-Tge" secondAttribute="width" id="ngM-2p-KhZ"/>
+                                            <constraint firstItem="uo4-c7-iAg" firstAttribute="width" secondItem="yJl-EC-Tge" secondAttribute="width" id="tIM-E0-qUB"/>
                                             <constraint firstItem="yKK-mn-tXu" firstAttribute="bottom" secondItem="liZ-w5-YTW" secondAttribute="bottom" id="vTy-Ss-3gK"/>
                                         </constraints>
                                     </stackView>
@@ -2128,7 +2139,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oA2-Vg-m0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5640" y="1252"/>
+            <point key="canvasLocation" x="5597" y="1297"/>
         </scene>
         <!--Get Help Now-->
         <scene sceneID="hfO-Yb-8j2">
@@ -2842,6 +2853,105 @@ Email: oig@peacecorps.gov</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9s9-lV-tmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3104" y="-1364"/>
+        </scene>
+        <!--Coping with Unwanted Attention Strategies-->
+        <scene sceneID="D1I-Sh-VvZ">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="nst-xd-igV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rFT-E2-lfW"/>
+                        <viewControllerLayoutGuide type="bottom" id="KzA-XK-AV8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D6O-3g-Uxv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="te7-uS-1ve">
+                                <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wSe-J7-EJ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="736"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzg-Cs-Drk" userLabel="PlaceHolder">
+                                                <rect key="frame" x="0.0" y="37" width="15" height="662"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="plJ-VX-tVX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrg-X8-iGI" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coping with Unwanted Attention Strategies" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4L-HH-Q6E">
+                                                        <rect key="frame" x="20" y="10" width="500" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La0-dE-f4H">
+                                                        <rect key="frame" x="20" y="38" width="500" height="614"/>
+                                                        <mutableString key="text">➢	Walk purposefully. Always walk with confidence and purpose. ➢	Look assertive. Hold your head high, shoulders back and present yourself as a professional demanding respect. ➢	Nod (to acknowledge) and keep on walking. Simply recognizing the person can help ward off unwanted attention. Many times an inappropriate comment is an effort to get attention. ➢	Dress appropriately. Keep in mind what is culturally appropriate. ➢	Greetings. Sometimes a polite “Good Morning” can thwart a potential unwanted comment, but at other times it can escalate the situation.  If this strategy does not work, try a different one. ➢	Pretend that you heard something else. “I agree, it HAS been really great weather recently. Have a nice day, bye!” ➢	Humor. Use humor to lighten the moment and solicit another response.  For example, if you are told that you would make a good lover, reply that your spouse is sure to agree!  Keep walking.  This may not work with a persistent individual, so please keep trying different strategies when needed. ➢	Be polite but firm. It is quite normal to stand your ground. “I am offended by your comment; please do not address me in that manner.” ➢	Maintain your composure. Try to remain calm even if you feel upset. The converse is also true; try not to show hostility as this may provoke a confrontation. It is best to remove yourself from a situation if you feel that you are losing control. ➢	Never say “next time.” Make no promises for another time, because you can be sure that the next time they see you, they will remind you of that promise.</mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="La0-dE-f4H" secondAttribute="bottom" constant="10" id="4M9-Mj-1h9"/>
+                                                    <constraint firstItem="i4L-HH-Q6E" firstAttribute="top" secondItem="Lrg-X8-iGI" secondAttribute="top" constant="10" id="FxE-nm-Le2"/>
+                                                    <constraint firstItem="i4L-HH-Q6E" firstAttribute="leading" secondItem="Lrg-X8-iGI" secondAttribute="leading" constant="20" id="IWT-J6-T3C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i4L-HH-Q6E" secondAttribute="trailing" constant="20" id="NOf-wB-BN5"/>
+                                                    <constraint firstItem="La0-dE-f4H" firstAttribute="leading" secondItem="i4L-HH-Q6E" secondAttribute="leading" id="Rph-Z4-QjR"/>
+                                                    <constraint firstItem="La0-dE-f4H" firstAttribute="top" secondItem="i4L-HH-Q6E" secondAttribute="bottom" constant="8" id="kNb-L5-J9q"/>
+                                                    <constraint firstItem="La0-dE-f4H" firstAttribute="width" secondItem="i4L-HH-Q6E" secondAttribute="width" id="pjW-92-pvF"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Rk-hT-ShY" userLabel="PlaceHolder">
+                                                <rect key="frame" x="585" y="37" width="15" height="662"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0Rk-hT-ShY" firstAttribute="height" secondItem="Kzg-Cs-Drk" secondAttribute="height" id="FbN-Zv-fcr"/>
+                                            <constraint firstItem="0Rk-hT-ShY" firstAttribute="width" secondItem="Kzg-Cs-Drk" secondAttribute="width" id="thk-Pt-F9v"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wSe-J7-EJ1" firstAttribute="leading" secondItem="te7-uS-1ve" secondAttribute="leading" id="2m2-2j-t8I"/>
+                                    <constraint firstAttribute="bottom" secondItem="wSe-J7-EJ1" secondAttribute="bottom" id="7eS-U6-C8f"/>
+                                    <constraint firstItem="wSe-J7-EJ1" firstAttribute="height" secondItem="te7-uS-1ve" secondAttribute="height" id="9le-19-Pkw"/>
+                                    <constraint firstItem="Lrg-X8-iGI" firstAttribute="height" secondItem="te7-uS-1ve" secondAttribute="height" multiplier="0.9" id="AJz-nF-Hem"/>
+                                    <constraint firstItem="Lrg-X8-iGI" firstAttribute="width" secondItem="te7-uS-1ve" secondAttribute="width" constant="-60" id="eju-PD-HSg"/>
+                                    <constraint firstItem="wSe-J7-EJ1" firstAttribute="top" secondItem="te7-uS-1ve" secondAttribute="top" id="huY-Ox-Xzu"/>
+                                    <constraint firstAttribute="trailing" secondItem="wSe-J7-EJ1" secondAttribute="trailing" id="ip1-nB-maM"/>
+                                    <constraint firstItem="Kzg-Cs-Drk" firstAttribute="height" secondItem="te7-uS-1ve" secondAttribute="height" multiplier="0.9" id="oHD-pF-4eb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KzA-XK-AV8" firstAttribute="top" secondItem="te7-uS-1ve" secondAttribute="bottom" id="TBB-3M-GIA"/>
+                            <constraint firstItem="te7-uS-1ve" firstAttribute="leading" secondItem="D6O-3g-Uxv" secondAttribute="leadingMargin" constant="-20" id="Vg7-JA-GUr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="te7-uS-1ve" secondAttribute="trailing" constant="-20" id="ePN-yR-bEH"/>
+                            <constraint firstItem="te7-uS-1ve" firstAttribute="top" secondItem="rFT-E2-lfW" secondAttribute="bottom" id="tc7-Vq-0YR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coping with Unwanted Attention Strategies" id="wOZ-ic-y3i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLf-R7-GkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5597" y="261"/>
         </scene>
     </scenes>
     <resources>
