@@ -862,6 +862,9 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="dMd-ES-xp1" kind="show" id="5CY-Xf-wgd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-gC-Z0G" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="192" width="560" height="44"/>
@@ -1255,7 +1258,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGw-KM-dbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4802" y="2192"/>
+            <point key="canvasLocation" x="6955" y="1296"/>
         </scene>
         <!--Circle Of Trusts-->
         <scene sceneID="dkv-H3-zwe">
@@ -1886,7 +1889,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MFn-4S-J4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4802" y="1292"/>
+            <point key="canvasLocation" x="5525" y="1296"/>
         </scene>
         <!--Learn More about the Reporting Types-->
         <scene sceneID="gLa-NY-zPw">
@@ -2156,7 +2159,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oA2-Vg-m0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5525" y="1292"/>
+            <point key="canvasLocation" x="5525" y="2210"/>
         </scene>
         <!--Get Help Now-->
         <scene sceneID="hfO-Yb-8j2">
@@ -3651,7 +3654,12 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-mi-Uac">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <string key="text">Have you anticipated where and in which ways you might come into contact with the perpetrator and perpetrator’s friends/family?If you were to come into contact with the perpetrator and perpetrator’s family/friends, what specific things could you do that might help you feel safe in that situation?Have you thought about making a plan in case of emergencies of who you could call, where you could go, and how you could get there? How can Peace Corps assist you in developing this plan?</string>
+                                                                <string key="text">Have you anticipated where and in which ways you might come into contact with the perpetrator and perpetrator’s friends/family?
+
+If you were to come into contact with the perpetrator and perpetrator’s family/friends, what specific things could you do that might help you feel safe in that situation?
+
+Have you thought about making a plan in case of emergencies of who you could call, where you could go, and how you could get there? How can Peace Corps assist you in developing this plan?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3690,7 +3698,12 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-hB-a6S">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Know where to go for help •	Have a way to alert neighbors/counterparts if there’s a problem •	Help develop a phone list of people to call in an emergency •	Ensure you have readily accessible emergency contact numbers for local authorities and PC •	If requested, establish contacts between PC and counterpart, neighbors, local police &amp; community leaders so they know how to contact PC •	Have your important documents ready in case of an emergency </mutableString>
+                                                                <string key="text">•	Know where to go for help 
+•	Have a way to alert neighbors/counterparts if there’s a problem 
+•	Help develop a phone list of people to call in an emergency 
+•	Ensure you have readily accessible emergency contact numbers for local authorities and PC 
+•	If requested, establish contacts between PC and counterpart, neighbors, local police &amp; community leaders so they know how to contact PC 
+•	Have your important documents ready in case of an emergency </string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3744,7 +3757,20 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-KB-W6N">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">Do you suspect the perpetrator or the perpetrator’s family/friends know where you live? If so, do you believe the perpetrator may have access to your housing? Do you feel safe inside your home? What can Peace Corps do to help you feel safe inside your home (e.g., working locks on door/windows, etc.)? If you live with a host family or on a family compound, does anyone know about the incident? If not, would they be supportive if they were to learn of the incident?If the perpetrator or the perpetrator’s family/friends were to show up at your home are there people you can turn to for assistance?In the unlikely event of a non-medical emergency, are there local friends, community members, or other Volunteers nearby who you can stay with or contact for assistance? If not, can Peace Corps help you identify individuals and establish those contacts? How could you contact these individuals?Can you think of other resources or things you can do to feel safer where you live? What can Peace Corps do to assist you with this?</mutableString>
+                                                                <string key="text">Do you suspect the perpetrator or the perpetrator’s family/friends know where you live? If so, do you believe the perpetrator may have access to your housing? 
+
+Do you feel safe inside your home? What can Peace Corps do to help you feel safe inside your home (e.g., working locks on door/windows, etc.)? 
+
+If you live with a host family or on a family compound, does anyone know about the incident? If not, would they be supportive if they were to learn of the incident?
+
+If the perpetrator or the perpetrator’s family/friends were to show up at your home are there people you can turn to for assistance?
+
+In the unlikely event of a non-medical emergency, are there local friends, community members, or other Volunteers nearby who you can stay with or contact for assistance? If not, can Peace Corps help you identify individuals and establish those contacts? 
+
+How could you contact these individuals?
+
+Can you think of other resources or things you can do to feel safer where you live? What can Peace Corps do to assist you with this?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3783,7 +3809,14 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-co-MSC">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Know where to go for help •	Ask staff to conduct a safety inspection of your home, if necessary •	Ensure needed security upgrades are completed •	Help develop a phone list of people to call in an emergency •	Ensure that you have readily accessible emergency contact numbers for local authorities and PC •	Have a way to alert neighbors/counterparts if there’s a problem •	Take steps to enhance privacy (use locks, keep curtains closed, etc)</mutableString>
+                                                                <string key="text">•	Know where to go for help 
+•	Ask staff to conduct a safety inspection of your home, if necessary 
+•	Ensure needed security upgrades are completed 
+•	Help develop a phone list of people to call in an emergency 
+•	Ensure that you have readily accessible emergency contact numbers for local authorities and PC 
+•	Have a way to alert neighbors/counterparts if there’s a problem 
+•	Take steps to enhance privacy (use locks, keep curtains closed, etc)
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3837,7 +3870,14 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe5-3B-cnJ">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">Does the perpetrator know your cell phone number? Your email address? Have you thought about what you would do if the perpetrator or perpetrator’s friends/family attempts to contact you or posts things about you online?  What can Peace Corps do to help you?Does the perpetrator know any of your passwords? If so, have you considered changing your passwords?Do you have any social media accounts (e.g., Facebook, Google, Twitter, Linked In, blogs)? Are you “friends” with the perpetrator or perpetrator’s friends/family? If so, do you know how to block the perpetrator or perpetrator’s family or friends?Are you concerned that the perpetrator or perpetrator’s family/friends will contact you on the Internet?  If they do, have you thought about what you will do?</mutableString>
+                                                                <string key="text">Does the perpetrator know your cell phone number? Your email address? Have you thought about what you would do if the perpetrator or perpetrator’s friends/family attempts to contact you or posts things about you online?  What can Peace Corps do to help you?
+
+Does the perpetrator know any of your passwords? If so, have you considered changing your passwords?
+
+Do you have any social media accounts (e.g., Facebook, Google, Twitter, Linked In, blogs)? Are you “friends” with the perpetrator or perpetrator’s friends/family? If so, do you know how to block the perpetrator or perpetrator’s family or friends?
+
+Are you concerned that the perpetrator or perpetrator’s family/friends will contact you on the Internet?  If they do, have you thought about what you will do?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3876,7 +3916,14 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9l-pD-3Ne">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Change your SIM card or cellphone •	Ensure you have readily accessible emergency contact numbers for local authorities and PC •	Change user names and/or passwords for mail and other social media •	Try to avoid using location services or posting information that may divulge your location •	Notify Peace Corps as soon as possible of safety and security concerns or if the offender attempts to contact you. •	Program your phone with important emergency numbers •	Keep phone charged and have enough minutes in case of an emergency. </mutableString>
+                                                                <string key="text">•	Change your SIM card or cellphone 
+•	Ensure you have readily accessible emergency contact numbers for local authorities and PC 
+•	Change user names and/or passwords for mail and other social media 
+•	Try to avoid using location services or posting information that may divulge your location 
+•	Notify Peace Corps as soon as possible of safety and security concerns or if the offender attempts to contact you. 
+•	Program your phone with important emergency numbers 
+•	Keep phone charged and have enough minutes in case of an emergency. 
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3930,7 +3977,18 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-Gz-qhF">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <string key="text">Does the perpetrator or perpetrator’s family/friends know where you work? Does anyone else at work know about the incident?If your counterpart/supervisor learns about the incident, do you think it would make you more or less safe?If you work with the perpetrator, are there steps you can take to avoid interacting with the perpetrator?If the perpetrator shows up at your work are there people you can turn to for support?Is there anything that the Peace Corps can do to help you feel safe at work?</string>
+                                                                <string key="text">Does the perpetrator or perpetrator’s family/friends know where you work? 
+
+Does anyone else at work know about the incident?
+
+If your counterpart/supervisor learns about the incident, do you think it would make you more or less safe?
+
+If you work with the perpetrator, are there steps you can take to avoid interacting with the perpetrator?
+
+If the perpetrator shows up at your work are there people you can turn to for support?
+
+Is there anything that the Peace Corps can do to help you feel safe at work?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -3969,7 +4027,12 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-3g-RxU">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Make sure PC has established contact with your counterpart so they know how to contact PC •	Identify an emergency point of contact in the workplace  •	Immediately notify PC if the offender comes to your work •	If working in isolated areas seek accompaniment by a coworker or community member if possible •	Avoid staying late or alone in the office or workplace</mutableString>
+                                                                <string key="text">•	Make sure PC has established contact with your counterpart so they know how to contact PC 
+•	Identify an emergency point of contact in the workplace  
+•	Immediately notify PC if the offender comes to your work 
+•	If working in isolated areas seek accompaniment by a coworker or community member if possible 
+•	Avoid staying late or alone in the office or workplace
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4023,7 +4086,18 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-tU-MKl">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">Do you anticipate that you will see the perpetrator when you are out in public? If yes, where?Do you see the perpetrator’s family/friends when you are out in public? If yes, where?If needed, is there someone you trust who can accompany you to the places you need to go?If you were approached by the perpetrator or perpetrator’s friends/family in a public place, do you know where you could go to be safe?Do you have any concerns about rumors related to the incident that are mentioned by community members or other Volunteers? How might you respond to these? How might these rumors impact you? How can Peace Corps assist you in dealing with rumors?Are there specific things you or Peace Corps can do that might help you feel safer in your community?</mutableString>
+                                                                <string key="text">Do you anticipate that you will see the perpetrator when you are out in public? If yes, where?
+
+Do you see the perpetrator’s family/friends when you are out in public? If yes, where?
+
+If needed, is there someone you trust who can accompany you to the places you need to go?
+
+If you were approached by the perpetrator or perpetrator’s friends/family in a public place, do you know where you could go to be safe?
+
+Do you have any concerns about rumors related to the incident that are mentioned by community members or other Volunteers? How might you respond to these? How might these rumors impact you? How can Peace Corps assist you in dealing with rumors?
+
+Are there specific things you or Peace Corps can do that might help you feel safer in your community?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4062,7 +4136,12 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-d6-phS">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Establish regular check-in plan with PCMO and other PC staff •	Find out what support services are available to you, including Volunteer Support Network and PCVLs •	Trust your instincts; don’t worry about appearing to over-react (over-reacting is okay) •	Be aware of unhealthy coping mechanisms such as self-medicating, isolating oneself, hurting oneself, etc. and seek help from PC •	Ask Peace Corps for help before stress becomes overwhelming.</mutableString>
+                                                                <string key="text">•	Establish regular check-in plan with PCMO and other PC staff 
+•	Find out what support services are available to you, including Volunteer Support Network and PCVLs 
+•	Trust your instincts; don’t worry about appearing to over-react (over-reacting is okay) 
+•	Be aware of unhealthy coping mechanisms such as self-medicating, isolating oneself, hurting oneself, etc. and seek help from PC 
+•	Ask Peace Corps for help before stress becomes overwhelming.
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4116,7 +4195,14 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izg-sh-fZN">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">Do you have any safety concerns with any modes of transportation related to the incident? Does the perpetrator know your transportation routes? If yes, can you change the routes you take to work, home, shopping?Does the perpetrator or the perpetrator’s friends/family use the same transportation you do? If so, are there other ways you could get where you need to go? Is their opportunity for carpooling with someone else?Are there specific things you can think of doing or that Peace Corps might do that might help you feel safer in transport?</mutableString>
+                                                                <string key="text">Do you have any safety concerns with any modes of transportation related to the incident? 
+
+Does the perpetrator know your transportation routes? If yes, can you change the routes you take to work, home, shopping?
+
+Does the perpetrator or the perpetrator’s friends/family use the same transportation you do? If so, are there other ways you could get where you need to go? Is their opportunity for carpooling with someone else?
+
+Are there specific things you can think of doing or that Peace Corps might do that might help you feel safer in transport?
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4155,7 +4241,13 @@ Email: oig@peacecorps.gov</string>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-ej-huC">
                                                                 <rect key="frame" x="20" y="38" width="500" height="628"/>
-                                                                <mutableString key="text">•	Assist with identifying a safe taxi/moto-taxi or bus services •	Ensure that the Volunteer has readily accessible emergency contact numbers for local authorities and PC •	Notify Peace Corps as soon as possible of safety and security concerns •	Trust your instincts; don’t worry about appearing to over-react  •	Modify daily routines, change times and routes to frequent locations if possible •	Keep personal belongings secure at all times</mutableString>
+                                                                <string key="text">•	Assist with identifying a safe taxi/moto-taxi or bus services 
+•	Ensure that the Volunteer has readily accessible emergency contact numbers for local authorities and PC 
+•	Notify Peace Corps as soon as possible of safety and security concerns 
+•	Trust your instincts; don’t worry about appearing to over-react  
+•	Modify daily routines, change times and routes to frequent locations if possible 
+•	Keep personal belongings secure at all times
+</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4240,6 +4332,105 @@ Email: oig@peacecorps.gov</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i69-lu-Ovs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="8373" y="361"/>
+        </scene>
+        <!--Benefits of Seeking Staff Support-->
+        <scene sceneID="5f4-hY-Vfd">
+            <objects>
+                <viewController title="Benefits of Seeking Staff Support" automaticallyAdjustsScrollViewInsets="NO" id="dMd-ES-xp1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xtA-cL-ZSZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y0j-2k-G0U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZXT-J9-vtP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-0m-ArU">
+                                <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="52F-uk-aln">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="736"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-Qk-mg7" userLabel="PlaceHolder">
+                                                <rect key="frame" x="0.0" y="37" width="15" height="662"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="VBT-p8-Rtp"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHf-aI-ArX" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important reasons for a Volunteer to seek out Staff support" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAI-c2-KZJ">
+                                                        <rect key="frame" x="20" y="10" width="500" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSg-ee-07e">
+                                                        <rect key="frame" x="20" y="38" width="500" height="614"/>
+                                                        <mutableString key="text">•	So that appropriate and timely medical care can be provided.  •	HIV and hepatitis testing, including HIV PEP  •	STI screening  •	Pregnancy testing and prophylaxis, if applicable  •	So the Volunteer gets emotional support and mental health care  •	Access to long-term health care through worker’s compensation after COS, if needed.  •	To be informed about legal options and assistance. •	Help ensure the safety of the Volunteer and fellow Volunteers.  •	Help ensure the safety of future Volunteers. </mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="TSg-ee-07e" firstAttribute="leading" secondItem="OAI-c2-KZJ" secondAttribute="leading" id="1yk-io-zc8"/>
+                                                    <constraint firstItem="TSg-ee-07e" firstAttribute="top" secondItem="OAI-c2-KZJ" secondAttribute="bottom" constant="8" id="3bo-7k-QWs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TSg-ee-07e" secondAttribute="bottom" constant="10" id="IRj-Nv-6hc"/>
+                                                    <constraint firstItem="OAI-c2-KZJ" firstAttribute="top" secondItem="mHf-aI-ArX" secondAttribute="top" constant="10" id="YTI-w5-h7l"/>
+                                                    <constraint firstAttribute="trailing" secondItem="OAI-c2-KZJ" secondAttribute="trailing" constant="20" id="ZLw-GL-rbV"/>
+                                                    <constraint firstItem="OAI-c2-KZJ" firstAttribute="leading" secondItem="mHf-aI-ArX" secondAttribute="leading" constant="20" id="hg0-Qv-ZHA"/>
+                                                    <constraint firstItem="TSg-ee-07e" firstAttribute="width" secondItem="OAI-c2-KZJ" secondAttribute="width" id="tur-c4-rUP"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdF-tm-DKr" userLabel="PlaceHolder">
+                                                <rect key="frame" x="585" y="37" width="15" height="662"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="vdF-tm-DKr" firstAttribute="width" secondItem="yC3-Qk-mg7" secondAttribute="width" id="H6Z-Pg-8kl"/>
+                                            <constraint firstItem="vdF-tm-DKr" firstAttribute="height" secondItem="yC3-Qk-mg7" secondAttribute="height" id="Tpx-l1-Tba"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="52F-uk-aln" firstAttribute="leading" secondItem="cuw-0m-ArU" secondAttribute="leading" id="HG3-Wv-ib5"/>
+                                    <constraint firstItem="mHf-aI-ArX" firstAttribute="width" secondItem="cuw-0m-ArU" secondAttribute="width" constant="-60" id="UDb-6d-QUt"/>
+                                    <constraint firstItem="52F-uk-aln" firstAttribute="height" secondItem="cuw-0m-ArU" secondAttribute="height" id="aF8-Oz-wfJ"/>
+                                    <constraint firstItem="mHf-aI-ArX" firstAttribute="height" secondItem="cuw-0m-ArU" secondAttribute="height" multiplier="0.9" id="h89-Vh-UpY"/>
+                                    <constraint firstItem="52F-uk-aln" firstAttribute="top" secondItem="cuw-0m-ArU" secondAttribute="top" id="jQT-nr-fvL"/>
+                                    <constraint firstItem="yC3-Qk-mg7" firstAttribute="height" secondItem="cuw-0m-ArU" secondAttribute="height" multiplier="0.9" id="lnk-he-QeG"/>
+                                    <constraint firstAttribute="bottom" secondItem="52F-uk-aln" secondAttribute="bottom" id="msc-5e-z8k"/>
+                                    <constraint firstAttribute="trailing" secondItem="52F-uk-aln" secondAttribute="trailing" id="u1g-yI-eyJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cuw-0m-ArU" firstAttribute="top" secondItem="xtA-cL-ZSZ" secondAttribute="bottom" id="19d-MQ-KLt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cuw-0m-ArU" secondAttribute="trailing" constant="-20" id="7qy-xj-Nev"/>
+                            <constraint firstItem="cuw-0m-ArU" firstAttribute="leading" secondItem="ZXT-J9-vtP" secondAttribute="leadingMargin" constant="-20" id="Uhp-yD-SOm"/>
+                            <constraint firstItem="Y0j-2k-G0U" firstAttribute="top" secondItem="cuw-0m-ArU" secondAttribute="bottom" id="h09-SV-ZAL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Benefits of Seeking Staff Support" id="Du7-6s-kbs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFw-Xz-x2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4802" y="1296"/>
         </scene>
     </scenes>
     <resources>
