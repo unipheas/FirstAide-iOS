@@ -847,6 +847,9 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="JLB-PB-jfF" kind="show" id="gsD-jm-2Nt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAz-8g-gua" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
@@ -907,6 +910,9 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="yIV-ez-Vw3" kind="show" id="YwW-Ua-eF9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -4604,6 +4610,616 @@ Are there specific things you can think of doing or that Peace Corps might do th
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMm-ts-54X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6241" y="1668"/>
+        </scene>
+        <!--Confidentiality-->
+        <scene sceneID="WLW-jg-QFi">
+            <objects>
+                <viewController title="Confidentiality" automaticallyAdjustsScrollViewInsets="NO" id="JLB-PB-jfF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qxP-B0-X3e"/>
+                        <viewControllerLayoutGuide type="bottom" id="9HT-xD-Nxm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G6m-nt-Hdh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V1k-AG-bPu">
+                                <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4xk-ap-elk">
+                                        <rect key="frame" x="0.0" y="0.0" width="1710" height="736"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaE-oQ-JW7" userLabel="PlaceHolder">
+                                                <rect key="frame" x="0.0" y="37" width="15" height="662"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="lrt-lR-biM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwD-8D-UJv" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of Staff" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th9-kI-rad">
+                                                        <rect key="frame" x="20" y="10" width="500" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-oJ-xDX">
+                                                        <rect key="frame" x="20" y="38" width="500" height="614"/>
+                                                        <string key="text">Peace Corps staff are held to high expectations with regards to confidentiality.   All Peace Corps staff and the independent Peace Corps Sexual Assault Hotline responders are trained to safeguard personal information.  If you believe your information is being mishandled, please call the Office of Inspector General (OIG).</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="th9-kI-rad" firstAttribute="top" secondItem="DwD-8D-UJv" secondAttribute="top" constant="10" id="8QP-6F-5U4"/>
+                                                    <constraint firstItem="th9-kI-rad" firstAttribute="leading" secondItem="DwD-8D-UJv" secondAttribute="leading" constant="20" id="EZI-Rg-W0r"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lnH-oJ-xDX" secondAttribute="bottom" constant="10" id="GeC-eq-OYQ"/>
+                                                    <constraint firstItem="lnH-oJ-xDX" firstAttribute="top" secondItem="th9-kI-rad" secondAttribute="bottom" constant="8" id="HoU-Q6-4zi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="th9-kI-rad" secondAttribute="trailing" constant="20" id="N6A-0h-i0l"/>
+                                                    <constraint firstItem="lnH-oJ-xDX" firstAttribute="leading" secondItem="th9-kI-rad" secondAttribute="leading" id="fHn-FB-U7O"/>
+                                                    <constraint firstItem="lnH-oJ-xDX" firstAttribute="width" secondItem="th9-kI-rad" secondAttribute="width" id="oJJ-OM-Njb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6IY-pi-zVJ" userLabel="Slide2" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="585" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of the Volunteer Community" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjv-Ez-1uO">
+                                                        <rect key="frame" x="20" y="10" width="500" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-3J-afE">
+                                                        <rect key="frame" x="20" y="38" width="500" height="614"/>
+                                                        <mutableString key="text">When Volunteers learn of a fellow PCV’s sexual assault their actions can make a difference - they can support the healing process or further hurt the Volunteer who was sexually assaulted.  Some things to consider: •	What is your role in protecting information about a crime against a Volunteer? •	If you become aware of a crime committed against a fellow PCV, how might posting information on a social media platform, such as a blog or Facebook, impact or even endanger the Volunteer, their host community, or their friends and family?</mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="b5I-3J-afE" secondAttribute="bottom" constant="10" id="4EA-po-6o7"/>
+                                                    <constraint firstItem="bjv-Ez-1uO" firstAttribute="top" secondItem="6IY-pi-zVJ" secondAttribute="top" constant="10" id="DSn-JQ-YY4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bjv-Ez-1uO" secondAttribute="trailing" constant="20" id="E1P-na-dcG"/>
+                                                    <constraint firstItem="bjv-Ez-1uO" firstAttribute="leading" secondItem="6IY-pi-zVJ" secondAttribute="leading" constant="20" id="RFo-FJ-0O4"/>
+                                                    <constraint firstItem="b5I-3J-afE" firstAttribute="width" secondItem="bjv-Ez-1uO" secondAttribute="width" id="gok-dG-aFY"/>
+                                                    <constraint firstItem="b5I-3J-afE" firstAttribute="top" secondItem="bjv-Ez-1uO" secondAttribute="bottom" constant="8" id="lor-fq-0Bj"/>
+                                                    <constraint firstItem="b5I-3J-afE" firstAttribute="leading" secondItem="bjv-Ez-1uO" secondAttribute="leading" id="qsk-rV-wGY"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBO-41-aiM" userLabel="Slide3" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="1140" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of the Volunteer Who Has Been Assaulted" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwc-Pc-hAe">
+                                                        <rect key="frame" x="20" y="10" width="500" height="20"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-bz-DU9">
+                                                        <rect key="frame" x="20" y="38" width="500" height="614"/>
+                                                        <mutableString key="text">If you become the victim of a crime, choose who you trust with your sensitive information. Volunteer communications with other Volunteers may not be held to the same rules of privacy that apply to Peace Corps staff or Hotline responders.  As one Volunteer shared: “After the sexual assault, I needed the support of a fellow PCV and shared a little about what I was going through.  I had no idea that because I was seeking legal justice that the defense lawyer would contact that individual four months later to fish for information to use against me in a court of law.  Had I known that anything that I said verbally or in an email would be fair game for court, I would have been more cautious and spoken to a counselor through secure communication earlier.”</mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="Dwc-Pc-hAe" secondAttribute="trailing" constant="20" id="23z-FJ-sdQ"/>
+                                                    <constraint firstItem="SEL-bz-DU9" firstAttribute="leading" secondItem="Dwc-Pc-hAe" secondAttribute="leading" id="327-MJ-a90"/>
+                                                    <constraint firstItem="Dwc-Pc-hAe" firstAttribute="leading" secondItem="jBO-41-aiM" secondAttribute="leading" constant="20" id="LuH-2r-zHN"/>
+                                                    <constraint firstItem="Dwc-Pc-hAe" firstAttribute="top" secondItem="jBO-41-aiM" secondAttribute="top" constant="10" id="cYt-yH-eDC"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SEL-bz-DU9" secondAttribute="bottom" constant="10" id="e5M-zi-Uhg"/>
+                                                    <constraint firstItem="SEL-bz-DU9" firstAttribute="width" secondItem="Dwc-Pc-hAe" secondAttribute="width" id="iRS-kU-ChL"/>
+                                                    <constraint firstItem="SEL-bz-DU9" firstAttribute="top" secondItem="Dwc-Pc-hAe" secondAttribute="bottom" constant="8" id="u7i-iZ-6Sy"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zb-wo-uFH" userLabel="PlaceHolder">
+                                                <rect key="frame" x="1695" y="37" width="15" height="662"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9zb-wo-uFH" firstAttribute="height" secondItem="uaE-oQ-JW7" secondAttribute="height" id="IYc-pA-yha"/>
+                                            <constraint firstItem="6IY-pi-zVJ" firstAttribute="height" secondItem="DwD-8D-UJv" secondAttribute="height" id="RtK-bk-FMn"/>
+                                            <constraint firstItem="jBO-41-aiM" firstAttribute="width" secondItem="DwD-8D-UJv" secondAttribute="width" id="Z7g-RY-0LQ"/>
+                                            <constraint firstItem="9zb-wo-uFH" firstAttribute="width" secondItem="uaE-oQ-JW7" secondAttribute="width" id="j2a-CP-lnG"/>
+                                            <constraint firstItem="6IY-pi-zVJ" firstAttribute="width" secondItem="DwD-8D-UJv" secondAttribute="width" id="pzu-NT-Jte"/>
+                                            <constraint firstItem="jBO-41-aiM" firstAttribute="height" secondItem="DwD-8D-UJv" secondAttribute="height" id="vs4-OR-8gA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4xk-ap-elk" firstAttribute="top" secondItem="V1k-AG-bPu" secondAttribute="top" id="1iq-3H-Cq8"/>
+                                    <constraint firstAttribute="bottom" secondItem="4xk-ap-elk" secondAttribute="bottom" id="53L-1r-IZg"/>
+                                    <constraint firstItem="DwD-8D-UJv" firstAttribute="width" secondItem="V1k-AG-bPu" secondAttribute="width" constant="-60" id="5Hv-i5-H5L"/>
+                                    <constraint firstItem="DwD-8D-UJv" firstAttribute="height" secondItem="V1k-AG-bPu" secondAttribute="height" multiplier="0.9" id="VtE-82-oGH"/>
+                                    <constraint firstAttribute="trailing" secondItem="4xk-ap-elk" secondAttribute="trailing" id="d59-gb-mlJ"/>
+                                    <constraint firstItem="4xk-ap-elk" firstAttribute="height" secondItem="V1k-AG-bPu" secondAttribute="height" id="hhZ-lf-Rxl"/>
+                                    <constraint firstItem="4xk-ap-elk" firstAttribute="leading" secondItem="V1k-AG-bPu" secondAttribute="leading" id="ioS-z8-4O1"/>
+                                    <constraint firstItem="uaE-oQ-JW7" firstAttribute="height" secondItem="V1k-AG-bPu" secondAttribute="height" multiplier="0.9" id="z3L-7w-Y7G"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9HT-xD-Nxm" firstAttribute="top" secondItem="V1k-AG-bPu" secondAttribute="bottom" id="4vs-HT-cPx"/>
+                            <constraint firstItem="V1k-AG-bPu" firstAttribute="leading" secondItem="G6m-nt-Hdh" secondAttribute="leadingMargin" constant="-20" id="9CG-XG-liE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V1k-AG-bPu" secondAttribute="trailing" constant="-20" id="MlM-e2-Gj3"/>
+                            <constraint firstItem="V1k-AG-bPu" firstAttribute="top" secondItem="qxP-B0-X3e" secondAttribute="bottom" id="pAI-Hb-LsX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confidentiality" id="Eq7-wa-lWb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXp-Qd-dnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7652" y="1668"/>
+        </scene>
+        <!--Peace Corps Mythbusters: Assumptions and Facts-->
+        <scene sceneID="b2f-BJ-LTL">
+            <objects>
+                <viewController title="Peace Corps Mythbusters: Assumptions and Facts" automaticallyAdjustsScrollViewInsets="NO" id="yIV-ez-Vw3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWB-9p-syh"/>
+                        <viewControllerLayoutGuide type="bottom" id="sZy-ro-hx1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HiP-rF-pw1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGq-Ly-aFn">
+                                <rect key="frame" x="0.0" y="64" width="600" height="736"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RCz-zT-nYG">
+                                        <rect key="frame" x="0.0" y="0.0" width="5040" height="736"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Utt-pB-RTM" userLabel="PlaceHolder">
+                                                <rect key="frame" x="0.0" y="37" width="15" height="662"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="1zB-2B-0u9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pax-Ne-akF" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. ASSUMPTION: Everyone and their neighbor’s goat will find out about what happened" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaa-xI-YXn">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-s2-6SI">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <string key="text">FACT:  All Peace Corps staff have been trained to protect your information and any Peace Corps Staff who improperly disclose the identity of a Volunteer or other information regarding a sexual assault may be subject to disciplinary action.</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Wog-s2-6SI" secondAttribute="bottom" constant="10" id="2jN-dl-snp"/>
+                                                    <constraint firstItem="Wog-s2-6SI" firstAttribute="top" secondItem="eaa-xI-YXn" secondAttribute="bottom" constant="8" id="MNs-jY-xyA"/>
+                                                    <constraint firstItem="eaa-xI-YXn" firstAttribute="leading" secondItem="Pax-Ne-akF" secondAttribute="leading" constant="20" id="eCK-EY-Emk"/>
+                                                    <constraint firstAttribute="trailing" secondItem="eaa-xI-YXn" secondAttribute="trailing" constant="20" id="fDZ-Uw-afl"/>
+                                                    <constraint firstItem="Wog-s2-6SI" firstAttribute="width" secondItem="eaa-xI-YXn" secondAttribute="width" id="kbC-5D-u41"/>
+                                                    <constraint firstItem="eaa-xI-YXn" firstAttribute="top" secondItem="Pax-Ne-akF" secondAttribute="top" constant="10" id="oVc-nX-fs0"/>
+                                                    <constraint firstItem="Wog-s2-6SI" firstAttribute="leading" secondItem="eaa-xI-YXn" secondAttribute="leading" id="r1O-dN-mw4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbI-V3-AOs" userLabel="Slide2" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="585" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. ASSUMPTION: The incident occurred at my site; therefore, I’ll get an automatic site change" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-eY-QVF">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1Z-QL-HEL">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <string key="text">FACT: You will be part of the discussions about your continued service at your site, in country, or in Peace Corps. No decision will be made without your input and your participation. Keep in mind, one of the biggest factors to be considered will be your personal safety. Peace Corps will help you evaluate your options.</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="yWD-eY-QVF" firstAttribute="leading" secondItem="MbI-V3-AOs" secondAttribute="leading" constant="20" id="SzT-eN-HSB"/>
+                                                    <constraint firstItem="yWD-eY-QVF" firstAttribute="top" secondItem="MbI-V3-AOs" secondAttribute="top" constant="10" id="ULu-yk-MZn"/>
+                                                    <constraint firstItem="k1Z-QL-HEL" firstAttribute="leading" secondItem="yWD-eY-QVF" secondAttribute="leading" id="Ufx-Ny-gZm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yWD-eY-QVF" secondAttribute="trailing" constant="20" id="df2-Da-Y7Y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="k1Z-QL-HEL" secondAttribute="bottom" constant="10" id="mQY-nM-8ew"/>
+                                                    <constraint firstItem="k1Z-QL-HEL" firstAttribute="top" secondItem="yWD-eY-QVF" secondAttribute="bottom" constant="8" id="oIh-HY-gsi"/>
+                                                    <constraint firstItem="k1Z-QL-HEL" firstAttribute="width" secondItem="yWD-eY-QVF" secondAttribute="width" id="su6-FX-a0k"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMe-2f-AoL" userLabel="Slide3" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="1140" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. ASSUMPTION: The culture here is different, so Peace Corps staff will blame me for what happened" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzm-Ye-zGa">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-bQ-UZm">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <string key="text">FACT: Peace Corps goes to great lengths to train staff in the field to understand sexual assault and respond to the needs of Volunteers who become the victims of violent crime. Designated Staff at post, which include Safety and Security Managers, Peace Corps Medical Officers, and Sexual Assault Response Liaisons, are specially trained to respond to reports of sexual assault with compassion and professionalism.</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="S8o-bQ-UZm" firstAttribute="top" secondItem="Qzm-Ye-zGa" secondAttribute="bottom" constant="8" id="7jS-p8-NTb"/>
+                                                    <constraint firstItem="Qzm-Ye-zGa" firstAttribute="top" secondItem="cMe-2f-AoL" secondAttribute="top" constant="10" id="O6f-zU-lEK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="S8o-bQ-UZm" secondAttribute="bottom" constant="10" id="Wco-EB-Ibm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Qzm-Ye-zGa" secondAttribute="trailing" constant="20" id="fXR-dz-GOS"/>
+                                                    <constraint firstItem="Qzm-Ye-zGa" firstAttribute="leading" secondItem="cMe-2f-AoL" secondAttribute="leading" constant="20" id="np3-AT-2kH"/>
+                                                    <constraint firstItem="S8o-bQ-UZm" firstAttribute="width" secondItem="Qzm-Ye-zGa" secondAttribute="width" id="qo0-Sd-Wm0"/>
+                                                    <constraint firstItem="S8o-bQ-UZm" firstAttribute="leading" secondItem="Qzm-Ye-zGa" secondAttribute="leading" id="zpQ-4V-Tpw"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDo-CZ-FU8" userLabel="Slide4" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="1695" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. ASSUMPTION: I was breaking a policy when the sexual assault occurred; therefore, staff will send me back to the U.S. ASAP" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KB-jN-1Se">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-Wx-X27">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <mutableString key="text">FACT: Peace Corps honors an Immunity Policy, which is a way for Peace Corps to promote reporting of sexual assault and ensure a compassionate and supportive response by the Agency. Victims—and witnesses who didn’t help commit the sexual assault—need not fear any administrative consequences for reporting a sexual assault regardless of the circumstances or whether they were violating a Peace Corps policy when the incident occurred.  The Immunity Policy does not grant immunity for any criminal or civil liability for violations of law.</mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="XUW-Wx-X27" firstAttribute="leading" secondItem="1KB-jN-1Se" secondAttribute="leading" id="HT0-un-qH4"/>
+                                                    <constraint firstItem="XUW-Wx-X27" firstAttribute="top" secondItem="1KB-jN-1Se" secondAttribute="bottom" constant="8" id="JHw-9a-y2o"/>
+                                                    <constraint firstItem="1KB-jN-1Se" firstAttribute="top" secondItem="kDo-CZ-FU8" secondAttribute="top" constant="10" id="VxU-MC-Drz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XUW-Wx-X27" secondAttribute="bottom" constant="10" id="geZ-J7-aHS"/>
+                                                    <constraint firstItem="XUW-Wx-X27" firstAttribute="width" secondItem="1KB-jN-1Se" secondAttribute="width" id="oqh-Ra-GPE"/>
+                                                    <constraint firstItem="1KB-jN-1Se" firstAttribute="leading" secondItem="kDo-CZ-FU8" secondAttribute="leading" constant="20" id="pjn-On-KPT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1KB-jN-1Se" secondAttribute="trailing" constant="20" id="tTq-wr-Ffc"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pku-r9-hGO" userLabel="Slide5" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="2250" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. ASSUMPTION: The process of reporting is difficult and time consuming" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iW-FR-DAj">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-Np-LnO">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <mutableString key="text">FACT: You will not be alone in this. If you are interested in reporting to the police, we have specially trained staff that will explain the process involved in filing a police report and how the investigation and prosecution will be conducted. Peace Corps can also hire an attorney to assist you with your legal options. Peace Corps will be with you every step of the way. Sometimes, the investigative and judicial process take a long time and will most likely be very different from the systems and procedures you may be familiar with in the United States. But even if you leave the country, Peace Corps will continue to work with the police and prosecutors and will keep you informed about your case.  </mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="1iW-FR-DAj" firstAttribute="leading" secondItem="Pku-r9-hGO" secondAttribute="leading" constant="20" id="2Fg-Ts-ZdM"/>
+                                                    <constraint firstItem="OwA-Np-LnO" firstAttribute="top" secondItem="1iW-FR-DAj" secondAttribute="bottom" constant="8" id="8Rt-40-425"/>
+                                                    <constraint firstItem="OwA-Np-LnO" firstAttribute="leading" secondItem="1iW-FR-DAj" secondAttribute="leading" id="K8M-AP-mKX"/>
+                                                    <constraint firstItem="OwA-Np-LnO" firstAttribute="width" secondItem="1iW-FR-DAj" secondAttribute="width" id="NJ1-qi-kM1"/>
+                                                    <constraint firstItem="1iW-FR-DAj" firstAttribute="top" secondItem="Pku-r9-hGO" secondAttribute="top" constant="10" id="cOh-Lv-rqm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OwA-Np-LnO" secondAttribute="bottom" constant="10" id="eKq-mR-dDo"/>
+                                                    <constraint firstAttribute="trailing" secondItem="1iW-FR-DAj" secondAttribute="trailing" constant="20" id="kF4-mU-Cwq"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8tc-7h-uXj" userLabel="Slide6" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="2805" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6. ASSUMPTION: If I report, the assailant will become potentially dangerous to me" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ1-2t-OCN">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f81-pz-ShS">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <string key="text">FACT:  When you report any crime or incident, it is extremely important to assess your safety and security. Staff at post, particularly your Safety and Security Manager, can help you create a safety plan that addresses safety concerns by creating solutions, contacts, and plans of action that will help keep you safe in the event of an emergency or encounter with an assailant.</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="FJ1-2t-OCN" secondAttribute="trailing" constant="20" id="H9p-XO-beL"/>
+                                                    <constraint firstItem="f81-pz-ShS" firstAttribute="leading" secondItem="FJ1-2t-OCN" secondAttribute="leading" id="NjJ-ct-wdb"/>
+                                                    <constraint firstItem="f81-pz-ShS" firstAttribute="top" secondItem="FJ1-2t-OCN" secondAttribute="bottom" constant="8" id="NpZ-Qe-bfF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="f81-pz-ShS" secondAttribute="bottom" constant="10" id="XQy-Qk-t4T"/>
+                                                    <constraint firstItem="FJ1-2t-OCN" firstAttribute="leading" secondItem="8tc-7h-uXj" secondAttribute="leading" constant="20" id="aZF-Hq-vsC"/>
+                                                    <constraint firstItem="FJ1-2t-OCN" firstAttribute="top" secondItem="8tc-7h-uXj" secondAttribute="top" constant="10" id="dgF-dE-pmz"/>
+                                                    <constraint firstItem="f81-pz-ShS" firstAttribute="width" secondItem="FJ1-2t-OCN" secondAttribute="width" id="hEX-Ac-bi9"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2U4-Rm-wt8" userLabel="Slide7" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="3360" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2a-IO-ZPT">
+                                                        <rect key="frame" x="20" y="10" width="500" height="62"/>
+                                                        <string key="text">7. ASSUMPTION: Peace Corps didn’t respond the way I expected to last time I brought up an issue, so I doubt they would this time around</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyU-fa-3kJ">
+                                                        <rect key="frame" x="20" y="80" width="500" height="572"/>
+                                                        <string key="text">FACT: If you experience this problem, there is something you can do. Volunteers who feel their incident was neglected can report their concerns to the Office of the Inspector General. Contact information for the OIG can be found at the end of this workbook. </string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="O2a-IO-ZPT" firstAttribute="leading" secondItem="2U4-Rm-wt8" secondAttribute="leading" constant="20" id="4Co-nc-zjv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WyU-fa-3kJ" secondAttribute="bottom" constant="10" id="9OC-iS-LgZ"/>
+                                                    <constraint firstItem="O2a-IO-ZPT" firstAttribute="top" secondItem="2U4-Rm-wt8" secondAttribute="top" constant="10" id="AmJ-bx-0Ol"/>
+                                                    <constraint firstItem="WyU-fa-3kJ" firstAttribute="top" secondItem="O2a-IO-ZPT" secondAttribute="bottom" constant="8" id="GWv-u5-Kwk"/>
+                                                    <constraint firstItem="WyU-fa-3kJ" firstAttribute="width" secondItem="O2a-IO-ZPT" secondAttribute="width" id="hIx-d3-jsN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="O2a-IO-ZPT" secondAttribute="trailing" constant="20" id="i2O-HV-dYw"/>
+                                                    <constraint firstItem="WyU-fa-3kJ" firstAttribute="leading" secondItem="O2a-IO-ZPT" secondAttribute="leading" id="y9L-TA-yEa"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-tu-ypt" userLabel="Slide8" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="3915" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZj-qs-Cnb">
+                                                        <rect key="frame" x="20" y="10" width="500" height="62"/>
+                                                        <string key="text">8. ASSUMPTION: I was sexually assaulted by a PCV – I don’t want to press charges in my country of service and Peace Corps can’t do anything about what happened, so I might as well not report</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utU-gs-YHD">
+                                                        <rect key="frame" x="20" y="80" width="500" height="572"/>
+                                                        <mutableString key="text">FACT: This is untrue. Volunteers can pursue an internal Peace Corps administrative process through the Volunteer/Trainee Sexual Misconduct Policy. Initiating this process asks Peace Corps to address instances of sexual misconduct by other Volunteers separate from any criminal investigation or proceeding. The process allows Volunteers the opportunity to present a case for sexual misconduct before a hearing panel of Peace Corps officials who will assess the case and determine whether disciplinary action is necessary to penalize the offender.</mutableString>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="FZj-qs-Cnb" firstAttribute="top" secondItem="Gga-tu-ypt" secondAttribute="top" constant="10" id="7W8-1x-eBE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FZj-qs-Cnb" secondAttribute="trailing" constant="20" id="8Z2-eA-KFH"/>
+                                                    <constraint firstItem="FZj-qs-Cnb" firstAttribute="leading" secondItem="Gga-tu-ypt" secondAttribute="leading" constant="20" id="M5X-ek-YGi"/>
+                                                    <constraint firstItem="utU-gs-YHD" firstAttribute="top" secondItem="FZj-qs-Cnb" secondAttribute="bottom" constant="8" id="XLd-1b-F0a"/>
+                                                    <constraint firstItem="utU-gs-YHD" firstAttribute="width" secondItem="FZj-qs-Cnb" secondAttribute="width" id="iY6-Oj-F8F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="utU-gs-YHD" secondAttribute="bottom" constant="10" id="sdI-ZO-LKq"/>
+                                                    <constraint firstItem="utU-gs-YHD" firstAttribute="leading" secondItem="FZj-qs-Cnb" secondAttribute="leading" id="xPn-vt-gmU"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vnF-Bg-atJ" userLabel="Slide9" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
+                                                <rect key="frame" x="4470" y="37" width="540" height="662"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9. ASSUMPTION: If I choose to leave service after being assaulted, I automatically have to early terminate (E.T)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-PK-BJC">
+                                                        <rect key="frame" x="20" y="10" width="500" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-3U-epU">
+                                                        <rect key="frame" x="20" y="59" width="500" height="593"/>
+                                                        <string key="text">FACT:  In many cases when a Volunteer is the victim of a crime, Interrupted Service is an option, which indicates that a Volunteer leaves service due to circumstances beyond their control. Additionally, if you are a victim of sexual assault, you are also entitled to a medevac (45 days) which may be located in your home of record or Washington, DC.  Medevacs allow for Volunteers to return to service at the end of the 45 day period.</string>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.63137254899999995" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="oX8-3U-epU" firstAttribute="width" secondItem="Z5o-PK-BJC" secondAttribute="width" id="2jX-IO-dzO"/>
+                                                    <constraint firstItem="oX8-3U-epU" firstAttribute="top" secondItem="Z5o-PK-BJC" secondAttribute="bottom" constant="8" id="CRz-Rw-orh"/>
+                                                    <constraint firstItem="Z5o-PK-BJC" firstAttribute="leading" secondItem="vnF-Bg-atJ" secondAttribute="leading" constant="20" id="JQI-iY-C6v"/>
+                                                    <constraint firstItem="oX8-3U-epU" firstAttribute="leading" secondItem="Z5o-PK-BJC" secondAttribute="leading" id="ZmW-Ff-btl"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oX8-3U-epU" secondAttribute="bottom" constant="10" id="nc6-N6-8NT"/>
+                                                    <constraint firstItem="Z5o-PK-BJC" firstAttribute="top" secondItem="vnF-Bg-atJ" secondAttribute="top" constant="10" id="px8-a1-qnE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Z5o-PK-BJC" secondAttribute="trailing" constant="20" id="qcW-fD-78w"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cW8-8N-2hB" userLabel="PlaceHolder">
+                                                <rect key="frame" x="5025" y="37" width="15" height="662"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8tc-7h-uXj" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="8Vl-Rn-TqM"/>
+                                            <constraint firstItem="MbI-V3-AOs" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="Awa-cC-dDV"/>
+                                            <constraint firstItem="vnF-Bg-atJ" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="D4t-P4-rOE"/>
+                                            <constraint firstItem="cW8-8N-2hB" firstAttribute="width" secondItem="Utt-pB-RTM" secondAttribute="width" id="DtR-QP-Cs3"/>
+                                            <constraint firstItem="8tc-7h-uXj" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="FFh-Ys-70w"/>
+                                            <constraint firstItem="cMe-2f-AoL" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="Hmb-I6-vcB"/>
+                                            <constraint firstItem="Gga-tu-ypt" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="MAW-u0-yAB"/>
+                                            <constraint firstItem="2U4-Rm-wt8" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="NOO-iT-qui"/>
+                                            <constraint firstItem="cW8-8N-2hB" firstAttribute="height" secondItem="Utt-pB-RTM" secondAttribute="height" id="O1A-Aw-vT6"/>
+                                            <constraint firstItem="Pku-r9-hGO" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="RqZ-GN-Lkr"/>
+                                            <constraint firstItem="2U4-Rm-wt8" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="VlC-zY-ZMR"/>
+                                            <constraint firstItem="kDo-CZ-FU8" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="Xcc-wN-N6r"/>
+                                            <constraint firstItem="MbI-V3-AOs" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="ZNY-AL-vPY"/>
+                                            <constraint firstItem="vnF-Bg-atJ" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="aXE-FM-EQp"/>
+                                            <constraint firstItem="Gga-tu-ypt" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="jAv-eM-9pO"/>
+                                            <constraint firstItem="kDo-CZ-FU8" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="jSj-i7-ePA"/>
+                                            <constraint firstItem="Pku-r9-hGO" firstAttribute="height" secondItem="Pax-Ne-akF" secondAttribute="height" id="tHZ-B2-rbN"/>
+                                            <constraint firstItem="cMe-2f-AoL" firstAttribute="width" secondItem="Pax-Ne-akF" secondAttribute="width" id="u27-26-1ta"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pax-Ne-akF" firstAttribute="width" secondItem="RGq-Ly-aFn" secondAttribute="width" constant="-60" id="0Pz-i3-d2E"/>
+                                    <constraint firstItem="Pax-Ne-akF" firstAttribute="height" secondItem="RGq-Ly-aFn" secondAttribute="height" multiplier="0.9" id="4jY-fL-e3A"/>
+                                    <constraint firstAttribute="bottom" secondItem="RCz-zT-nYG" secondAttribute="bottom" id="AvK-m7-LZY"/>
+                                    <constraint firstItem="Utt-pB-RTM" firstAttribute="height" secondItem="RGq-Ly-aFn" secondAttribute="height" multiplier="0.9" id="Dqo-hM-FRd"/>
+                                    <constraint firstItem="RCz-zT-nYG" firstAttribute="height" secondItem="RGq-Ly-aFn" secondAttribute="height" id="MWN-La-e3a"/>
+                                    <constraint firstItem="RCz-zT-nYG" firstAttribute="top" secondItem="RGq-Ly-aFn" secondAttribute="top" id="tm0-7Q-a5D"/>
+                                    <constraint firstAttribute="trailing" secondItem="RCz-zT-nYG" secondAttribute="trailing" id="upQ-8o-Xz0"/>
+                                    <constraint firstItem="RCz-zT-nYG" firstAttribute="leading" secondItem="RGq-Ly-aFn" secondAttribute="leading" id="xtj-5A-xWC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.90588235289999997" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RGq-Ly-aFn" firstAttribute="leading" secondItem="HiP-rF-pw1" secondAttribute="leadingMargin" constant="-20" id="Gvx-DF-uJT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RGq-Ly-aFn" secondAttribute="trailing" constant="-20" id="jAu-EI-bhW"/>
+                            <constraint firstItem="sZy-ro-hx1" firstAttribute="top" secondItem="RGq-Ly-aFn" secondAttribute="bottom" id="kUT-cl-WAK"/>
+                            <constraint firstItem="RGq-Ly-aFn" firstAttribute="top" secondItem="PWB-9p-syh" secondAttribute="bottom" id="sDs-fM-1iA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Peace Corps Mythbusters: Assumptions and Facts" id="F09-gj-SQc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBg-Wp-xzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8373" y="1668"/>
         </scene>
     </scenes>
     <resources>
