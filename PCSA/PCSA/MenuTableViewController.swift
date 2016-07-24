@@ -100,7 +100,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     /**
      Expand the cell at the index specified.
-     	
+     
      - parameter index: The index of the cell to expand.
      */
     private func expandItemAtIndex(index : Int, parent: Int) {
@@ -282,7 +282,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             
             // The value of the child is indexPath.row - actualPosition - 1
             NSLog("The value of the child is \(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
-            
+            presentChildViewController(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])
             return
         }
         
@@ -345,22 +345,63 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         var viewIdentifier:String
         switch index {
         case 0:
-            viewIdentifier = "GetHelpNow"
+            viewIdentifier = "GET_HELP_NOW"
         case 1:
-            viewIdentifier = "CircleOfTrust"
+            viewIdentifier = "CIRCLE_OF_TRUST"
         default:
             viewIdentifier = ""
         }
         
+        navigateToViewController(viewIdentifier)
+    }
+
+    func presentChildViewController(value: String){
+        var viewIdentifier:String
+        switch value {
+        // Safety Tools
+        case Constants.PERSONAL_SECURITY_STRATEGIES:
+            viewIdentifier = ""
+        case Constants.RADAR:
+            viewIdentifier = "RADAR"
+        case Constants.COPING_WITH_UNWANTED:
+            viewIdentifier = "COPING_WITH_UNWANTED"
+        case Constants.TACTICS_OF_SEXUAL_PREDATORS:
+            viewIdentifier = "TACTICS_OF_SEXUAL_PREDATORS"
+        case Constants.BYSTANDER_INTERVENTION:
+            viewIdentifier = "BYSTANDER_INTERVENTION"
+        case Constants.SAFETY_PLAN_BASICS:
+            viewIdentifier = "SAFETY_PLAN_BASICS"
+        case Constants.SAFETY_PLAN_WORKSHEET:
+            viewIdentifier = "SAFETY_PLAN_WORKSHEET"
+            
+        // Supporting Services
+        case Constants.BENEFITS_OF_SEEKING_STAFF:
+            viewIdentifier = "BENEFITS_OF_SEEKING_STAFF"
+        case Constants.AVAILABLE_SERVICES_AFTER_SEXUAL_ASSAULT:
+            viewIdentifier = "AVAILABLE_SERVICES_AFTER_SEXUAL_ASSAULT"
+        case Constants.PEACE_CORPS_COMMITMENT_TO_VICTIM:
+            viewIdentifier = "PEACE_CORPS_COMMITMENT_TO_VICTIM"
+        case Constants.WHAT_TO_DO_AFTER_ASSAULT:
+            viewIdentifier = "WHAT_TO_DO_AFTER_ASSAULT"
+        case Constants.CONFIDENTIALITY:
+            viewIdentifier = "CONFIDENTIALITY"
+        case Constants.PEACE_CORPS_MYTHBUSTERS:
+            viewIdentifier = "PEACE_CORPS_MYTHBUSTERS"
+            
+        default:
+            viewIdentifier = ""
+        }
+        
+        navigateToViewController(viewIdentifier)
+    }
+    
+    func navigateToViewController(viewIdentifier:String){
         if(!viewIdentifier.isEmpty){
             let viewController = self.storyboard?.instantiateViewControllerWithIdentifier(viewIdentifier)
             let nav = revealViewController().frontViewController as! UINavigationController
             nav.pushViewController(viewController!, animated: true)
             revealViewController().revealToggleAnimated(true)
         }
-        
     }
-    
-
     
 }
