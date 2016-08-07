@@ -36,6 +36,13 @@
 		70EA34F61CFACC2B000BE4E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70EA34F41CFACC2B000BE4E6 /* LaunchScreen.storyboard */; };
 		70EA35011CFACC2B000BE4E6 /* PCSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA35001CFACC2B000BE4E6 /* PCSATests.swift */; };
 		70EA350C1CFACC2B000BE4E6 /* PCSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70EA350B1CFACC2B000BE4E6 /* PCSAUITests.swift */; };
+		70EEAD3F1D51211F00D11F65 /* integeruniquer.data in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD341D51211F00D11F65 /* integeruniquer.data */; };
+		70EEAD401D51211F00D11F65 /* integeruniquer.index in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD351D51211F00D11F65 /* integeruniquer.index */; };
+		70EEAD411D51211F00D11F65 /* integeruniquer.data in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD371D51211F00D11F65 /* integeruniquer.data */; };
+		70EEAD421D51211F00D11F65 /* integeruniquer.index in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD381D51211F00D11F65 /* integeruniquer.index */; };
+		70EEAD431D51211F00D11F65 /* MANIFEST.plist in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD391D51211F00D11F65 /* MANIFEST.plist */; };
+		70EEAD441D51211F00D11F65 /* form.template in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD3A1D51211F00D11F65 /* form.template */; };
+		70EEAD451D51211F00D11F65 /* menu.js in Resources */ = {isa = PBXBuildFile; fileRef = 70EEAD3E1D51211F00D11F65 /* menu.js */; };
 		70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */; };
 		78DE29F5A10DED26ED676982 /* Pods_PCSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F260A636BAAD9A52B81400 /* Pods_PCSAUITests.framework */; };
 		C453578560B76180D916C783 /* Pods_PCSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E606191717154E519112C6E /* Pods_PCSA.framework */; };
@@ -99,6 +106,13 @@
 		70EA35071CFACC2B000BE4E6 /* PCSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70EA350B1CFACC2B000BE4E6 /* PCSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PCSAUITests.swift; sourceTree = "<group>"; };
 		70EA350D1CFACC2B000BE4E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70EEAD341D51211F00D11F65 /* integeruniquer.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = integeruniquer.data; sourceTree = "<group>"; };
+		70EEAD351D51211F00D11F65 /* integeruniquer.index */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = integeruniquer.index; sourceTree = "<group>"; };
+		70EEAD371D51211F00D11F65 /* integeruniquer.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = integeruniquer.data; sourceTree = "<group>"; };
+		70EEAD381D51211F00D11F65 /* integeruniquer.index */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = integeruniquer.index; sourceTree = "<group>"; };
+		70EEAD391D51211F00D11F65 /* MANIFEST.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MANIFEST.plist; sourceTree = "<group>"; };
+		70EEAD3A1D51211F00D11F65 /* form.template */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = form.template; sourceTree = "<group>"; };
+		70EEAD3E1D51211F00D11F65 /* menu.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = menu.js; sourceTree = "<group>"; };
 		70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOfTrustEditViewController.swift; sourceTree = "<group>"; };
 		82B8598E765A50DE420135B5 /* Pods-PCSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSATests/Pods-PCSATests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E606191717154E519112C6E /* Pods_PCSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,10 +290,97 @@
 		70EA350A1CFACC2B000BE4E6 /* PCSAUITests */ = {
 			isa = PBXGroup;
 			children = (
+				70EEAD2E1D51211F00D11F65 /* Instruments.trace */,
+				70EEAD3E1D51211F00D11F65 /* menu.js */,
 				70EA350B1CFACC2B000BE4E6 /* PCSAUITests.swift */,
 				70EA350D1CFACC2B000BE4E6 /* Info.plist */,
 			);
 			path = PCSAUITests;
+			sourceTree = "<group>";
+		};
+		70EEAD2E1D51211F00D11F65 /* Instruments.trace */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD2F1D51211F00D11F65 /* corespace */,
+				70EEAD3A1D51211F00D11F65 /* form.template */,
+				70EEAD3B1D51211F00D11F65 /* instrument_data */,
+			);
+			path = Instruments.trace;
+			sourceTree = "<group>";
+		};
+		70EEAD2F1D51211F00D11F65 /* corespace */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD301D51211F00D11F65 /* currentRun */,
+				70EEAD391D51211F00D11F65 /* MANIFEST.plist */,
+			);
+			path = corespace;
+			sourceTree = "<group>";
+		};
+		70EEAD301D51211F00D11F65 /* currentRun */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD311D51211F00D11F65 /* core */,
+			);
+			path = currentRun;
+			sourceTree = "<group>";
+		};
+		70EEAD311D51211F00D11F65 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD321D51211F00D11F65 /* uniquing */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		70EEAD321D51211F00D11F65 /* uniquing */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD331D51211F00D11F65 /* arrayUniquer */,
+				70EEAD361D51211F00D11F65 /* typedArrayUniquer */,
+			);
+			path = uniquing;
+			sourceTree = "<group>";
+		};
+		70EEAD331D51211F00D11F65 /* arrayUniquer */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD341D51211F00D11F65 /* integeruniquer.data */,
+				70EEAD351D51211F00D11F65 /* integeruniquer.index */,
+			);
+			path = arrayUniquer;
+			sourceTree = "<group>";
+		};
+		70EEAD361D51211F00D11F65 /* typedArrayUniquer */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD371D51211F00D11F65 /* integeruniquer.data */,
+				70EEAD381D51211F00D11F65 /* integeruniquer.index */,
+			);
+			path = typedArrayUniquer;
+			sourceTree = "<group>";
+		};
+		70EEAD3B1D51211F00D11F65 /* instrument_data */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD3C1D51211F00D11F65 /* 1E2B732A-6DCA-48F6-9272-CF92DECBC024 */,
+			);
+			path = instrument_data;
+			sourceTree = "<group>";
+		};
+		70EEAD3C1D51211F00D11F65 /* 1E2B732A-6DCA-48F6-9272-CF92DECBC024 */ = {
+			isa = PBXGroup;
+			children = (
+				70EEAD3D1D51211F00D11F65 /* run_data */,
+			);
+			path = "1E2B732A-6DCA-48F6-9272-CF92DECBC024";
+			sourceTree = "<group>";
+		};
+		70EEAD3D1D51211F00D11F65 /* run_data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = run_data;
 			sourceTree = "<group>";
 		};
 		CCBC75EBDCCBE781252EC370 /* Pods */ = {
@@ -428,6 +529,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70EEAD451D51211F00D11F65 /* menu.js in Resources */,
+				70EEAD431D51211F00D11F65 /* MANIFEST.plist in Resources */,
+				70EEAD411D51211F00D11F65 /* integeruniquer.data in Resources */,
+				70EEAD421D51211F00D11F65 /* integeruniquer.index in Resources */,
+				70EEAD441D51211F00D11F65 /* form.template in Resources */,
+				70EEAD3F1D51211F00D11F65 /* integeruniquer.data in Resources */,
+				70EEAD401D51211F00D11F65 /* integeruniquer.index in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
