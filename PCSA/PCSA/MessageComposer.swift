@@ -1,6 +1,7 @@
 //
 //  MessageComposer.swift
 //  PCSA
+//  Handles initializing view controller for sending messages
 //
 //  Created by Chamika Weerasinghe on 6/12/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.

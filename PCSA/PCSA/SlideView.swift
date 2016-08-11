@@ -1,6 +1,7 @@
 //
 //  SlideView.swift
 //  PCSA
+//  UIView for slide menu
 //
 //  Created by Chamika Weerasinghe on 7/10/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.

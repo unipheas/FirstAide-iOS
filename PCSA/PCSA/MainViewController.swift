@@ -1,6 +1,8 @@
 //
 //  MainViewController.swift
 //  PCSA
+//  Landing view controller after the splash or the login.
+//  Provide funtionality to navigate to main components
 //
 //  Created by Chamika Weerasinghe on 5/29/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.
@@ -21,17 +23,10 @@ class MainViewController: UIViewController {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-//            revealViewController().rearViewRevealWidth = 100
         }
         
-//        self.navigationController!.navigationBar.barTintColor = UIColor.init(red: 48/255, green: 231/255, blue: 176/255, alpha: 1.0)
         UIUtil.initViewControllerViews(self)
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

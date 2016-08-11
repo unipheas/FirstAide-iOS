@@ -1,6 +1,7 @@
 //
 //  ViewController.swift
 //  PCSA
+//  Showing splash at the beginning of the applicatin launch
 //
 //  Created by Chamika Weerasinghe on 5/29/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.
@@ -19,12 +20,6 @@ class SplashViewController: UIViewController {
     func showMainController(){
         performSegueWithIdentifier("MainNav", sender: self)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
