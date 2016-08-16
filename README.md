@@ -11,6 +11,8 @@ This project is to support the initiative by creating a mobile app that PCVs can
 
 ![alt text](screenshots/main_small.png)
 
+Watch a video walkthrough of this app [here](https://www.youtube.com/watch?v=K0iRimt26xM)
+
 You can learn more about the Systers organization, whose members work on the development of this app [here](http://anitaborg.org/get-involved/systers/) and join our mailing list [here](http://systers.org/mailman/listinfo/systers)
 
 ## Getting Started
