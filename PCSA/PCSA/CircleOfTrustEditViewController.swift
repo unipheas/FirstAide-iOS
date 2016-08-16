@@ -61,29 +61,8 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     }
     
     //MARK: Actions
-    @IBAction func selectContact1(sender: AnyObject) {
-        self.selectContactPick(0)
-    }
-    
-    @IBAction func selectContact2(sender: AnyObject) {
-        self.selectContactPick(1)
-    }
-    
-    @IBAction func selectContact3(sender: AnyObject) {
-        self.selectContactPick(2)
-    }
-    
-    
-    @IBAction func selectContact4(sender: AnyObject) {
-        self.selectContactPick(3)
-    }
-    
-    @IBAction func selectContact5(sender: AnyObject) {
-        self.selectContactPick(4)
-    }
-    
-    @IBAction func selectContact6(sender: AnyObject) {
-        self.selectContactPick(5)
+    @IBAction func selectContact(sender: UIButton) {
+        self.selectContactPick(sender.tag)
     }
     
     func selectContactPick(index:Int){

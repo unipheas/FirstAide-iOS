@@ -1423,47 +1423,47 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact1:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="eez-O6-5iy"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="W12-QH-gme"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lv-yh-TEq">
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lv-yh-TEq">
                                         <rect key="frame" x="558" y="80" width="22" height="30"/>
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact2:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="vtt-cq-nFV"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="8gR-hs-fq0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvG-qL-ac8">
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvG-qL-ac8">
                                         <rect key="frame" x="558" y="135" width="22" height="30"/>
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact3:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="LYa-7o-hPN"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="3eI-QH-g38"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es6-rO-Uq9">
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es6-rO-Uq9">
                                         <rect key="frame" x="558" y="190" width="22" height="30"/>
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact4:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="FUX-Bt-Nl2"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="oyT-aq-EN9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-a2-OBT">
+                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0a-a2-OBT">
                                         <rect key="frame" x="558" y="245" width="22" height="30"/>
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact5:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="vMQ-UD-sxD"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="k5j-0j-Djn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-OF-RVW">
+                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znj-OF-RVW">
                                         <rect key="frame" x="558" y="300" width="22" height="30"/>
                                         <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
                                         <state key="normal" image="PickContactButton"/>
                                         <connections>
-                                            <action selector="selectContact6:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="SMU-LB-zQS"/>
+                                            <action selector="selectContact:" destination="b4D-Ph-Znz" eventType="touchUpInside" id="mNI-Im-aJI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -4685,7 +4685,10 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-3J-afE">
                                                         <rect key="frame" x="20" y="38" width="500" height="614"/>
-                                                        <mutableString key="text">When Volunteers learn of a fellow PCV’s sexual assault their actions can make a difference - they can support the healing process or further hurt the Volunteer who was sexually assaulted.  Some things to consider: •	What is your role in protecting information about a crime against a Volunteer? •	If you become aware of a crime committed against a fellow PCV, how might posting information on a social media platform, such as a blog or Facebook, impact or even endanger the Volunteer, their host community, or their friends and family?</mutableString>
+                                                        <string key="text">When Volunteers learn of a fellow PCV’s sexual assault their actions can make a difference - they can support the healing process or further hurt the Volunteer who was sexually assaulted.  Some things to consider: 
+•	What is your role in protecting information about a crime against a Volunteer? 
+•	If you become aware of a crime committed against a fellow PCV, how might posting information on a social media platform, such as a blog or Facebook, impact or even endanger the Volunteer, their host community, or their friends and family?
+</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4724,7 +4727,12 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-bz-DU9">
                                                         <rect key="frame" x="20" y="38" width="500" height="614"/>
-                                                        <mutableString key="text">If you become the victim of a crime, choose who you trust with your sensitive information. Volunteer communications with other Volunteers may not be held to the same rules of privacy that apply to Peace Corps staff or Hotline responders.  As one Volunteer shared: “After the sexual assault, I needed the support of a fellow PCV and shared a little about what I was going through.  I had no idea that because I was seeking legal justice that the defense lawyer would contact that individual four months later to fish for information to use against me in a court of law.  Had I known that anything that I said verbally or in an email would be fair game for court, I would have been more cautious and spoken to a counselor through secure communication earlier.”</mutableString>
+                                                        <string key="text">If you become the victim of a crime, choose who you trust with your sensitive information. Volunteer communications with other Volunteers may not be held to the same rules of privacy that apply to Peace Corps staff or Hotline responders.  
+
+As one Volunteer shared:
+
+ “After the sexual assault, I needed the support of a fellow PCV and shared a little about what I was going through.  I had no idea that because I was seeking legal justice that the defense lawyer would contact that individual four months later to fish for information to use against me in a court of law.  Had I known that anything that I said verbally or in an email would be fair game for court, I would have been more cautious and spoken to a counselor through secure communication earlier.”
+</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4944,7 +4952,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-Wx-X27">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
-                                                        <mutableString key="text">FACT: Peace Corps honors an Immunity Policy, which is a way for Peace Corps to promote reporting of sexual assault and ensure a compassionate and supportive response by the Agency. Victims—and witnesses who didn’t help commit the sexual assault—need not fear any administrative consequences for reporting a sexual assault regardless of the circumstances or whether they were violating a Peace Corps policy when the incident occurred.  The Immunity Policy does not grant immunity for any criminal or civil liability for violations of law.</mutableString>
+                                                        <string key="text">FACT: Peace Corps honors an Immunity Policy, which is a way for Peace Corps to promote reporting of sexual assault and ensure a compassionate and supportive response by the Agency. Victims—and witnesses who didn’t help commit the sexual assault—need not fear any administrative consequences for reporting a sexual assault regardless of the circumstances or whether they were violating a Peace Corps policy when the incident occurred.  The Immunity Policy does not grant immunity for any criminal or civil liability for violations of law.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -4983,7 +4991,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-Np-LnO">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
-                                                        <mutableString key="text">FACT: You will not be alone in this. If you are interested in reporting to the police, we have specially trained staff that will explain the process involved in filing a police report and how the investigation and prosecution will be conducted. Peace Corps can also hire an attorney to assist you with your legal options. Peace Corps will be with you every step of the way. Sometimes, the investigative and judicial process take a long time and will most likely be very different from the systems and procedures you may be familiar with in the United States. But even if you leave the country, Peace Corps will continue to work with the police and prosecutors and will keep you informed about your case.  </mutableString>
+                                                        <string key="text">FACT: You will not be alone in this. If you are interested in reporting to the police, we have specially trained staff that will explain the process involved in filing a police report and how the investigation and prosecution will be conducted. Peace Corps can also hire an attorney to assist you with your legal options. Peace Corps will be with you every step of the way. Sometimes, the investigative and judicial process take a long time and will most likely be very different from the systems and procedures you may be familiar with in the United States. But even if you leave the country, Peace Corps will continue to work with the police and prosecutors and will keep you informed about your case.  </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -5102,7 +5110,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utU-gs-YHD">
                                                         <rect key="frame" x="20" y="80" width="500" height="572"/>
-                                                        <mutableString key="text">FACT: This is untrue. Volunteers can pursue an internal Peace Corps administrative process through the Volunteer/Trainee Sexual Misconduct Policy. Initiating this process asks Peace Corps to address instances of sexual misconduct by other Volunteers separate from any criminal investigation or proceeding. The process allows Volunteers the opportunity to present a case for sexual misconduct before a hearing panel of Peace Corps officials who will assess the case and determine whether disciplinary action is necessary to penalize the offender.</mutableString>
+                                                        <string key="text">FACT: This is untrue. Volunteers can pursue an internal Peace Corps administrative process through the Volunteer/Trainee Sexual Misconduct Policy. Initiating this process asks Peace Corps to address instances of sexual misconduct by other Volunteers separate from any criminal investigation or proceeding. The process allows Volunteers the opportunity to present a case for sexual misconduct before a hearing panel of Peace Corps officials who will assess the case and determine whether disciplinary action is necessary to penalize the offender.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
