@@ -17,14 +17,14 @@ You can learn more about the Systers organization, whose members work on the dev
 Update to XCode 7.3.1
 
 ###Installation:
-1. Go to your terminal and execute this command
+Go to your terminal and execute this command
 
     $ git clone https://github.com/systers/PCSA-iOS.git
 
 Or download the ZIP file from above
 Also you can clone the git repository through XCode
 
-2. Navigate to PCSA directory (within your cloned directory) via the terminal and execute 
+Navigate to PCSA directory (within your cloned directory) via the terminal and execute 
 
     $ pod install
 
