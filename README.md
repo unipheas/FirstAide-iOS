@@ -9,6 +9,7 @@ Peace Corps is committed to providing a compassionate and supportive response to
 
 This project is to support the initiative by creating a mobile app that PCVs can readily have accessible to report or gain information on Peace Corps Safety and Security procedures.
 
+![alt text](screenshots/main_small.png)
 
 You can learn more about the Systers organization, whose members work on the development of this app [here](http://anitaborg.org/get-involved/systers/) and join our mailing list [here](http://systers.org/mailman/listinfo/systers)
 
