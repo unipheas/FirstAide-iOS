@@ -1,6 +1,7 @@
 //
 //  MenuTableViewController.swift
 //  PCSA
+//  Slide Menu
 //
 //  Created by Chamika Weerasinghe on 6/7/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.
@@ -46,11 +47,6 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         let width = revealViewController().view.frame.width
         
         revealViewController().rearViewRevealWidth = width * 0.8
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -274,14 +270,9 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
         
         if isParentCell {
-            NSLog("indexPath.row = \(indexPath.row) actualPosition=\(actualPosition)")
             self.presentComponentViewController(indexPath.row)
             
         }else {
-            NSLog("A child was tapped!!!")
-            
-            // The value of the child is indexPath.row - actualPosition - 1
-            NSLog("The value of the child is \(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
             presentChildViewController(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])
             return
         }
@@ -292,7 +283,6 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        //            return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
         return 60.0
     }
     

@@ -52,11 +52,6 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
         addDoneButtonOnKeyboard()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     override func viewWillAppear(animated: Bool) {
         registerForKeyboardNotifications()
     }
@@ -66,29 +61,8 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     }
     
     //MARK: Actions
-    @IBAction func selectContact1(sender: AnyObject) {
-        self.selectContactPick(0)
-    }
-    
-    @IBAction func selectContact2(sender: AnyObject) {
-        self.selectContactPick(1)
-    }
-    
-    @IBAction func selectContact3(sender: AnyObject) {
-        self.selectContactPick(2)
-    }
-    
-    
-    @IBAction func selectContact4(sender: AnyObject) {
-        self.selectContactPick(3)
-    }
-    
-    @IBAction func selectContact5(sender: AnyObject) {
-        self.selectContactPick(4)
-    }
-    
-    @IBAction func selectContact6(sender: AnyObject) {
-        self.selectContactPick(5)
+    @IBAction func selectContact(sender: UIButton) {
+        self.selectContactPick(sender.tag)
     }
     
     func selectContactPick(index:Int){
@@ -117,8 +91,6 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
         
         let saveSuccess = NSKeyedArchiver.archiveRootObject(numbers, toFile: CircleOfTrustEditViewController.ArchiveURL.path!)
         if(saveSuccess){
-//            UIUtil.showAlert(self, title: "Save", message: "Numbers saved sucessfully", actions:nil)
-            print("Numbers saved sucessfully")
             return true
         }else{
             UIUtil.showAlert(self, title: "Save", message: "Numbers failed to save", actions: nil)
@@ -229,10 +201,7 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     
     // MARK: Contacts Picker
     func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
-        //        let contact = contactProperty.contact
-        //        print(contact.givenName)
         let phoneNumber = contactProperty.value as! CNPhoneNumber
-        //        print(phoneNumber.stringValue)
         selectedTextField.text = phoneNumber.stringValue
     }
     

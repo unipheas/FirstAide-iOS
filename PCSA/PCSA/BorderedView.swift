@@ -1,6 +1,7 @@
 //
 //  BorderedView.swift
 //  PCSA
+//  UIView having with colored border 
 //
 //  Created by Chamika Weerasinghe on 6/26/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.

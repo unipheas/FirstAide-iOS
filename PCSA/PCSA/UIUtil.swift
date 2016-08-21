@@ -1,6 +1,7 @@
 //
 //  UIUtil.swift
 //  PCSA
+//  Utility class for UI related functions
 //
 //  Created by Chamika Weerasinghe on 6/8/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.
