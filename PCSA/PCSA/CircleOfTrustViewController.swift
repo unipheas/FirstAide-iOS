@@ -117,13 +117,7 @@ class CircleOfTrustViewController: UIViewController {
         updateImageViews(phoneNumbers)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    /*
+     /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -139,11 +133,6 @@ class CircleOfTrustViewController: UIViewController {
     }
     
     func updateImageViews(numbers:[String]){
-        //        for i in 0..<(numbers.count){
-        //            if(numbers[i].characters.count > 0){
-        //                //TODO set images from contacts
-        //            }
-        //        }
         loadContactPhotos(numbers)
     }
     
@@ -174,7 +163,6 @@ class CircleOfTrustViewController: UIViewController {
                             number = contact.phoneNumbers[0].value as! CNPhoneNumber
                             phoneStr = number.stringValue
                             for i in 0..<numbers.count{
-                                //                                NSLog("phone ori: \(number.stringValue) mod:\(phoneStr)")
                                 if(numbers[i] == phoneStr && contact.imageDataAvailable){
                                     images.append(contact.thumbnailImageData!)
                                 }
@@ -209,11 +197,7 @@ class CircleOfTrustViewController: UIViewController {
                         
                     }
                 }
-                
-                
             }
         })
     }
-    
-    
 }

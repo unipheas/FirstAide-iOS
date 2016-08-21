@@ -1,6 +1,7 @@
 //
 //  ThemedButton.swift
 //  PCSA
+//  Application's theme applied button. Use this class for each button for maintaining UI consistency. 
 //
 //  Created by Chamika Weerasinghe on 6/5/16.
 //  Copyright © 2016 Peacecorps. All rights reserved.
@@ -12,7 +13,6 @@ class ThemedButton: SimpleButton {
 
     override func configureButtonStyles() {
         super.configureButtonStyles()
-        //setBorderWidth(4.0)
         setBorderWidth(2.0, forState: .Normal)
         setBorderWidth(4.0, forState: .Highlighted)
         setCornerRadius(3.0)
