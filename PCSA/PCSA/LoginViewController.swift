@@ -12,7 +12,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
     
     var pickerDataSource = Constants.CONTACT_LOCATIONS;
     var locationName = Constants.CONTACT_LOCATIONS[0]
-
+    
     // MARK: Properties
     
     @IBOutlet weak var locationPicker: UIPickerView!
@@ -31,33 +31,27 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
         defaults.setValue(username, forKeyPath: Configs.KEY_LOGGED)
         defaults.setValue(locationName, forKey: Configs.KEY_LOCATION)
         defaults.setBool(true, forKey: Configs.KEY_LOGGED)
-
+        
         performSegueWithIdentifier("LoggedInNav", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.locationPicker.dataSource = self
         self.locationPicker.delegate = self
         self.userNameText.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
     // Location Picker
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
@@ -81,5 +75,5 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
         textField.resignFirstResponder()
         return true
     }
-
+    
 }
