@@ -14,12 +14,15 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Check whether the user already logged or not. If logged user will be directly navigated to Main Screen.
+        // If not Login will be shown.
         let defaults = NSUserDefaults.standardUserDefaults()
         let logged = defaults.boolForKey(Configs.KEY_LOGGED)
         
         if(logged){
             performSelector(#selector(SplashViewController.showMainController), withObject: nil, afterDelay: 0)
-        }else{
+        }
+        else{
             performSelector(#selector(SplashViewController.showLoginController), withObject: nil, afterDelay: 0)
         }
     }
@@ -31,12 +34,5 @@ class SplashViewController: UIViewController {
     func showLoginController(){
         performSegueWithIdentifier("LoginNav", sender: self)
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }
 
