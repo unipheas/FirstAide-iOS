@@ -19,7 +19,7 @@ class SupportServiceViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        firstButtonTrailing.constant = (self.scrollView.frame.width - firstButton.frame.width) / (2 * UIScreen.mainScreen().scale)
+        firstButtonTrailing.constant = (self.scrollView.frame.width - firstButton.frame.width) / (2 * UIScreen.main.scale)
         
     }    
 

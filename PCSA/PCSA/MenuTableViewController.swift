@@ -29,7 +29,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     var dataSource: [Parent]!
     
     // Define wether can exist several cells expanded or not.
-    let numberOfCellsExpanded: NumberOfCellExpanded = .One
+    let numberOfCellsExpanded: NumberOfCellExpanded = .one
     
     // Constant to define the values for the tuple in case of not exist a cell expanded.
     let NoCellExpanded = (-1, -1)
@@ -56,12 +56,12 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      - parameter parents: The number of parents cells
      - parameter childs:  Then maximun number of child cells per parent.
      */
-    private func setInitialDataSource() {
+    fileprivate func setInitialDataSource() {
         
         //TODO: Load data from plist and use MVVM
-        dataSource = [Parent(state: .Collapsed, childs: [String](), title: Constants.GET_HELP_NOW),
-                      Parent(state: .Collapsed, childs: [String](), title: Constants.CIRCLE_OF_TRUST),
-                      Parent(state: .Collapsed, childs: [
+        dataSource = [Parent(state: .collapsed, childs: [String](), title: Constants.GET_HELP_NOW),
+                      Parent(state: .collapsed, childs: [String](), title: Constants.CIRCLE_OF_TRUST),
+                      Parent(state: .collapsed, childs: [
                         Constants.PERSONAL_SECURITY_STRATEGIES,
                         Constants.RADAR,
                         Constants.COPING_WITH_UNWANTED,
@@ -70,7 +70,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
                         Constants.SAFETY_PLAN_BASICS,
                         Constants.SAFETY_PLAN_WORKSHEET
                         ], title: Constants.SAFETY_TOOLS),
-                      Parent(state: .Collapsed, childs: [
+                      Parent(state: .collapsed, childs: [
                         Constants.BENEFITS_OF_SEEKING_STAFF,
                         Constants.AVAILABLE_SERVICES_AFTER_SEXUAL_ASSAULT,
                         Constants.PEACE_CORPS_COMMITMENT_TO_VICTIM,
@@ -78,14 +78,14 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
                         Constants.CONFIDENTIALITY,
                         Constants.PEACE_CORPS_MYTHBUSTERS
                         ], title: Constants.SUPPORTING_SERVICES),
-                      Parent(state: .Collapsed, childs: [
+                      Parent(state: .collapsed, childs: [
                         Constants.WAS_IT_SEXUAL_ASSAULT,
                         Constants.SEXUAL_ASSAULT_COMMON_QUESTIONS,
                         Constants.IMPACT_SEXUAL_ASSAULT,
                         Constants.SEXUAL_HARRASSMENT,
                         Constants.HELPING_FRIEND_OR_COMMUNITY_MEMBER
                         ], title: Constants.SEXUAL_ASSAULT_AWARENESS),
-                      Parent(state: .Collapsed, childs: [
+                      Parent(state: .collapsed, childs: [
                         Constants.PEACE_COPRS_POLICY_SEXUAL_ASSAULT,
                         Constants.GLOSSARY,
                         Constants.FURTHER_RESOURCES
@@ -99,25 +99,25 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      
      - parameter index: The index of the cell to expand.
      */
-    private func expandItemAtIndex(index : Int, parent: Int) {
+    fileprivate func expandItemAtIndex(_ index : Int, parent: Int) {
         
         // the data of the childs for the specific parent cell.
         let currentSubItems = self.dataSource[parent].childs
         
         // update the state of the cell.
-        self.dataSource[parent].state = .Expanded
+        self.dataSource[parent].state = .expanded
         
         // position to start to insert rows.
         var insertPos = index + 1
         
-        let indexPaths = (0..<currentSubItems.count).map { _ -> NSIndexPath in
-            let indexPath = NSIndexPath(forRow: insertPos, inSection: 0)
+        let indexPaths = (0..<currentSubItems.count).map { _ -> IndexPath in
+            let indexPath = IndexPath(row: insertPos, section: 0)
             insertPos += 1
             return indexPath
         }
         
         // insert the new rows
-        self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        self.tableView.insertRows(at: indexPaths, with: UITableViewRowAnimation.fade)
         
         // update the total of rows
         self.total += currentSubItems.count
@@ -128,22 +128,22 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      
      - parameter index: The index of the cell to collapse
      */
-    private func collapseSubItemsAtIndex(index : Int, parent: Int) {
+    fileprivate func collapseSubItemsAtIndex(_ index : Int, parent: Int) {
         
-        var indexPaths = [NSIndexPath]()
+        var indexPaths = [IndexPath]()
         
         let numberOfChilds = self.dataSource[parent].childs.count
         
         // update the state of the cell.
-        self.dataSource[parent].state = .Collapsed
+        self.dataSource[parent].state = .collapsed
         
         guard index + 1 <= index + numberOfChilds else { return }
         
         // create an array of NSIndexPath with the selected positions
-        indexPaths = (index + 1...index + numberOfChilds).map { NSIndexPath(forRow: $0, inSection: 0)}
+        indexPaths = (index + 1...index + numberOfChilds).map { IndexPath(row: $0, section: 0)}
         
         // remove the expanded cells
-        self.tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        self.tableView.deleteRows(at: indexPaths, with: UITableViewRowAnimation.fade)
         
         // update the total of rows
         self.total -= numberOfChilds
@@ -155,17 +155,17 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      - parameter parent: The parent of the cell
      - parameter index:  The index of the cell.
      */
-    private func updateCells(parent: Int, index: Int) {
+    fileprivate func updateCells(_ parent: Int, index: Int) {
         
         switch (self.dataSource[parent].state) {
             
-        case .Expanded:
+        case .expanded:
             self.collapseSubItemsAtIndex(index, parent: parent)
             self.lastCellExpanded = NoCellExpanded
             
-        case .Collapsed:
+        case .collapsed:
             switch (numberOfCellsExpanded) {
-            case .One:
+            case .one:
                 // exist one cell expanded previously
                 if self.lastCellExpanded != NoCellExpanded {
                     
@@ -188,7 +188,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
                     self.expandItemAtIndex(index, parent: parent)
                     self.lastCellExpanded = (index, parent)
                 }
-            case .Several:
+            case .several:
                 self.expandItemAtIndex(index, parent: parent)
             }
         }
@@ -201,7 +201,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      
      - returns: A tuple with the parent position, if it's a parent cell and the actual position righ now.
      */
-    private func findParent(index : Int) -> (parent: Int, isParentCell: Bool, actualPosition: Int) {
+    fileprivate func findParent(_ index : Int) -> (parent: Int, isParentCell: Bool, actualPosition: Int) {
         
         var position = 0, parent = 0
         guard position < index else { return (parent, true, parent) }
@@ -211,9 +211,9 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         repeat {
             
             switch (item.state) {
-            case .Expanded:
+            case .expanded:
                 position += item.childs.count + 1
-            case .Collapsed:
+            case .collapsed:
                 position += 1
             }
             
@@ -237,28 +237,28 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     // MARK: - Table view data source
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.total
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell : MenuTableViewCell!
         
-        let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
+        let (parent, isParentCell, actualPosition) = self.findParent((indexPath as NSIndexPath).row)
         
         if !isParentCell {
-            cell = tableView.dequeueReusableCellWithIdentifier(childCellIdentifier, forIndexPath: indexPath) as! MenuTableViewCell
-            cell.childTitle!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
+            cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath) as! MenuTableViewCell
+            cell.childTitle!.text = self.dataSource[parent].childs[(indexPath as NSIndexPath).row - actualPosition - 1]
         }
         else {
-            cell = tableView.dequeueReusableCellWithIdentifier(parentCellIdentifier, forIndexPath: indexPath) as! MenuTableViewCell
+            cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath) as! MenuTableViewCell
             cell.title!.text = self.dataSource[parent].title
         }
         
@@ -266,23 +266,23 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let (parent, isParentCell, actualPosition) = self.findParent((indexPath as NSIndexPath).row)
         
         if isParentCell {
-            self.presentComponentViewController(indexPath.row)
+            self.presentComponentViewController((indexPath as NSIndexPath).row)
             
         }else {
-            presentChildViewController(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])
+            presentChildViewController(self.dataSource[parent].childs[(indexPath as NSIndexPath).row - actualPosition - 1])
             return
         }
         
         self.tableView.beginUpdates()
-        self.updateCells(parent, index: indexPath.row)
+        self.updateCells(parent, index: (indexPath as NSIndexPath).row)
         self.tableView.endUpdates()
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60.0
     }
     
@@ -331,7 +331,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
      }
      */
     
-    func presentComponentViewController(index: Int){
+    func presentComponentViewController(_ index: Int){
         var viewIdentifier:String
         switch index {
         case 0:
@@ -345,7 +345,7 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         navigateToViewController(viewIdentifier)
     }
 
-    func presentChildViewController(value: String){
+    func presentChildViewController(_ value: String){
         var viewIdentifier:String
         switch value {
         // Safety Tools
@@ -385,12 +385,12 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         navigateToViewController(viewIdentifier)
     }
     
-    func navigateToViewController(viewIdentifier:String){
+    func navigateToViewController(_ viewIdentifier:String){
         if(!viewIdentifier.isEmpty){
-            let viewController = self.storyboard?.instantiateViewControllerWithIdentifier(viewIdentifier)
+            let viewController = self.storyboard?.instantiateViewController(withIdentifier: viewIdentifier)
             let nav = revealViewController().frontViewController as! UINavigationController
             nav.pushViewController(viewController!, animated: true)
-            revealViewController().revealToggleAnimated(true)
+            revealViewController().revealToggle(animated: true)
         }
     }
     

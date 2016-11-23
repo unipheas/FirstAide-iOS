@@ -18,7 +18,7 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var locationPicker: UIPickerView!
     @IBOutlet weak var userNameText: UITextField!
     
-    @IBAction func loginButtonTap(sender: AnyObject) {
+    @IBAction func loginButtonTap(_ sender: AnyObject) {
         
         let username = userNameText.text
         
@@ -27,12 +27,12 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
             return
         }
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = UserDefaults.standard
         defaults.setValue(username, forKeyPath: Configs.KEY_LOGGED)
         defaults.setValue(locationName, forKey: Configs.KEY_LOCATION)
-        defaults.setBool(true, forKey: Configs.KEY_LOGGED)
+        defaults.set(true, forKey: Configs.KEY_LOGGED)
         
-        performSegueWithIdentifier("LoggedInNav", sender: self)
+        performSegue(withIdentifier: "LoggedInNav", sender: self)
     }
     
     override func viewDidLoad() {
@@ -54,24 +54,24 @@ class LoginViewController: UIViewController,UIPickerViewDataSource, UIPickerView
      */
     
     // Location Picker
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         locationName = pickerDataSource[row]
     }
     
     // UITextField Delegate
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }

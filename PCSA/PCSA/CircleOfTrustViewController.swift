@@ -28,7 +28,7 @@ class CircleOfTrustViewController: UIViewController {
     let messageComposer = MessageComposer()
     
     //MARK: Actions
-    @IBAction func helpMe(sender: AnyObject) {
+    @IBAction func helpMe(_ sender: AnyObject) {
         var recipients = [String]()
         
         for number in phoneNumbers {
@@ -41,16 +41,16 @@ class CircleOfTrustViewController: UIViewController {
             if (messageComposer.canSendText()) {
                 //ask for user to message type
                 let actions = [
-                    UIAlertAction(title: "Come get me", style: UIAlertActionStyle.Default, handler: { (action) in
+                    UIAlertAction(title: "Come get me", style: UIAlertActionStyle.default, handler: { (action) in
                         self.presentMessageSend(recipients, body: "Come and get me. I need help getting home Safely. Call ASAP to get my Location.Sent through First Aide's Circle of Trust.")
                     }),
-                    UIAlertAction(title: "Call I need an interruption", style: UIAlertActionStyle.Default, handler: { (action) in
+                    UIAlertAction(title: "Call I need an interruption", style: UIAlertActionStyle.default, handler: { (action) in
                         self.presentMessageSend(recipients, body: "Call and pretend you need me. I need an interruption. Message sent through First Aide's Circle of Trust.")
                     }),
-                    UIAlertAction(title: "I need to talk", style: UIAlertActionStyle.Default, handler: { (action) in
+                    UIAlertAction(title: "I need to talk", style: UIAlertActionStyle.default, handler: { (action) in
                         self.presentMessageSend(recipients, body: "I need to talk. Message sent through First Aide's Circle of Trust.")
                     }),
-                    UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil),
+                    UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: nil),
                     ]
                 UIUtil.showAlert(self, title: "Select a request", message: "", actions: actions)
                 
@@ -68,8 +68,8 @@ class CircleOfTrustViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindToNumberSave(sender:UIStoryboardSegue){
-        if let sourceViewController = sender.sourceViewController as? CircleOfTrustEditViewController{
+    @IBAction func unwindToNumberSave(_ sender:UIStoryboardSegue){
+        if let sourceViewController = sender.source as? CircleOfTrustEditViewController{
             //Since numbers update only when save button in CircleOfTrustEditViewController is pressed
             phoneNumbers = sourceViewController.numbers
             updateImageViews(phoneNumbers)
@@ -77,10 +77,10 @@ class CircleOfTrustViewController: UIViewController {
         
     }
     
-    func presentMessageSend(recipients:[String],body:String){
+    func presentMessageSend(_ recipients:[String],body:String){
         // Obtain a configured MFMessageComposeViewController
         let messageComposeVC = messageComposer.configuredMessageComposeViewController(recipients, textBody: body)
-        presentViewController(messageComposeVC, animated: true, completion: nil)
+        present(messageComposeVC, animated: true, completion: nil)
     }
     
     //MARK: ViewController
@@ -91,7 +91,7 @@ class CircleOfTrustViewController: UIViewController {
         
         //reposition buttons 1,2,5,6 (buttons which are not in center Y)
         let radius = imageTrustee4.frame.origin.x - buttonHelpMe.frame.origin.x
-        let height = radius * sin(NumberUtil.degToRad(60))/UIScreen.mainScreen().scale
+        let height = radius * sin(NumberUtil.degToRad(60))/UIScreen.main.scale
         
         constraintNorthHeight.constant = height
         constraintSouthHeight.constant = height
@@ -109,7 +109,7 @@ class CircleOfTrustViewController: UIViewController {
         for imageView in imageViews{
             imageView.layer.borderWidth = 1.0
             imageView.layer.masksToBounds = false
-            imageView.layer.borderColor = UIColor.whiteColor().CGColor
+            imageView.layer.borderColor = UIColor.white.cgColor
             imageView.layer.cornerRadius = imageView.frame.size.width/2
             imageView.clipsToBounds = true
         }
@@ -129,30 +129,30 @@ class CircleOfTrustViewController: UIViewController {
     
     //MARK: Data
     func loadNumbers() -> [String]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(CircleOfTrustEditViewController.ArchiveURL.path!) as? [String]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: CircleOfTrustEditViewController.ArchiveURL.path) as? [String]
     }
     
-    func updateImageViews(numbers:[String]){
+    func updateImageViews(_ numbers:[String]){
         loadContactPhotos(numbers)
     }
     
-    func loadContactPhotos(numbers:[String]){
-        var images=[NSData]()
+    func loadContactPhotos(_ numbers:[String]){
+        var images=[Data]()
         let contactStroe = CNContactStore()
         let keysToFetch = [
             CNContactPhoneNumbersKey,
             CNContactImageDataAvailableKey,
             CNContactThumbnailImageDataKey]
-        contactStroe.requestAccessForEntityType(.Contacts, completionHandler: { (granted, error) -> Void in
+        contactStroe.requestAccess(for: .contacts, completionHandler: { (granted, error) -> Void in
             if granted {
                 
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { // 1
+                DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async { // 1
                     
                     //retrieve images in background
-                    let predicate = CNContact.predicateForContactsInContainerWithIdentifier(contactStroe.defaultContainerIdentifier())
+                    let predicate = CNContact.predicateForContactsInContainer(withIdentifier: contactStroe.defaultContainerIdentifier())
                     var contacts: [CNContact]! = []
                     do {
-                        contacts = try contactStroe.unifiedContactsMatchingPredicate(predicate, keysToFetch: keysToFetch)// [CNContact]
+                        contacts = try contactStroe.unifiedContacts(matching: predicate, keysToFetch: keysToFetch as [CNKeyDescriptor])// [CNContact]
                     }catch {
                         
                     }
@@ -160,7 +160,7 @@ class CircleOfTrustViewController: UIViewController {
                         var phoneStr = ""
                         var number: CNPhoneNumber!
                         if contact.phoneNumbers.count > 0 {
-                            number = contact.phoneNumbers[0].value as! CNPhoneNumber
+                            number = contact.phoneNumbers[0].value 
                             phoneStr = number.stringValue
                             for i in 0..<numbers.count{
                                 if(numbers[i] == phoneStr && contact.imageDataAvailable){
@@ -175,7 +175,7 @@ class CircleOfTrustViewController: UIViewController {
                     
                     
                     
-                    dispatch_async(dispatch_get_main_queue()) {
+                    DispatchQueue.main.async {
                         // update UI main thread
                         
                         if(images.count > 0 ){

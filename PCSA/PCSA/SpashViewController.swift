@@ -16,23 +16,23 @@ class SplashViewController: UIViewController {
         
         // Check whether the user already logged or not. If logged user will be directly navigated to Main Screen.
         // If not Login will be shown.
-        let defaults = NSUserDefaults.standardUserDefaults()
-        let logged = defaults.boolForKey(Configs.KEY_LOGGED)
+        let defaults = UserDefaults.standard
+        let logged = defaults.bool(forKey: Configs.KEY_LOGGED)
         
         if(logged){
-            performSelector(#selector(SplashViewController.showMainController), withObject: nil, afterDelay: 0)
+            perform(#selector(SplashViewController.showMainController), with: nil, afterDelay: 0)
         }
         else{
-            performSelector(#selector(SplashViewController.showLoginController), withObject: nil, afterDelay: 0)
+            perform(#selector(SplashViewController.showLoginController), with: nil, afterDelay: 0)
         }
     }
     
     func showMainController(){
-        performSegueWithIdentifier("MainNav", sender: self)
+        performSegue(withIdentifier: "MainNav", sender: self)
     }
     
     func showLoginController(){
-        performSegueWithIdentifier("LoginNav", sender: self)
+        performSegue(withIdentifier: "LoginNav", sender: self)
     }
 }
 

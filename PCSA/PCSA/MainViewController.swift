@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
         }
         
         UIUtil.initViewControllerViews(self)
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
+        UIApplication.shared.statusBarStyle = .lightContent
     }
     
 
@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
     }
     */
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 }
