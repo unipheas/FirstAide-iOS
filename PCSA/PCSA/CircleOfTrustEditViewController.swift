@@ -27,8 +27,8 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     var activeField:UITextField?
     
     // MARK: Archiving Paths
-    static let DocumentsDirectory = NSFileManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask).first!
-    static let ArchiveURL = DocumentsDirectory.URLByAppendingPathComponent("numbers")
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("numbers")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,31 +52,31 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
         addDoneButtonOnKeyboard()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         registerForKeyboardNotifications()
     }
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         registerForKeyboardNotifications()
     }
     
     //MARK: Actions
-    @IBAction func selectContact(sender: UIButton) {
+    @IBAction func selectContact(_ sender: UIButton) {
         self.selectContactPick(sender.tag)
     }
     
-    func selectContactPick(index:Int){
+    func selectContactPick(_ index:Int){
         selectedTextField = textFields[index]
         let contactPicker = CNContactPickerViewController()
         contactPicker.displayedPropertyKeys = [CNContactPhoneNumbersKey]
         contactPicker.delegate = self
-        navigationController?.presentViewController(contactPicker,
+        navigationController?.present(contactPicker,
                                                     animated: true, completion: nil)
     }
     
     // MARK: - Navigation
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if(identifier == "exitSaveNumbers" ){
             return self.saveNumbers()
         }
@@ -89,7 +89,7 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
             numbers[i] = textFields[i].text!
         }
         
-        let saveSuccess = NSKeyedArchiver.archiveRootObject(numbers, toFile: CircleOfTrustEditViewController.ArchiveURL.path!)
+        let saveSuccess = NSKeyedArchiver.archiveRootObject(numbers, toFile: CircleOfTrustEditViewController.ArchiveURL.path)
         if(saveSuccess){
             return true
         }else{
@@ -99,10 +99,10 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     }
     
     func loadNumbers() -> [String]? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(CircleOfTrustEditViewController.ArchiveURL.path!) as? [String]
+        return NSKeyedUnarchiver.unarchiveObject(withFile: CircleOfTrustEditViewController.ArchiveURL.path) as? [String]
     }
     
-    func updateTextFields(numbers:[String]){
+    func updateTextFields(_ numbers:[String]){
         for i in 0..<(numbers.count){
             textFields[i].text = numbers[i]
         }
@@ -110,10 +110,10 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     
     //MARK: Keyboard handling
     func addDoneButtonOnKeyboard() {
-        let doneToolbar: UIToolbar = UIToolbar(frame: CGRectMake(0, 0, self.view.bounds.size.width, 50))
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 50))
         
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
-        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: #selector(CircleOfTrustEditViewController.finishDecimalKeypad))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(CircleOfTrustEditViewController.finishDecimalKeypad))
         
         var items: [UIBarButtonItem]? = [UIBarButtonItem]()
         items?.append(flexSpace)
@@ -137,24 +137,24 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     func registerForKeyboardNotifications()
     {
         //Adding notifies on keyboard appearing
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CircleOfTrustEditViewController.keyboardWasShown(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CircleOfTrustEditViewController.keyboardWillBeHidden(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CircleOfTrustEditViewController.keyboardWasShown(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CircleOfTrustEditViewController.keyboardWillBeHidden(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     
     func deregisterFromKeyboardNotifications()
     {
         //Removing notifies on keyboard appearing
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
-    func keyboardWasShown(notification: NSNotification)
+    func keyboardWasShown(_ notification: Notification)
     {
         //Need to calculate keyboard exact size due to Apple suggestions
-        self.scrollView.scrollEnabled = true
-        let info : NSDictionary = notification.userInfo!
-        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue().size
+        self.scrollView.isScrollEnabled = true
+        let info : NSDictionary = (notification as NSNotification).userInfo! as NSDictionary
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
         let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize!.height, 0.0)
         
         self.scrollView.contentInset = contentInsets
@@ -164,7 +164,7 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
         aRect.size.height -= keyboardSize!.height
         if (activeField != nil)
         {
-            if (!CGRectContainsPoint(aRect, activeField!.frame.origin))
+            if (!aRect.contains(activeField!.frame.origin))
             {
                 self.scrollView.scrollRectToVisible(activeField!.frame, animated: true)
             }
@@ -174,33 +174,33 @@ class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate
     }
     
     
-    func keyboardWillBeHidden(notification: NSNotification)
+    func keyboardWillBeHidden(_ notification: Notification)
     {
         //Once keyboard disappears, restore original positions
-        let info : NSDictionary = notification.userInfo!
-        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue().size
+        let info : NSDictionary = (notification as NSNotification).userInfo! as NSDictionary
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
         let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, -keyboardSize!.height, 0.0)
         self.scrollView.contentInset = contentInsets
         self.scrollView.scrollIndicatorInsets = contentInsets
         self.view.endEditing(true)
-        self.scrollView.scrollEnabled = false
+        self.scrollView.isScrollEnabled = false
         
     }
     
     // MARK: UITextFieldDelegate
     
-    func textFieldDidBeginEditing(textField: UITextField)
+    func textFieldDidBeginEditing(_ textField: UITextField)
     {
         activeField = textField
     }
     
-    func textFieldDidEndEditing(textField: UITextField)
+    func textFieldDidEndEditing(_ textField: UITextField)
     {
         activeField = nil
     }
     
     // MARK: Contacts Picker
-    func contactPicker(picker: CNContactPickerViewController, didSelectContactProperty contactProperty: CNContactProperty) {
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contactProperty: CNContactProperty) {
         let phoneNumber = contactProperty.value as! CNPhoneNumber
         selectedTextField.text = phoneNumber.stringValue
     }

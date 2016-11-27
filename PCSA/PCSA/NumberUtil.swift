@@ -13,7 +13,7 @@ import Darwin
 class NumberUtil {
     
     // converts degrees to radian
-    class func degToRad(degrees: CGFloat) -> CGFloat {
+    class func degToRad(_ degrees: CGFloat) -> CGFloat {
         return CGFloat(M_PI * 2.0) * degrees / 360.0
     }
 }

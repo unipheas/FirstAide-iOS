@@ -16,8 +16,8 @@ import Foundation
  - Expanded:  Cell expanded
  */
 enum State {
-    case Collapsed
-    case Expanded
+    case collapsed
+    case expanded
 }
 
 /**
@@ -27,8 +27,8 @@ enum State {
  - Several: Several cells expanded at time.
  */
 enum NumberOfCellExpanded {
-    case One
-    case Several
+    case one
+    case several
 }
 
 /**

@@ -23,7 +23,7 @@ class AccordionMenuTableViewController: UITableViewController {
     var dataSource: [Parent]!
     
     /// Define wether can exist several cells expanded or not.
-    let numberOfCellsExpanded: NumberOfCellExpanded = .One
+    let numberOfCellsExpanded: NumberOfCellExpanded = .one
     
     /// Constant to define the values for the tuple in case of not exist a cell expanded.
     let NoCellExpanded = (-1, -1)
@@ -48,14 +48,14 @@ class AccordionMenuTableViewController: UITableViewController {
      - parameter parents: The number of parents cells
      - parameter childs:  Then maximun number of child cells per parent.
      */
-    private func setInitialDataSource(numberOfRowParents parents: Int, numberOfRowChildPerParent childs: Int) {
+    fileprivate func setInitialDataSource(numberOfRowParents parents: Int, numberOfRowChildPerParent childs: Int) {
         
         // Set the total of cells initially.
         self.total = parents
         
-        let data = [Parent](count: parents, repeatedValue: Parent(state: .Collapsed, childs: [String](), title: ""))
+        let data = [Parent](repeating: Parent(state: .collapsed, childs: [String](), title: ""), count: parents)
         
-        dataSource = data.enumerate().map({ (index: Int, element: Parent) -> Parent in
+        dataSource = data.enumerated().map({ (index: Int, element: Parent) -> Parent in
             
             var newElement = element
             
@@ -65,7 +65,7 @@ class AccordionMenuTableViewController: UITableViewController {
             let random = Int(arc4random_uniform(UInt32(childs + 1)))
             
             // create the array for each cell
-            newElement.childs = (0..<random).enumerate().map {"Subitem \($0.index)"}
+            newElement.childs = (0..<random).enumerated().map {"Subitem \($0)"}
             
             return newElement
         })
@@ -76,25 +76,25 @@ class AccordionMenuTableViewController: UITableViewController {
      
      - parameter index: The index of the cell to expand.
      */
-    private func expandItemAtIndex(index : Int, parent: Int) {
+    fileprivate func expandItemAtIndex(_ index : Int, parent: Int) {
         
         // the data of the childs for the specific parent cell.
         let currentSubItems = self.dataSource[parent].childs
         
         // update the state of the cell.
-        self.dataSource[parent].state = .Expanded
+        self.dataSource[parent].state = .expanded
         
         // position to start to insert rows.
         var insertPos = index + 1
         
-        let indexPaths = (0..<currentSubItems.count).map { _ -> NSIndexPath in
-            let indexPath = NSIndexPath(forRow: insertPos, inSection: 0)
+        let indexPaths = (0..<currentSubItems.count).map { _ -> IndexPath in
+            let indexPath = IndexPath(row: insertPos, section: 0)
             insertPos += 1
             return indexPath
         }
         
         // insert the new rows
-        self.tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        self.tableView.insertRows(at: indexPaths, with: UITableViewRowAnimation.fade)
         
         // update the total of rows
         self.total += currentSubItems.count
@@ -105,22 +105,22 @@ class AccordionMenuTableViewController: UITableViewController {
      
      - parameter index: The index of the cell to collapse
      */
-    private func collapseSubItemsAtIndex(index : Int, parent: Int) {
+    fileprivate func collapseSubItemsAtIndex(_ index : Int, parent: Int) {
         
-        var indexPaths = [NSIndexPath]()
+        var indexPaths = [IndexPath]()
         
         let numberOfChilds = self.dataSource[parent].childs.count
         
         // update the state of the cell.
-        self.dataSource[parent].state = .Collapsed
+        self.dataSource[parent].state = .collapsed
         
         guard index + 1 <= index + numberOfChilds else { return }
         
         // create an array of NSIndexPath with the selected positions
-        indexPaths = (index + 1...index + numberOfChilds).map { NSIndexPath(forRow: $0, inSection: 0)}
+        indexPaths = (index + 1...index + numberOfChilds).map { IndexPath(row: $0, section: 0)}
         
         // remove the expanded cells
-        self.tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        self.tableView.deleteRows(at: indexPaths, with: UITableViewRowAnimation.fade)
         
         // update the total of rows
         self.total -= numberOfChilds
@@ -132,17 +132,17 @@ class AccordionMenuTableViewController: UITableViewController {
      - parameter parent: The parent of the cell
      - parameter index:  The index of the cell.
      */
-    private func updateCells(parent: Int, index: Int) {
+    fileprivate func updateCells(_ parent: Int, index: Int) {
         
         switch (self.dataSource[parent].state) {
             
-        case .Expanded:
+        case .expanded:
             self.collapseSubItemsAtIndex(index, parent: parent)
             self.lastCellExpanded = NoCellExpanded
             
-        case .Collapsed:
+        case .collapsed:
             switch (numberOfCellsExpanded) {
-            case .One:
+            case .one:
                 // exist one cell expanded previously
                 if self.lastCellExpanded != NoCellExpanded {
                     
@@ -165,7 +165,7 @@ class AccordionMenuTableViewController: UITableViewController {
                     self.expandItemAtIndex(index, parent: parent)
                     self.lastCellExpanded = (index, parent)
                 }
-            case .Several:
+            case .several:
                 self.expandItemAtIndex(index, parent: parent)
             }
         }
@@ -178,7 +178,7 @@ class AccordionMenuTableViewController: UITableViewController {
      
      - returns: A tuple with the parent position, if it's a parent cell and the actual position righ now.
      */
-    private func findParent(index : Int) -> (parent: Int, isParentCell: Bool, actualPosition: Int) {
+    fileprivate func findParent(_ index : Int) -> (parent: Int, isParentCell: Bool, actualPosition: Int) {
         
         var position = 0, parent = 0
         guard position < index else { return (parent, true, parent) }
@@ -188,9 +188,9 @@ class AccordionMenuTableViewController: UITableViewController {
         repeat {
             
             switch (item.state) {
-            case .Expanded:
+            case .expanded:
                 position += item.childs.count + 1
-            case .Collapsed:
+            case .collapsed:
                 position += 1
             }
             
@@ -217,27 +217,27 @@ extension AccordionMenuTableViewController {
     
     // MARK: UITableViewDataSource
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.total
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell : UITableViewCell!
         
-        let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
+        let (parent, isParentCell, actualPosition) = self.findParent((indexPath as NSIndexPath).row)
         
         if !isParentCell {
-            cell = tableView.dequeueReusableCellWithIdentifier(childCellIdentifier, forIndexPath: indexPath)
-            cell.textLabel!.text = self.dataSource[parent].childs[indexPath.row - actualPosition - 1]
-            cell.backgroundColor = UIColor.greenColor()
+            cell = tableView.dequeueReusableCell(withIdentifier: childCellIdentifier, for: indexPath)
+            cell.textLabel!.text = self.dataSource[parent].childs[(indexPath as NSIndexPath).row - actualPosition - 1]
+            cell.backgroundColor = UIColor.green
         }
         else {
-            cell = tableView.dequeueReusableCellWithIdentifier(parentCellIdentifier, forIndexPath: indexPath)
+            cell = tableView.dequeueReusableCell(withIdentifier: parentCellIdentifier, for: indexPath)
             cell.textLabel!.text = self.dataSource[parent].title
         }
         
@@ -246,25 +246,25 @@ extension AccordionMenuTableViewController {
     
     // MARK: UITableViewDelegate
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let (parent, isParentCell, actualPosition) = self.findParent(indexPath.row)
+        let (parent, isParentCell, actualPosition) = self.findParent((indexPath as NSIndexPath).row)
         
         guard isParentCell else {
             NSLog("A child was tapped!!!")
             
             // The value of the child is indexPath.row - actualPosition - 1
-            NSLog("The value of the child is \(self.dataSource[parent].childs[indexPath.row - actualPosition - 1])")
+            NSLog("The value of the child is \(self.dataSource[parent].childs[(indexPath as NSIndexPath).row - actualPosition - 1])")
             
             return
         }
         
         self.tableView.beginUpdates()
-        self.updateCells(parent, index: indexPath.row)
+        self.updateCells(parent, index: (indexPath as NSIndexPath).row)
         self.tableView.endUpdates()
     }
     
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return !self.findParent(indexPath.row).isParentCell ? 44.0 : 64.0
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return !self.findParent((indexPath as NSIndexPath).row).isParentCell ? 44.0 : 64.0
     }
 }

@@ -37,47 +37,47 @@ class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPicke
         self.locationText.delegate = self
         locationText.text=pickerDataSource[0]
         updatePhoneNumbers(0)
-        locationPicker.hidden = true
+        locationPicker.isHidden = true
         
     }
     
     //MARK: Actions
     
-    @IBAction func selectNext(sender: AnyObject) {
-        otherStaffView.hidden=false;
-        postStaffView.hidden=true;
+    @IBAction func selectNext(_ sender: AnyObject) {
+        otherStaffView.isHidden=false;
+        postStaffView.isHidden=true;
     }
-    @IBAction func selectPrevious(sender: AnyObject) {
-        otherStaffView.hidden=true;
-        postStaffView.hidden=false;
+    @IBAction func selectPrevious(_ sender: AnyObject) {
+        otherStaffView.isHidden=true;
+        postStaffView.isHidden=false;
     }
     
-    @IBAction func pcmoCall(sender: UIButton) {
+    @IBAction func pcmoCall(_ sender: UIButton) {
         startCall(pcmoPhoneText.text!)
     }
     
-    @IBAction func ssmCall(sender: AnyObject) {
+    @IBAction func ssmCall(_ sender: AnyObject) {
         startCall(ssmPhoneText.text!)
     }
     
-    @IBAction func sarlCall(sender: AnyObject) {
+    @IBAction func sarlCall(_ sender: AnyObject) {
         startCall(sarlPhoneText.text!)
     }
 
-    @IBAction func pcSavesUSCall(sender: AnyObject) {
+    @IBAction func pcSavesUSCall(_ sender: AnyObject) {
         startCall(Constants.PC_SAVES_NON_US_PHONE_NUMBER)
     }
 
     
-    @IBAction func officeVictimCall(sender: AnyObject) {
+    @IBAction func officeVictimCall(_ sender: AnyObject) {
         startCall(Constants.OFFICE_VICTIM_PHONE_NUMBER)
     }
     
-    @IBAction func officeInspectionCall(sender: AnyObject) {
+    @IBAction func officeInspectionCall(_ sender: AnyObject) {
         startCall(Constants.OFFICE_INSPECTION_PHONE_NUMBER)
     }
     
-    @IBAction func officeCivilCall(sender: AnyObject) {
+    @IBAction func officeCivilCall(_ sender: AnyObject) {
         startCall(Constants.OFFICE_CIVIL_PHONE_NUMBER)
     }
     
@@ -94,38 +94,38 @@ class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPicke
     
     //MARK: Location picker
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return pickerDataSource.count;
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerDataSource[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        locationPicker.hidden = true
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        locationPicker.isHidden = true
         locationText.text = pickerDataSource[row]
         updatePhoneNumbers(row)
     }
     
     //MARK: Location text
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        locationPicker.hidden = false
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        locationPicker.isHidden = false
         return false
     }
     
-    func updatePhoneNumbers(locationIndex: Int){
+    func updatePhoneNumbers(_ locationIndex: Int){
         pcmoPhoneText.text = Constants.PCMO_NUMBERS[locationIndex]
         ssmPhoneText.text = Constants.SSM_NUMBERS[locationIndex]
         sarlPhoneText.text = Constants.SARL_NUMBERS[locationIndex]
     }
     
-    func startCall(phoneNumber: String){
-        UIApplication.sharedApplication().openURL(NSURL(string: "telprompt://\(phoneNumber)")!)
+    func startCall(_ phoneNumber: String){
+        UIApplication.shared.openURL(URL(string: "telprompt://\(phoneNumber)")!)
     }
 
 }

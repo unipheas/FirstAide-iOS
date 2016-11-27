@@ -27,7 +27,7 @@ class SlideView: UIView {
     
     func initSubviews(){
         // init two views and the sizes
-        if let bottomView = self.viewWithTag(1) , popView = self.viewWithTag(2) {
+        if let bottomView = self.viewWithTag(1) , let popView = self.viewWithTag(2) {
             let bottomTapRecognizer = UITapGestureRecognizer()
             bottomTapRecognizer.addTarget(self, action: #selector(SlideView.showPopView))
             bottomView.addGestureRecognizer(bottomTapRecognizer)
@@ -60,9 +60,9 @@ class SlideView: UIView {
         animateLayoutChange()    }
     
     func animateLayoutChange(){
-        UIView.animateWithDuration(0.5) {
+        UIView.animate(withDuration: 0.5, animations: {
             self.layoutIfNeeded()
-        }
+        }) 
     }
     
 }
