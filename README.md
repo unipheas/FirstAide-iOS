@@ -17,7 +17,7 @@ You can learn more about the Systers organization, whose members work on the dev
 
 ## Getting Started
 
-Update to XCode 7.3.1
+Update to XCode 8.0 or above
 
 ###Installation:
 Go to your terminal and execute this command
