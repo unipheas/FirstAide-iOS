@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AfterAssualtViewController: UIViewController {
+class AfterAssualtViewController: MainViewController {
 
 
     override func viewDidLoad() {

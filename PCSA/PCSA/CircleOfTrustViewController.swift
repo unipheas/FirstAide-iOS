@@ -9,7 +9,7 @@
 import UIKit
 import Contacts
 
-class CircleOfTrustViewController: UIViewController {
+class CircleOfTrustViewController: MainViewController {
     
     // MARK: Properties
     @IBOutlet weak var buttonHelpMe: UIButton!

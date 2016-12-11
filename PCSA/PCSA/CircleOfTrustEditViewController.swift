@@ -9,7 +9,7 @@
 import UIKit
 import ContactsUI
 
-class CircleOfTrustEditViewController: UIViewController, CNContactPickerDelegate,UITextFieldDelegate {
+class CircleOfTrustEditViewController: MainViewController, CNContactPickerDelegate,UITextFieldDelegate {
     
     //MARK: Properties
     @IBOutlet weak var textFieldNumber1: UITextField!

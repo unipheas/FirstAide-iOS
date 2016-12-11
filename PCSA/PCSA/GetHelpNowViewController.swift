@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GetHelpNowViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate {
+class GetHelpNowViewController: MainViewController,UIPickerViewDataSource, UIPickerViewDelegate,UITextFieldDelegate {
     
     //MARK: Properties
     @IBOutlet weak var postStaffView: UIView!

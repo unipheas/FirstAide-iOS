@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SupportServiceViewController: UIViewController {
+class SupportServiceViewController: MainViewController {
 
     //MARK: Properties
     @IBOutlet weak var scrollView: UIScrollView!
