@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3EH-Op-fZx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3EH-Op-fZx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1815,7 +1815,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="28" width="480" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNu-hx-7rS" id="SDt-eA-iBV">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-VW-qLG">
@@ -1842,7 +1842,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="88" width="480" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88D-Y2-nra" id="CqG-Oh-JKu">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-oK-9xK">
@@ -6089,9 +6089,9 @@ As one Volunteer shared:
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iR5-x6-KCi" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="33.5" width="540" height="601"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wly-I6-D0Q">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wly-I6-D0Q" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="8" width="500" height="583"/>
-                                                        <mutableString key="text">Even though the laws vary between countries, Peace Corps recognizes that sexual assault takes many forms. These include rape, attempted rape, and unwanted sexual contact, such as grabbing, fondling, or forced kissing.
+                                                        <string key="text">Even though the laws vary between countries, Peace Corps recognizes that sexual assault takes many forms. These include rape, attempted rape, and unwanted sexual contact, such as grabbing, fondling, or forced kissing.
 
 The legal definition of sexual assault differs among Peace Corps countries.  However, Peace Corps asks these questions to help the agency classify crimes of a sexual nature
 
@@ -6103,7 +6103,7 @@ Was there contact with the Volunteer’s genitalia, anus, groin, breast, inner t
 
 Rape:
 Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was the Volunteer forced to perform oral sex on another person or penetrate another person against his/her will? 
-</mutableString>
+</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -6232,7 +6232,7 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ai-de-s86" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="33.5" width="540" height="601"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2F-gP-WPS">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2F-gP-WPS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="8" width="500" height="583"/>
                                                         <string key="text">The Peace Corps is committed to maintaining high standards of conduct in the workplace and providing all employees, Volunteers, and trainees a work environment that is free from harassment of any kind.  The Office of Civil Rights and Diversity, or OCRD, handles claims of harassment, including sexual harassment of a Volunteer or Trainee by a Peace Corps staff member or fellow Volunteer/ Trainee.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -6355,9 +6355,9 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-E5-N6U">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-E5-N6U" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38" width="500" height="614"/>
-                                                        <mutableString key="text">If it is not consensual, then it is a crime.  Consensual means that both people are old enough to consent, have the capacity to consent, and agreed to the sexual contact.  There are two main considerations to help Volunteers judge whether or not a sexual act is consensual.
+                                                        <string key="text">If it is not consensual, then it is a crime.  Consensual means that both people are old enough to consent, have the capacity to consent, and agreed to the sexual contact.  There are two main considerations to help Volunteers judge whether or not a sexual act is consensual.
 
 1. Did both people have the physical, mental, and legal capacity to consent?  Those with diminished capacity – for example, some people with disabilities, some elderly people and people who have been drugged or are unconscious – may not have the ability to consent to have sex.
 
@@ -6368,7 +6368,7 @@ If someone does not have the capacity to consent because they are too scared to 
 
 If you are not sure if you were sexually assaulted, or even if something made you uncomfortable, don’t be afraid to discuss the incident with your PCMO or someone else you trust for support.  
 
-Even if weeks, months, or years have passed, it is never too late to report an incident of sexual assault so you can receive support to aid your healing and recovery.</mutableString>
+Even if weeks, months, or years have passed, it is never too late to report an incident of sexual assault so you can receive support to aid your healing and recovery.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -6488,16 +6488,16 @@ Even if weeks, months, or years have passed, it is never too late to report an i
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-Md-Mfe">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-Md-Mfe" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38" width="500" height="614"/>
-                                                        <mutableString key="text">Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature.  Sexual harassment is behavior that is unwelcome, offensive, can cause fear or anxiety and can impact job performance.
+                                                        <string key="text">Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature.  Sexual harassment is behavior that is unwelcome, offensive, can cause fear or anxiety and can impact job performance.
 
 The actions you may think are within tolerable ranges of acceptability may be offensive to others. People have different thresholds of tolerance for many of these behaviors. The bottom line is that ‘unwelcomed’ is determined by the recipient, not the person displaying the offensive conduct.
 
 If you feel you are being sexually harassed, sharing this with either a Volunteer or staff  will better ensure that you get the help and support you deserve.
 
 Cases of sexual harassment committed by a PCV or Peace Corps Staff member against a PCV can be reported to the Office of Civil Rights and Diversity (OCRD).
-</mutableString>
+</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -6617,28 +6617,28 @@ Cases of sexual harassment committed by a PCV or Peace Corps Staff member agains
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU7-kZ-nIK">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU7-kZ-nIK" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
                                                         <mutableString key="text">Sexual assault can have many effects on the victim – and it affects each person differently. 
 
 Physical/Physiological: 
-- Physical injury from the assault itself 
-- Pregnancy
-- Sexually Transmitted Infections 
-- Self-medicating (i.e., alcohol/drug abuse) 
-- Sleep disorders
-- Eating disorders 
-- Physical triggers (sights, smells, sounds, touching) that may produce a physical or psychological reaction 
-- Self-mutilation (self-inflicted cuts but not to commit suicide) 
+•	Physical injury from the assault itself 
+•	Pregnancy
+•	Sexually Transmitted Infections 
+•	Self-medicating (i.e., alcohol/drug abuse) 
+•	Sleep disorders
+•	Eating disorders 
+•	Physical triggers (sights, smells, sounds, touching) that may produce a physical or psychological reaction 
+•	Self-mutilation (self-inflicted cuts but not to commit suicide) 
 
 Psychological/ Emotional: 
-- Depression 
-- Anger 
-- Fear 
-- Anxiety 
-- Guilt 
-- Shock
-- Shame/ Embarrassment
+•	Depression 
+•	Anger 
+•	Fear 
+•	Anxiety 
+•	Guilt 
+•	Shock
+•	Shame/ Embarrassment
 
 It is important to recognize that all of the reactions are NORMAL. They are NORMAL reactions to an ABNORMAL situation. They are symptoms of a traumatic experience that your body and mind are trying to deal with - like running a fever to fight off infection. While the symptoms are normal, it’s okay to seek help.</mutableString>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6760,7 +6760,7 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQn-dG-8FW">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQn-dG-8FW" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
                                                         <string key="text">People respond to an assault in many different ways. Just because you didn’t resist physically doesn’t mean it wasn’t rape – in fact, many victims experience the survival instinct to “freeze” and do not physically resist due to fear that their attacker might become more violent.  Lack of consent can be expressed (saying “no”) or can be implied through non-verbal cues and reactions by the non-consenting person.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6799,7 +6799,7 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4q-AU-1my">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4q-AU-1my" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
                                                         <string key="text">Sexual assault can occur when the offender and the victim have a pre-existing relationship, even if the offender is the victim’s spouse. It does not matter whether the other person is a former romantic partner or a complete stranger. It also doesn’t matter if you ever had sex in the past. If it is nonconsensual this time, it is rape.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6838,9 +6838,9 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY6-5U-5PJ">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY6-5U-5PJ" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
-                                                        <mutableString key="text">Alcohol and drugs are not an excuse. The key question is still: did you consent or not? Regardless of whether you were drunk or sober, if the sex is nonconsensual, it is rape. However, because each country has different definitions of “nonconsensual,” please contact your PCMO or SSM if you have questions about your specific host country definitions and laws. Peace Corps believes that if you were so intoxicated or drugged that you passed out and/or were unable to consent, it was rape. Both people must be conscious and willing participants.</mutableString>
+                                                        <string key="text">Alcohol and drugs are not an excuse. The key question is still: did you consent or not? Regardless of whether you were drunk or sober, if the sex is nonconsensual, it is rape. However, because each country has different definitions of “nonconsensual,” please contact your PCMO or SSM if you have questions about your specific host country definitions and laws. Peace Corps believes that if you were so intoxicated or drugged that you passed out and/or were unable to consent, it was rape. Both people must be conscious and willing participants.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -6877,7 +6877,7 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5y-35-aSQ">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5y-35-aSQ" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
                                                         <string key="text">It depends on the circumstances. If you didn’t say no because you were legitimately scared for your life or safety, then it may be a sexual assault. In some cases it may be unsafe to resist, physically or verbally — for example, when someone has a knife or gun to your head, or threatens you, a fellow PCV, or community member if you say anything.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -6916,9 +6916,9 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-Gf-Ppr">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-Gf-Ppr" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
-                                                        <mutableString key="text">Sexual arousal and/or orgasm during rape is extremely common, yet rarely talked about. It is biological. Sexual arousal works from the same autonomic, reflex-driven system associated with heart rate, digestion, and perspiration.  Sexual organs do not think, they are designed to respond to stimulation. Sexual arousal or orgasm during rape does not mean it felt good. It does not mean you enjoyed it. It does not mean you asked for it. It does not mean you consented. Becoming sexually aroused does not equal consent.</mutableString>
+                                                        <string key="text">Sexual arousal and/or orgasm during rape is extremely common, yet rarely talked about. It is biological. Sexual arousal works from the same autonomic, reflex-driven system associated with heart rate, digestion, and perspiration.  Sexual organs do not think, they are designed to respond to stimulation. Sexual arousal or orgasm during rape does not mean it felt good. It does not mean you enjoyed it. It does not mean you asked for it. It does not mean you consented. Becoming sexually aroused does not equal consent.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -7046,7 +7046,7 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-iC-xHS">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-iC-xHS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
                                                         <string key="text">Whether they come to you for help first, or you learn of their experience some time down the line, there are things you can do to personally support a friend who is the survivor of sexual assault. 
 
@@ -7087,11 +7087,11 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE4-5S-73C">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE4-5S-73C" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <string key="text">- If a survivor chooses to share their story with you, do not to question their story, judge it, or ask for details about it.
+                                                        <string key="text">•	If a survivor chooses to share their story with you, do not to question their story, judge it, or ask for details about it.
 
-- Show them and tell them that you believe them, and that they are believed.</string>
+•	Show them and tell them that you believe them, and that they are believed.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -7128,13 +7128,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-Su-KGD">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-Su-KGD" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <string key="text">- Listen patiently and allow them to share their story on their own terms. You may be the first and only person your friend tells.
+                                                        <string key="text">•	Listen patiently and allow them to share their story on their own terms. You may be the first and only person your friend tells.
 
-- Encourage them to take their time, or reassure them that you are there to listen when they are ready. 
+•	Encourage them to take their time, or reassure them that you are there to listen when they are ready. 
 
-- You can also respect their privacy by not sharing with others.</string>
+•	You can also respect their privacy by not sharing with others.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -7171,11 +7171,11 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reF-vF-M8u">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reF-vF-M8u" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <string key="text">- It is important to not ask/tell a survivor to report their assault to family, loved ones, the police, or the authorities or seek certain help. 
+                                                        <string key="text">•	It is important to not ask/tell a survivor to report their assault to family, loved ones, the police, or the authorities or seek certain help. 
 
-- Allow a survivor to seek help and heal at their own pace.  Instead, offer to support them, accompany them, or help them seek information at a pace that they want and are comfortable with.</string>
+•	Allow a survivor to seek help and heal at their own pace.  Instead, offer to support them, accompany them, or help them seek information at a pace that they want and are comfortable with.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -7212,11 +7212,11 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBE-P2-3gi">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBE-P2-3gi" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <string key="text">- A survivor may want additional support and information. You can provide an enormous amount of support by expressing concern and offering to look into resources for them. This could be medical treatment at a hospital, a sexual assault hotline, local advocacy services, counseling, or a local support group. 
+                                                        <string key="text">•	A survivor may want additional support and information. You can provide an enormous amount of support by expressing concern and offering to look into resources for them. This could be medical treatment at a hospital, a sexual assault hotline, local advocacy services, counseling, or a local support group. 
 
-- It could also be as simple as providing a phone number or going with them to an appointment.</string>
+•	It could also be as simple as providing a phone number or going with them to an appointment.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -7253,13 +7253,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-In-zpY">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-In-zpY" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <string key="text">- Offer to be there for your friend whenever they need you. Encourage them to come back to you for further support when appropriate. Remind them that you will be there to listen when they do.
+                                                        <string key="text">•	Offer to be there for your friend whenever they need you. Encourage them to come back to you for further support when appropriate. Remind them that you will be there to listen when they do.
 
-- This will help your friend know that you are a safe source of support and that they can rely on when they need it. 
+•	This will help your friend know that you are a safe source of support and that they can rely on when they need it. 
 
-- Creating this culture of openness with a friend can be comforting to a survivor who may need space to begin healing on their own terms.</string>
+•	Creating this culture of openness with a friend can be comforting to a survivor who may need space to begin healing on their own terms.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
