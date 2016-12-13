@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AB775DF1BEA42563494D382 /* Pods_PCSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3801FDCD9986FFE68258BAB /* Pods_PCSATests.framework */; };
+		575EF8501DFFFC20008ADF4C /* ScrollableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575EF84F1DFFFC20008ADF4C /* ScrollableTextView.swift */; };
 		700C1CC81D16EA330070FACC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C1CC71D16EA330070FACC /* Constants.swift */; };
 		701B5B9D1D5F6D2F001118DB /* circle_of_trust.js in Resources */ = {isa = PBXBuildFile; fileRef = 701B5B991D5F6D2F001118DB /* circle_of_trust.js */; };
 		701B5B9E1D5F6D2F001118DB /* get_help_now.js in Resources */ = {isa = PBXBuildFile; fileRef = 701B5B9A1D5F6D2F001118DB /* get_help_now.js */; };
@@ -73,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		05776F1764C0E43A2EB49A92 /* Pods-PCSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSA.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSA/Pods-PCSA.release.xcconfig"; sourceTree = "<group>"; };
+		575EF84F1DFFFC20008ADF4C /* ScrollableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableTextView.swift; sourceTree = "<group>"; };
 		6917B996CDAC0375C28FAA18 /* Pods-PCSAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PCSAUITests/Pods-PCSAUITests.release.xcconfig"; sourceTree = "<group>"; };
 		700C1CC71D16EA330070FACC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		701B5B991D5F6D2F001118DB /* circle_of_trust.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = circle_of_trust.js; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			children = (
 				70A44C6D1D049618001C10B3 /* ThemedButton.swift */,
 				705DDEDF1D060F820037ABDE /* MenuTableViewCell.swift */,
+				575EF84F1DFFFC20008ADF4C /* ScrollableTextView.swift */,
 				706996AB1D1F9C4600CD02A0 /* BorderedView.swift */,
 				70E0D0EB1D326C9A004BE126 /* SlideView.swift */,
 			);
@@ -730,6 +733,7 @@
 				70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */,
 				70F6D6BA1D57875700EF35D4 /* Configs.swift in Sources */,
 				70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */,
+				575EF8501DFFFC20008ADF4C /* ScrollableTextView.swift in Sources */,
 				703FEB1F1D25A6CB00F5CB1C /* GetHelpNowViewController.swift in Sources */,
 				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
 				70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */,
