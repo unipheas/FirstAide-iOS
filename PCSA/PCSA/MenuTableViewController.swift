@@ -378,6 +378,18 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         case Constants.PEACE_CORPS_MYTHBUSTERS:
             viewIdentifier = "PEACE_CORPS_MYTHBUSTERS"
             
+        // Sexual Assault Awareness
+        case Constants.WAS_IT_SEXUAL_ASSAULT:
+            viewIdentifier = "WAS_IT_SEXUAL_ASSAULT"
+        case Constants.SEXUAL_ASSAULT_COMMON_QUESTIONS:
+            viewIdentifier = "SEXUAL_ASSAULT_COMMON_QUESTIONS"
+        case Constants.IMPACT_SEXUAL_ASSAULT:
+            viewIdentifier = "IMPACT_SEXUAL_ASSAULT"
+        case Constants.SEXUAL_HARRASSMENT:
+            viewIdentifier = "SEXUAL_HARRASSMENT"
+        case Constants.HELPING_FRIEND_OR_COMMUNITY_MEMBER:
+            viewIdentifier = "HELPING_FRIEND_OR_COMMUNITY_MEMBER"
+        
         default:
             viewIdentifier = ""
         }
