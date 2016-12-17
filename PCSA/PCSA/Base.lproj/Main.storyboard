@@ -202,12 +202,22 @@
                                                     <segue destination="Yit-RF-DPs" kind="show" id="MOs-FQ-Wva"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlU-1q-hbi" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zlU-1q-hbi" customClass="ThemedButton" customModule="PCSA" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="108" width="560" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="aIR-Ep-Pjy"/>
                                                 </constraints>
-                                                <state key="normal" title="Coping with Unwanted Attention Strategies"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Coping with Unwanted Attention Strategies">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
                                                 <connections>
                                                     <segue destination="nst-xd-igV" kind="show" id="1hc-0h-OeW"/>
                                                 </connections>
@@ -6619,7 +6629,7 @@ Cases of sexual harassment committed by a PCV or Peace Corps Staff member agains
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU7-kZ-nIK" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
-                                                        <mutableString key="text">Sexual assault can have many effects on the victim – and it affects each person differently. 
+                                                        <string key="text">Sexual assault can have many effects on the victim – and it affects each person differently. 
 
 Physical/Physiological: 
 •	Physical injury from the assault itself 
@@ -6640,7 +6650,7 @@ Psychological/ Emotional:
 •	Shock
 •	Shame/ Embarrassment
 
-It is important to recognize that all of the reactions are NORMAL. They are NORMAL reactions to an ABNORMAL situation. They are symptoms of a traumatic experience that your body and mind are trying to deal with - like running a fever to fight off infection. While the symptoms are normal, it’s okay to seek help.</mutableString>
+It is important to recognize that all of the reactions are NORMAL. They are NORMAL reactions to an ABNORMAL situation. They are symptoms of a traumatic experience that your body and mind are trying to deal with - like running a fever to fight off infection. While the symptoms are normal, it’s okay to seek help.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
