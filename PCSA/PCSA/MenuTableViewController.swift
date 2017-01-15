@@ -393,6 +393,16 @@ class MenuTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             viewIdentifier = "SEXUAL_HARRASSMENT"
         case Constants.HELPING_FRIEND_OR_COMMUNITY_MEMBER:
             viewIdentifier = "HELPING_FRIEND_OR_COMMUNITY_MEMBER"
+            
+        // Policies and Glossary
+        case Constants.POLICIES_AND_GLOSSARY:
+            viewIdentifier = "POLICIES_AND_GLOSSARY"
+        case Constants.PEACE_COPRS_POLICY_SEXUAL_ASSAULT:
+            viewIdentifier = "PEACE_COPRS_POLICY_SEXUAL_ASSAULT"
+        case Constants.GLOSSARY:
+            viewIdentifier = "GLOSSARY"
+        case Constants.FURTHER_RESOURCES:
+            viewIdentifier = "FURTHER_RESOURCES"
         
         default:
             viewIdentifier = ""
