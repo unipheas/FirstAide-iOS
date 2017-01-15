@@ -645,7 +645,7 @@ Being able to recognize dangers lets us begin to figure out ways to reduce the r
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-97-vvg">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-97-vvg" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">Now that you have recognized a potentially dangerous situation, what can you do in order to reduce the risk you face? In most situations, you will have choices to make. Identify as many options as you can.  For example, you can mitigate the risk of going out at night by traveling in a group, by using a trusted taxi or even by choosing to return home at an earlier hour.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -684,7 +684,7 @@ Being able to recognize dangers lets us begin to figure out ways to reduce the r
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njl-mj-Pql">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njl-mj-Pql" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">After figuring out what options you have, run the different scenarios in your head – say ‘What if’ – and decide which option is the best. You could try to defuse the situation by remaining calm and use good communication skills to keep the situation from escalating.  Maybe try an escape option where you run towards safety, not just away from danger.  As a last resort, try a verbal, psychological, or physical defense tactic.
 
@@ -725,7 +725,7 @@ Sometimes your best option might be a bit unconventional. If it’s the best opt
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpO-n2-Zny">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpO-n2-Zny" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">After you decide on your best course of action, decide when to act. Sometimes you’ll need to act right away. Other times you can wait until the danger gets closer – but don’t wait until it gets too close! 
 Draw your own imaginary line – set your own personal tripwire. Once the danger crosses that line – whatever you decided for yourself – that’s when you act.</string>
@@ -765,7 +765,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-bq-l4r">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-bq-l4r" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">And because no situation is static, you must constantly reassess your options as the conditions and circumstances change. If you encounter new risks or if you run out of options, start the cycle again. </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1828,7 +1828,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="28" width="379" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNu-hx-7rS" id="SDt-eA-iBV">
-                                            <rect key="frame" x="0.0" y="0.0" width="379" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="379" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-VW-qLG">
@@ -1855,7 +1855,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="88" width="379" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88D-Y2-nra" id="CqG-Oh-JKu">
-                                            <rect key="frame" x="0.0" y="0.0" width="379" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="379" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-oK-9xK">
@@ -2474,7 +2474,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr9-g4-FcG">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="2H6-Vh-uth"/>
                                                                     <constraint firstAttribute="height" constant="48" id="KUC-A2-jla"/>
@@ -2485,7 +2485,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-9C-HaB">
-                                                                <rect key="frame" x="166" y="492.66666666666663" width="147" height="20.333333333333371"/>
+                                                                <rect key="frame" x="166" y="492" width="147" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607843137254" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2541,7 +2541,7 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-Mo-G6Z">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="Mqq-cu-LQ3"/>
                                                                     <constraint firstAttribute="height" constant="48" id="ZJi-Gp-opM"/>
@@ -2552,7 +2552,7 @@ Located in-country, at post.</string>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-Mj-rm9">
-                                                                <rect key="frame" x="167" y="492.66666666666663" width="147" height="20.333333333333371"/>
+                                                                <rect key="frame" x="167" y="492" width="147" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2608,7 +2608,7 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj7-NB-z8l">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="qIO-TX-Hdz"/>
                                                                     <constraint firstAttribute="height" constant="48" id="wQS-6g-1yM"/>
@@ -2619,7 +2619,7 @@ Located in-country, at post.</string>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyQ-pQ-O9Y">
-                                                                <rect key="frame" x="167" y="492.66666666666663" width="147" height="20.333333333333371"/>
+                                                                <rect key="frame" x="167" y="492" width="147" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2776,10 +2776,10 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byK-Ss-PY9">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Jf-17G">
-                                                                        <rect key="frame" x="0.0" y="0.33333333333337123" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="0.33333333333325754" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="50O-h1-giV"/>
                                                                             <constraint firstAttribute="width" constant="48" id="GEK-KU-66E"/>
@@ -2792,12 +2792,12 @@ Located in-country, at post.</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="001-408-844-HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVt-YD-PMU">
-                                                                <rect key="frame" x="162.33333333333337" y="492.66666666666663" width="155.66666666666663" height="20.333333333333371"/>
+                                                                <rect key="frame" x="162.33333333333337" y="492" width="155.66666666666663" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="daT-GD-hje" userLabel="Description">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="daT-GD-hje" userLabel="Description" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="43" width="464" height="396"/>
                                                                 <color key="tintColor" red="0.99868744610000004" green="0.74952501059999999" blue="0.33808326719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <string key="text">The PC SAVES Helpline provides anonymous, confidential crisis intervention, support, and information via a call, text, or online chat to Peace Corps Volunteers and Trainees. All options are staffed by trained professionals not affiliated with Peace Corps, available 24/7.  No personally identifying information will be collected. 
@@ -2847,10 +2847,10 @@ Online Chat: pcsaveshelpline.org</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boU-aH-iiL">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-rB-HG2">
-                                                                        <rect key="frame" x="0.0" y="0.33333333333337123" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="0.33333333333325754" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="6Mf-6E-k43"/>
                                                                             <constraint firstAttribute="width" constant="48" id="QQU-HF-sid"/>
@@ -2863,12 +2863,12 @@ Online Chat: pcsaveshelpline.org</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 409-2701" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLZ-jo-CRP">
-                                                                <rect key="frame" x="179.33333333333337" y="492.66666666666663" width="121.66666666666663" height="20.333333333333371"/>
+                                                                <rect key="frame" x="179.33333333333337" y="492" width="121.66666666666663" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1h5-P5-CtR" userLabel="Description">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1h5-P5-CtR" userLabel="Description" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="43" width="464" height="396"/>
                                                                 <color key="tintColor" red="0.99868744610000004" green="0.74952501059999999" blue="0.33808326719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <string key="text">Victim Advocates are available for Volunteers who are victims of crimes. They can provide information regarding available response services, address questions/concerns, and ensure their voices are heard and considered in all decisions affecting service and care.
@@ -2916,10 +2916,10 @@ E-mail: victimadvocate@peacecorps.gov</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-yu-sav">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-Cs-cGT">
-                                                                        <rect key="frame" x="0.0" y="0.33333333333337123" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="0.33333333333325754" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="48" id="Jaa-dO-QN4"/>
                                                                             <constraint firstAttribute="height" constant="48" id="sUv-2B-A85"/>
@@ -2932,12 +2932,12 @@ E-mail: victimadvocate@peacecorps.gov</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 692-2915" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-Tj-uuZ">
-                                                                <rect key="frame" x="179.66666666666674" y="492.66666666666663" width="122.33333333333326" height="20.333333333333371"/>
+                                                                <rect key="frame" x="179.66666666666674" y="492" width="122.33333333333326" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-j4-qez" userLabel="Description">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cLR-j4-qez" userLabel="Description" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="43" width="464" height="396"/>
                                                                 <color key="tintColor" red="0.99868744610000004" green="0.74952501059999999" blue="0.33808326719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <string key="text">OIG is a resource for those who have been harmed by misconduct or criminal wrongdoing by a fellow Volunteer or Peace Corps Staff.  They are independent from Peace Corps with law enforcement officers who have the unique authorities to help seek a fair resolution and, in appropriate cases, to seek prosecution in the United States or host country.  
@@ -2987,10 +2987,10 @@ Email: oig@peacecorps.gov</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-TJ-yzp">
-                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="522.33333333333326" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-GY-AMz">
-                                                                        <rect key="frame" x="0.0" y="0.33333333333337123" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="0.33333333333325754" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="48" id="7fl-IH-8cn"/>
                                                                             <constraint firstAttribute="height" constant="48" id="ayh-0B-KzM"/>
@@ -3003,12 +3003,12 @@ Email: oig@peacecorps.gov</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 692-2139" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9j-7a-u8h">
-                                                                <rect key="frame" x="179.66666666666674" y="492.66666666666663" width="122.33333333333326" height="20.333333333333371"/>
+                                                                <rect key="frame" x="179.66666666666674" y="492" width="122.33333333333326" height="20.333333333333258"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-2r-zhi" userLabel="Description">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b9K-2r-zhi" userLabel="Description" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="43" width="464" height="396"/>
                                                                 <color key="tintColor" red="0.99868744610000004" green="0.74952501059999999" blue="0.33808326719999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <string key="text">Resource to provide leadership and guidance on all civil rights, equal employment opportunity and diversity matters; and to address issues of discrimination and harassment, including sexual harassment, in the recruitment/service of Volunteers/Trainees.
@@ -3186,7 +3186,7 @@ Email: ocrd@peacecorps.gov</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La0-dE-f4H">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La0-dE-f4H" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">➢	Walk purposefully. Always walk with confidence and purpose.
 
@@ -4076,7 +4076,7 @@ Email: ocrd@peacecorps.gov</string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-mi-Uac">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-mi-Uac" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333314" width="500" height="627.66666666666674"/>
                                                                 <string key="text">Have you anticipated where and in which ways you might come into contact with the perpetrator and perpetrator’s friends/family?
 
@@ -4120,7 +4120,7 @@ Have you thought about making a plan in case of emergencies of who you could cal
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-hB-a6S">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-hB-a6S" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333371" width="500" height="627.66666666666663"/>
                                                                 <string key="text">•	Know where to go for help
 
@@ -4237,7 +4237,7 @@ Can you think of other resources or things you can do to feel safer where you li
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-co-MSC">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-co-MSC" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333371" width="500" height="627.66666666666663"/>
                                                                 <string key="text">•	Know where to go for help
 
@@ -4417,7 +4417,7 @@ Are you concerned that the perpetrator or perpetrator’s family/friends will co
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-Gz-qhF">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-Gz-qhF" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333314" width="500" height="627.66666666666674"/>
                                                                 <string key="text">Does the perpetrator or perpetrator’s family/friends know where you work? 
 
@@ -4467,7 +4467,7 @@ Is there anything that the Peace Corps can do to help you feel safe at work?
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-3g-RxU">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-3g-RxU" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333371" width="500" height="627.66666666666663"/>
                                                                 <string key="text">•	Make sure PC has established contact with your counterpart so they know how to contact PC
 
@@ -4580,7 +4580,7 @@ Are there specific things you or Peace Corps can do that might help you feel saf
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-d6-phS">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-d6-phS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333371" width="500" height="627.66666666666663"/>
                                                                 <string key="text">•	Establish regular check-in plan with PCMO and other PC staff
 
@@ -4643,7 +4643,7 @@ Are there specific things you or Peace Corps can do that might help you feel saf
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izg-sh-fZN">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izg-sh-fZN" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333314" width="500" height="627.66666666666674"/>
                                                                 <string key="text">Do you have any safety concerns with any modes of transportation related to the incident? 
 
@@ -4689,7 +4689,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-ej-huC">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-ej-huC" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333371" width="500" height="627.66666666666663"/>
                                                                 <string key="text">•	Assist with identifying a safe taxi/moto-taxi or bus services
 
@@ -4986,7 +4986,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-Il-oBh">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-Il-oBh" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="38.333333333333314" width="500" height="627.66666666666674"/>
                                                                 <string key="text">•	We will treat you with dignity and respect. No one deserves to be the victim of a sexual assault. Peace Corps will believe you if you report a rape or other sexual assault. No one at Peace Corps will blame you or think the assault was your fault. 
 
@@ -5039,7 +5039,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-TX-tAz">
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-TX-tAz" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                                 <rect key="frame" x="20" y="80" width="500" height="586"/>
                                                                 <string key="text">•	If you feel that a sexual assault was not handled according to the agency’s Commitment to Sexual Assault Victims you can confidentially report to the OIG via an online web form located on Peace Corps’ website, or by phone, or email. </string>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5173,7 +5173,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-oJ-xDX">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-oJ-xDX" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">Peace Corps staff are held to high expectations with regards to confidentiality.   All Peace Corps staff and the independent Peace Corps Sexual Assault Hotline responders are trained to safeguard personal information.  If you believe your information is being mishandled, please call the Office of Inspector General (OIG).</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5387,7 +5387,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-s2-6SI">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-s2-6SI" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT:  All Peace Corps staff have been trained to protect your information and any Peace Corps Staff who improperly disclose the identity of a Volunteer or other information regarding a sexual assault may be subject to disciplinary action.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5426,7 +5426,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1Z-QL-HEL">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1Z-QL-HEL" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT: You will be part of the discussions about your continued service at your site, in country, or in Peace Corps. No decision will be made without your input and your participation. Keep in mind, one of the biggest factors to be considered will be your personal safety. Peace Corps will help you evaluate your options.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5465,7 +5465,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-bQ-UZm">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8o-bQ-UZm" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT: Peace Corps goes to great lengths to train staff in the field to understand sexual assault and respond to the needs of Volunteers who become the victims of violent crime. Designated Staff at post, which include Safety and Security Managers, Peace Corps Medical Officers, and Sexual Assault Response Liaisons, are specially trained to respond to reports of sexual assault with compassion and professionalism.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5504,7 +5504,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-Wx-X27">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUW-Wx-X27" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT: Peace Corps honors an Immunity Policy, which is a way for Peace Corps to promote reporting of sexual assault and ensure a compassionate and supportive response by the Agency. Victims—and witnesses who didn’t help commit the sexual assault—need not fear any administrative consequences for reporting a sexual assault regardless of the circumstances or whether they were violating a Peace Corps policy when the incident occurred.  The Immunity Policy does not grant immunity for any criminal or civil liability for violations of law.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5543,7 +5543,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-Np-LnO">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-Np-LnO" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT: You will not be alone in this. If you are interested in reporting to the police, we have specially trained staff that will explain the process involved in filing a police report and how the investigation and prosecution will be conducted. Peace Corps can also hire an attorney to assist you with your legal options. Peace Corps will be with you every step of the way. Sometimes, the investigative and judicial process take a long time and will most likely be very different from the systems and procedures you may be familiar with in the United States. But even if you leave the country, Peace Corps will continue to work with the police and prosecutors and will keep you informed about your case.  </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5582,7 +5582,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f81-pz-ShS">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f81-pz-ShS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT:  When you report any crime or incident, it is extremely important to assess your safety and security. Staff at post, particularly your Safety and Security Manager, can help you create a safety plan that addresses safety concerns by creating solutions, contacts, and plans of action that will help keep you safe in the event of an emergency or encounter with an assailant.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5622,7 +5622,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyU-fa-3kJ">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyU-fa-3kJ" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="80" width="500" height="572"/>
                                                         <string key="text">FACT: If you experience this problem, there is something you can do. Volunteers who feel their incident was neglected can report their concerns to the Office of the Inspector General. Contact information for the OIG can be found at the end of this workbook. </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5662,7 +5662,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utU-gs-YHD">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utU-gs-YHD" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="80" width="500" height="572"/>
                                                         <string key="text">FACT: This is untrue. Volunteers can pursue an internal Peace Corps administrative process through the Volunteer/Trainee Sexual Misconduct Policy. Initiating this process asks Peace Corps to address instances of sexual misconduct by other Volunteers separate from any criminal investigation or proceeding. The process allows Volunteers the opportunity to present a case for sexual misconduct before a hearing panel of Peace Corps officials who will assess the case and determine whether disciplinary action is necessary to penalize the offender.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5701,7 +5701,7 @@ As one Volunteer shared:
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-3U-epU">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-3U-epU" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="59" width="500" height="593"/>
                                                         <string key="text">FACT:  In many cases when a Volunteer is the victim of a crime, Interrupted Service is an option, which indicates that a Volunteer leaves service due to circumstances beyond their control. Additionally, if you are a victim of sexual assault, you are also entitled to a medevac (45 days) which may be located in your home of record or Washington, DC.  Medevacs allow for Volunteers to return to service at the end of the 45 day period.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -8117,7 +8117,7 @@ www.ted.com/talks/jackson_katz_violence_against_women_it_s_a_men_s_issue</string
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gdl-WV-Z02">
                                                             <rect key="frame" x="5" y="0.0" width="525" height="206.66666666666666"/>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                                            <mutableString key="text">Another person, without the consent of the Volunteer, intentionally or knowingly: 
+                                                            <string key="text">Another person, without the consent of the Volunteer, intentionally or knowingly: 
 • touches or contacts, either directly or through clothing, the Volunteer’s genitalia, anus, groin, breast, inner thigh, or buttocks; OR 
 • kisses the Volunteer; 
 • OR disrobes the Volunteer; OR
@@ -8126,7 +8126,7 @@ www.ted.com/talks/jackson_katz_violence_against_women_it_s_a_men_s_issue</string
 AND: 
 • The offender uses, or threatens to use, a weapon, OR
 • The offender uses, or threatens to use, force or other intimidating actions, OR
-• The Volunteer is incapacitated or otherwise incapable of giving consent.</mutableString>
+• The Volunteer is incapacitated or otherwise incapable of giving consent.</string>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
