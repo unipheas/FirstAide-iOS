@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3EH-Op-fZx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D30a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3EH-Op-fZx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -594,13 +594,13 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1: Recognize the danger" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1P-PG-9ZZ">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wy-Md-L4u" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Be aware of what is going on around you – be on the lookout for suspicious people and for situations that could pose a danger. 
 
 Be aware of how others perceive you – are your actions or dress inadvertently attracting unwanted attention?  Are you wearing jewelry, using a camera, working on a laptop, or flashing money that might grab the attention of a criminal?
@@ -637,13 +637,13 @@ Being able to recognize dangers lets us begin to figure out ways to reduce the r
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2: Assess your options" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LET-QQ-W2z">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-97-vvg">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Now that you have recognized a potentially dangerous situation, what can you do in order to reduce the risk you face? In most situations, you will have choices to make. Identify as many options as you can.  For example, you can mitigate the risk of going out at night by traveling in a group, by using a trusted taxi or even by choosing to return home at an earlier hour.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -676,13 +676,13 @@ Being able to recognize dangers lets us begin to figure out ways to reduce the r
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3: Decide what’s best for you" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNZ-SU-q1B">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njl-mj-Pql">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">After figuring out what options you have, run the different scenarios in your head – say ‘What if’ – and decide which option is the best. You could try to defuse the situation by remaining calm and use good communication skills to keep the situation from escalating.  Maybe try an escape option where you run towards safety, not just away from danger.  As a last resort, try a verbal, psychological, or physical defense tactic.
 
 Sometimes your best option might be a bit unconventional. If it’s the best option to keep you safe, then it’s a good option.</string>
@@ -717,13 +717,13 @@ Sometimes your best option might be a bit unconventional. If it’s the best opt
                                                 <rect key="frame" x="1695" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4: Act when the time is right" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP0-ih-flM">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpO-n2-Zny">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">After you decide on your best course of action, decide when to act. Sometimes you’ll need to act right away. Other times you can wait until the danger gets closer – but don’t wait until it gets too close! 
 Draw your own imaginary line – set your own personal tripwire. Once the danger crosses that line – whatever you decided for yourself – that’s when you act.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -757,13 +757,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="2250" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 5: Reassess as the situation changes" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yM3-43-eSZ">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZz-bq-l4r">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">And because no situation is static, you must constantly reassess your options as the conditions and circumstances change. If you encounter new risks or if you run out of options, start the cycle again. </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -1102,13 +1102,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="60" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBD-Qt-8AO" userLabel="Step 1 text">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get to a safe place" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mLg-CT-22Q">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1140,13 +1140,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="570" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 2" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-tY-4OH" userLabel="Step">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call PCMO/Duty Officer" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KVT-lr-A4Y">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1178,13 +1178,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="1080" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 3" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-62-xMW" userLabel="Step">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you have serious injuries seek immediate treatment" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="81Z-h5-9yY">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1216,13 +1216,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="1590" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 4" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgF-vl-MIv" userLabel="Step">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't go to the local police by yourself" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WrM-nd-1Mk">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1254,13 +1254,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="2100" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 5" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsd-oi-cBJ" userLabel="Step">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protect physical evidence   " lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LgT-tr-Mpw">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1292,13 +1292,13 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 <rect key="frame" x="2610" y="72" width="480" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 6" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo0-Qc-j8z" userLabel="Step">
-                                                        <rect key="frame" x="20" y="30" width="440" height="26.5"/>
+                                                        <rect key="frame" x="20" y="30" width="440" height="27"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell someone   " lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="icf-10-OkJ">
-                                                        <rect key="frame" x="20" y="81.5" width="440" height="474"/>
+                                                        <rect key="frame" x="20" y="82" width="440" height="474"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -1698,6 +1698,12 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="contactsButton1" destination="Yh2-sp-l38" id="KzO-Uf-V2H"/>
+                        <outlet property="contactsButton2" destination="1lv-yh-TEq" id="b5T-pw-tJo"/>
+                        <outlet property="contactsButton3" destination="QvG-qL-ac8" id="v51-Ly-Y3s"/>
+                        <outlet property="contactsButton4" destination="es6-rO-Uq9" id="yNW-Rf-B61"/>
+                        <outlet property="contactsButton5" destination="e0a-a2-OBT" id="ucp-Ci-Af7"/>
+                        <outlet property="contactsButton6" destination="znj-OF-RVW" id="nDL-2g-MxX"/>
                         <outlet property="scrollView" destination="Xye-4h-XH5" id="uRs-bG-BJb"/>
                         <outlet property="textFieldNumber1" destination="s34-tE-l6d" id="gml-ms-NXR"/>
                         <outlet property="textFieldNumber2" destination="TGv-jG-adx" id="dK4-WH-Mfk"/>
@@ -1825,7 +1831,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="28" width="340" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNu-hx-7rS" id="SDt-eA-iBV">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-VW-qLG">
@@ -1852,7 +1858,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="88" width="340" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88D-Y2-nra" id="CqG-Oh-JKu">
-                                            <rect key="frame" x="0.0" y="0.0" width="340" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="340" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-oK-9xK">
@@ -1930,22 +1936,22 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                         <rect key="frame" x="0.0" y="0.0" width="1155" height="668"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lo7-J5-2r9" userLabel="PlaceHolder">
-                                                <rect key="frame" x="0.0" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="0.0" y="34" width="15" height="601"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="gnZ-aY-JHJ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ho9-xl-2ws" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="33.5" width="540" height="601"/>
+                                                <rect key="frame" x="30" y="34" width="540" height="601"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services available for all who have experienced sexual assault" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I35-Qi-hhw">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZn-1D-dGp" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="552.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="552"/>
                                                         <string key="text">•	Medical Care related to injury, pregnancy, or sexually transmitted infections
 
 •	A sexual assault forensic exam (SAFE) to preserve evidence , if needed
@@ -1992,16 +1998,16 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXs-iQ-9jm" userLabel="Slide2" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="585" y="33.5" width="540" height="601"/>
+                                                <rect key="frame" x="585" y="34" width="540" height="601"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional services only available with a Standard Report" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XJ-BN-Izc">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-2C-3Ta" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="552.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="552"/>
                                                         <string key="text">•	Consultation with Country Director
 
 •	File a report with local law enforcement
@@ -2044,7 +2050,7 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXw-Mp-dIG" userLabel="PlaceHolder">
-                                                <rect key="frame" x="1140" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="1140" y="34" width="15" height="601"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -2180,13 +2186,13 @@ A Standard Report allows access to all of the same services offered through Rest
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should a Volunteer choose Standard or Restricted?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCs-iT-ezX">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gn8-Kb-IGA" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">When a Volunteer seeks support from staff, the default of services provided is a Restricted Report. The choice between seeking services of a Standard or Restricted Report is an individual one. Some services, however, can only be offered under standard reporting. Peace Corps believes it can best support a Volunteer through standard reporting as it allows the agency to leverage additional resources and offer additional services such as conducting an in-depth risk assessment.  The agency recognizes however that for some Volunteers the most important thing is strict confidentiality and a need for as few people to know as possible. </string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -2219,13 +2225,13 @@ A Standard Report allows access to all of the same services offered through Rest
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What does “need-to-know” mean?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-YC-isf">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOI-T5-HU3" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">A need-to-know means that a staff member has a specific role that requires basic knowledge about the assault. Only service providers typically have a need-to-know and therefore have access to information about the assault as reported by the Volunteer. Only medical staff have information about any medical treatment received.  
 
 A role may be mandated by Peace Corps policies and procedures, US law, or local laws. For example, a Country Director has a responsibility to know where each Volunteer is located and new site development requires time and resources managed by the Country Director. As such, a Country Director has a need-to-know when a Volunteer requests a site change. </string>
@@ -2260,13 +2266,13 @@ A role may be mandated by Peace Corps policies and procedures, US law, or local 
                                                 <rect key="frame" x="1695" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What if a Volunteer wants to request additional support services?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-nD-GgE">
-                                                        <rect key="frame" x="20" y="10" width="500" height="42.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="43"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7l-QE-8Lv" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
+                                                        <rect key="frame" x="20" y="61" width="500" height="591"/>
                                                         <string key="text">All reported sexual assault start with the basic services found under a Restricted Report. A Volunteer can request additional services and switch to a Standard Report at any time. Once a report becomes Standard, the report cannot be converted back to Restricted because staff that might help provide additional standard report services will have been provided with basic information.
 
 Volunteers can request additional services at any time, and Volunteers can discontinue/cancel a request for services at any time. </string>
@@ -2301,13 +2307,13 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                 <rect key="frame" x="2250" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Will I get the services/type of reporting I want?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qES-Gh-xBk">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enm-Jn-zaQ" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Volunteer preferences are very important to Peace Corps. We strive to ensure that Volunteer choices are respected. In most cases Volunteers receive all the services they desire. In the event a service is not possible, Peace Corps staff have a responsibility to provide an explanation.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -2450,13 +2456,13 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                 <rect key="frame" x="0.0" y="0.0" width="1620" height="650"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-k4-kwt" userLabel="PlaceHolder">
-                                                        <rect key="frame" x="0.0" y="32.5" width="30" height="585"/>
+                                                        <rect key="frame" x="0.0" y="33" width="30" height="585"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="vv0-hv-x7Z"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAs-8n-9Hb" userLabel="PCMO" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="60" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="60" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PCMO" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="kCN-NK-PGD">
                                                                 <rect key="frame" x="213" y="10" width="55" height="23"/>
@@ -2471,7 +2477,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr9-g4-FcG">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="2H6-Vh-uth"/>
                                                                     <constraint firstAttribute="height" constant="48" id="KUC-A2-jla"/>
@@ -2482,7 +2488,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-9C-HaB">
-                                                                <rect key="frame" x="166" y="491.5" width="147" height="20.5"/>
+                                                                <rect key="frame" x="166" y="492" width="147" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607843137254" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2523,7 +2529,7 @@ Located in-country, at post.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1W5-Dm-aID" userLabel="SSM" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="570" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="570" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SSM" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="1af-bZ-zQN">
                                                                 <rect key="frame" x="220" y="10" width="40" height="23"/>
@@ -2538,7 +2544,7 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-Mo-G6Z">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="Mqq-cu-LQ3"/>
                                                                     <constraint firstAttribute="height" constant="48" id="ZJi-Gp-opM"/>
@@ -2549,7 +2555,7 @@ Located in-country, at post.</string>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-Mj-rm9">
-                                                                <rect key="frame" x="167" y="491.5" width="147" height="20.5"/>
+                                                                <rect key="frame" x="167" y="492" width="147" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2590,7 +2596,7 @@ Located in-country, at post.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOm-lT-6ye" userLabel="SARL" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="1080" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="1080" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SARL" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="CMh-af-eV0">
                                                                 <rect key="frame" x="217" y="10" width="47" height="23"/>
@@ -2605,7 +2611,7 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj7-NB-z8l">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="48" id="qIO-TX-Hdz"/>
                                                                     <constraint firstAttribute="height" constant="48" id="wQS-6g-1yM"/>
@@ -2616,7 +2622,7 @@ Located in-country, at post.</string>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyQ-pQ-O9Y">
-                                                                <rect key="frame" x="167" y="491.5" width="147" height="20.5"/>
+                                                                <rect key="frame" x="167" y="492" width="147" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2657,7 +2663,7 @@ Located in-country, at post.</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cO-7r-ikH" userLabel="PlaceHolder">
-                                                        <rect key="frame" x="1590" y="32.5" width="30" height="585"/>
+                                                        <rect key="frame" x="1590" y="33" width="30" height="585"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -2682,7 +2688,7 @@ Located in-country, at post.</string>
                                         </constraints>
                                     </scrollView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you are in a country not listed, contact your country of service or the US embassy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="Ohb-0t-wNl">
-                                        <rect key="frame" x="159.5" y="698" width="432.5" height="30"/>
+                                        <rect key="frame" x="159" y="698" width="433" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -2752,13 +2758,13 @@ Located in-country, at post.</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="2130" height="650"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-2H-dgb" userLabel="PlaceHolder">
-                                                        <rect key="frame" x="0.0" y="32.5" width="30" height="585"/>
+                                                        <rect key="frame" x="0.0" y="33" width="30" height="585"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="30" id="Ril-jR-qZ1"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSO-ue-Mt0" userLabel="PC SAVES" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="60" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="60" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="PC SAVES Anonymous Helpline" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="azo-FC-Cw6">
                                                                 <rect key="frame" x="0.0" y="10" width="480" height="23"/>
@@ -2773,10 +2779,10 @@ Located in-country, at post.</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byK-Ss-PY9">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Jf-17G">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="1" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="50O-h1-giV"/>
                                                                             <constraint firstAttribute="width" constant="48" id="GEK-KU-66E"/>
@@ -2789,7 +2795,7 @@ Located in-country, at post.</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="001-408-844-HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVt-YD-PMU">
-                                                                <rect key="frame" x="162" y="491.5" width="156" height="20.5"/>
+                                                                <rect key="frame" x="162" y="492" width="156" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2835,7 +2841,7 @@ Online Chat: pcsaveshelpline.org</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ol-9P-RG0" userLabel="Office Victim" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="570" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="570" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Office of Victim Advocacy" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="jZg-3D-sw4">
                                                                 <rect key="frame" x="0.0" y="10" width="480" height="23"/>
@@ -2844,10 +2850,10 @@ Online Chat: pcsaveshelpline.org</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boU-aH-iiL">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-rB-HG2">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="1" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="48" id="6Mf-6E-k43"/>
                                                                             <constraint firstAttribute="width" constant="48" id="QQU-HF-sid"/>
@@ -2860,7 +2866,7 @@ Online Chat: pcsaveshelpline.org</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 409-2701" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLZ-jo-CRP">
-                                                                <rect key="frame" x="179" y="491.5" width="122" height="20.5"/>
+                                                                <rect key="frame" x="179" y="492" width="122" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2904,7 +2910,7 @@ E-mail: victimadvocate@peacecorps.gov</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0G-08-tJh" userLabel="Office Inspection" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="1080" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="1080" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Office of Inspector General" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="q1w-UZ-cx1">
                                                                 <rect key="frame" x="0.0" y="10" width="480" height="23"/>
@@ -2913,10 +2919,10 @@ E-mail: victimadvocate@peacecorps.gov</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-yu-sav">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZZ-Cs-cGT">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="1" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="48" id="Jaa-dO-QN4"/>
                                                                             <constraint firstAttribute="height" constant="48" id="sUv-2B-A85"/>
@@ -2929,7 +2935,7 @@ E-mail: victimadvocate@peacecorps.gov</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 692-2915" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpN-Tj-uuZ">
-                                                                <rect key="frame" x="179.5" y="491.5" width="122.5" height="20.5"/>
+                                                                <rect key="frame" x="179" y="492" width="123" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -2975,7 +2981,7 @@ Email: oig@peacecorps.gov</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dFW-i3-ofB" userLabel="Office Civil" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="1590" y="32.5" width="480" height="585"/>
+                                                        <rect key="frame" x="1590" y="33" width="480" height="585"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Office of Civil Rights and Diversity" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-g9-LLC">
                                                                 <rect key="frame" x="0.0" y="10" width="480" height="23"/>
@@ -2984,10 +2990,10 @@ Email: oig@peacecorps.gov</string>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-TJ-yzp">
-                                                                <rect key="frame" x="216" y="522" width="48" height="48"/>
+                                                                <rect key="frame" x="216" y="523" width="48" height="48"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-GY-AMz">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                                        <rect key="frame" x="0.0" y="1" width="48" height="48"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="48" id="7fl-IH-8cn"/>
                                                                             <constraint firstAttribute="height" constant="48" id="ayh-0B-KzM"/>
@@ -3000,7 +3006,7 @@ Email: oig@peacecorps.gov</string>
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(202) 692-2139" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9j-7a-u8h">
-                                                                <rect key="frame" x="179.5" y="491.5" width="122.5" height="20.5"/>
+                                                                <rect key="frame" x="179" y="492" width="123" height="21"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="1" green="0.69019607839999997" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -3044,7 +3050,7 @@ Email: ocrd@peacecorps.gov</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2px-f1-3ls" userLabel="PlaceHolder">
-                                                        <rect key="frame" x="2100" y="32.5" width="30" height="585"/>
+                                                        <rect key="frame" x="2100" y="33" width="30" height="585"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -3178,13 +3184,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coping with Unwanted Attention Strategies" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4L-HH-Q6E">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="La0-dE-f4H">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">➢	Walk purposefully. Always walk with confidence and purpose.
 
 ➢	Look assertive. Hold your head high, shoulders back and present yourself as a professional demanding respect.
@@ -3318,13 +3324,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characteristics of assaults:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30Q-az-456">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kp-OR-nsQ" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Sexual predators often plan sexual assaults.
     o	Sexual assault is not an accident.  Sexual predators know what they want to do, even if they have not already identified a specific target.  Most of them have a plan in mind for how they will select and control someone, or they will seek out an area where a potential victim might be isolated and unable to get help. When we say planned to some extent it may not mean days or weeks in advance but also planned in the particular moment.
 
@@ -3410,13 +3416,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tactics used by sexual predators:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fY2-PR-06N">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGA-MN-yYY" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Attempt to isolate their potential victim. They may target someone who is already alone. For example, walking alone, or they may try to get their target alone by offering a ride in their car.
 
 •	Persuasion and confidence. This is the “Smooth Talker” who puts you at ease.  They make you feel comfortable and relaxed so you are not aware of their true intent.  They may try to persuade you to do something you feel uncomfortable about.  They might promise that they won’t try anything with you or reassure you by saying “You can trust me.”
@@ -3547,13 +3553,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verbal with Potential Victim:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhk-7w-dfQ">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4C-tC-KZ4" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Diffuse the situation by starting a new conversation
 
 •	Say a friend is looking for the individual and leave together to find them 
@@ -3603,13 +3609,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verbal with Potential Offender" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUg-hB-dXb">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ex7-Q4-9DR" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Introduce yourself- let the predator know the individual isn’t alone
 
 •	Engage with the individual directly by starting a completely different conversation; example- sports, directions
@@ -3650,13 +3656,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Non-Verbal Tactics for both" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGC-xc-WJd">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-5l-gJx" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Get in line of vision and catch their eye
 
 •	Take a group photo to document what the potential offender looks like
@@ -3794,13 +3800,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main reasons for a Safety Plan:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWM-0k-O1o">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dk-ep-q0D" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Exploring on-going risks and concerns associated with the incident
 
 •	Assessing strategies on how to respond when a perceived threat is present
@@ -3838,13 +3844,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purpose of a Safety Plan:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4Z-Dc-8ax">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-bZ-SrG" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	To assist you in identifying strategies for mitigating on-going risks 
 
 •	To outline possible responses and resources in instances of potential future harm 
@@ -3884,13 +3890,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety Plans cannot:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOD-QZ-EmC">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cM-1n-6eQ" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Guarantee your future safety. 
 
 •	Take the place of working with a mental health specialist to identify ways to cope with emotions and stressful situations which may arise in the aftermath of an incident.  If you would like such assistance, counseling can be arranged through the PCMO. 
@@ -3926,13 +3932,13 @@ Email: ocrd@peacecorps.gov</string>
                                                 <rect key="frame" x="1695" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips for creating a Safety Plan" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd0-Tz-Vrg">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBX-UN-gpQ" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	If you choose to work with staff, be honest with sharing any concerns 
 
 •	Identify strategies that can be taken to reduce any on-going safety and security concerns 
@@ -4068,13 +4074,13 @@ Email: ocrd@peacecorps.gov</string>
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Physical Safety" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRk-bN-Em3">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUJ-mi-Uac">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Have you anticipated where and in which ways you might come into contact with the perpetrator and perpetrator’s friends/family?
 
 If you were to come into contact with the perpetrator and perpetrator’s family/friends, what specific things could you do that might help you feel safe in that situation?
@@ -4112,13 +4118,13 @@ Have you thought about making a plan in case of emergencies of who you could cal
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFA-dm-FHb">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9f-hB-a6S">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Know where to go for help
 
 •	Have a way to alert neighbors/counterparts if there’s a problem
@@ -4177,13 +4183,13 @@ Have you thought about making a plan in case of emergencies of who you could cal
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-el-GuA">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-KB-W6N" customClass="ScrollableTextView" customModule="PCSA">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Do you suspect the perpetrator or the perpetrator’s family/friends know where you live? If so, do you believe the perpetrator may have access to your housing? 
 
 Do you feel safe inside your home? What can Peace Corps do to help you feel safe inside your home (e.g., working locks on door/windows, etc.)? 
@@ -4229,13 +4235,13 @@ Can you think of other resources or things you can do to feel safer where you li
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APF-ou-seC">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7b-co-MSC">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Know where to go for help
 
 •	Ask staff to conduct a safety inspection of your home, if necessary
@@ -4296,13 +4302,13 @@ Can you think of other resources or things you can do to feel safer where you li
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Safety and Technology" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekx-P3-8yb">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe5-3B-cnJ" customClass="ScrollableTextView" customModule="PCSA">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Does the perpetrator know your cell phone number? Your email address? Have you thought about what you would do if the perpetrator or perpetrator’s friends/family attempts to contact you or posts things about you online?  What can Peace Corps do to help you?
 
 Does the perpetrator know any of your passwords? If so, have you considered changing your passwords?
@@ -4342,13 +4348,13 @@ Are you concerned that the perpetrator or perpetrator’s family/friends will co
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm4-zb-jSl">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9l-pD-3Ne" customClass="ScrollableTextView" customModule="PCSA">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Change your SIM card or cellphone
 
 •	Ensure you have readily accessible emergency contact numbers for local authorities and PC
@@ -4409,13 +4415,13 @@ Are you concerned that the perpetrator or perpetrator’s family/friends will co
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workplace" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucF-A6-7u6">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbB-Gz-qhF">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Does the perpetrator or perpetrator’s family/friends know where you work? 
 
 Does anyone else at work know about the incident?
@@ -4459,13 +4465,13 @@ Is there anything that the Peace Corps can do to help you feel safe at work?
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jnt-gX-mLQ">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-3g-RxU">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Make sure PC has established contact with your counterpart so they know how to contact PC
 
 •	Identify an emergency point of contact in the workplace 
@@ -4522,13 +4528,13 @@ Is there anything that the Peace Corps can do to help you feel safe at work?
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2Y-ff-zXu">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-tU-MKl" customClass="ScrollableTextView" customModule="PCSA">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Do you anticipate that you will see the perpetrator when you are out in public? If yes, where?
 
 Do you see the perpetrator’s family/friends when you are out in public? If yes, where?
@@ -4572,13 +4578,13 @@ Are there specific things you or Peace Corps can do that might help you feel saf
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pi6-Lm-Q7u">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0P-d6-phS">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Establish regular check-in plan with PCMO and other PC staff
 
 •	Find out what support services are available to you, including Volunteer Support Network and PCVLs
@@ -4635,13 +4641,13 @@ Are there specific things you or Peace Corps can do that might help you feel saf
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transportation" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-Jp-NCd">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izg-sh-fZN">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">Do you have any safety concerns with any modes of transportation related to the incident? 
 
 Does the perpetrator know your transportation routes? If yes, can you change the routes you take to work, home, shopping?
@@ -4681,13 +4687,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                         <rect key="frame" x="0.0" y="716" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actions:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ine-rQ-MEz">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIx-ej-huC">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	Assist with identifying a safe taxi/moto-taxi or bus services
 
 •	Ensure that the Volunteer has readily accessible emergency contact numbers for local authorities and PC
@@ -4836,13 +4842,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important reasons for a Volunteer to seek out Staff support" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAI-c2-KZJ">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSg-ee-07e" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	So that appropriate and timely medical care can be provided. 
 
 •	HIV and hepatitis testing, including HIV PEP 
@@ -4978,13 +4984,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                         <rect key="frame" x="0.0" y="30" width="540" height="676"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peace Corps’ Commitments" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGc-4M-YPb">
-                                                                <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                                <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-Il-oBh">
-                                                                <rect key="frame" x="20" y="38.5" width="500" height="627.5"/>
+                                                                <rect key="frame" x="20" y="39" width="500" height="627"/>
                                                                 <string key="text">•	We will treat you with dignity and respect. No one deserves to be the victim of a sexual assault. Peace Corps will believe you if you report a rape or other sexual assault. No one at Peace Corps will blame you or think the assault was your fault. 
 
 •	We will take appropriate steps to provide for your ongoing safety. Every effort will be made to keep you at your site as long as it is safe for you to continue service. BUT – your safety must always come first. 
@@ -5165,13 +5171,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of Staff" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th9-kI-rad">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-oJ-xDX">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Peace Corps staff are held to high expectations with regards to confidentiality.   All Peace Corps staff and the independent Peace Corps Sexual Assault Hotline responders are trained to safeguard personal information.  If you believe your information is being mishandled, please call the Office of Inspector General (OIG).</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -5204,13 +5210,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of the Volunteer Community" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjv-Ez-1uO">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5I-3J-afE" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">When Volunteers learn of a fellow PCV’s sexual assault their actions can make a difference - they can support the healing process or further hurt the Volunteer who was sexually assaulted.  Some things to consider:
 
 •	What is your role in protecting information about a crime against a Volunteer?
@@ -5248,13 +5254,13 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of the Volunteer Who Has Been Assaulted" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dwc-Pc-hAe">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEL-bz-DU9" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">If you become the victim of a crime, choose who you trust with your sensitive information. Volunteer communications with other Volunteers may not be held to the same rules of privacy that apply to Peace Corps staff or Hotline responders.  
 
 As one Volunteer shared:
@@ -6094,13 +6100,13 @@ As one Volunteer shared:
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="668"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-LO-2Sd" userLabel="PlaceHolder">
-                                                <rect key="frame" x="0.0" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="0.0" y="34" width="15" height="601"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="yzr-Hx-O7I"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iR5-x6-KCi" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="33.5" width="540" height="601"/>
+                                                <rect key="frame" x="30" y="34" width="540" height="601"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wly-I6-D0Q" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="8" width="500" height="583"/>
@@ -6142,7 +6148,7 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6co-oZ-s3X" userLabel="PlaceHolder">
-                                                <rect key="frame" x="585" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="585" y="34" width="15" height="601"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -6237,13 +6243,13 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="668"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41H-Tr-7HU" userLabel="PlaceHolder">
-                                                <rect key="frame" x="0.0" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="0.0" y="34" width="15" height="601"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="15" id="eyh-Mh-bzn"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ai-de-s86" userLabel="Slide1" customClass="BorderedView" customModule="PCSA" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="33.5" width="540" height="601"/>
+                                                <rect key="frame" x="30" y="34" width="540" height="601"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2F-gP-WPS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="8" width="500" height="583"/>
@@ -6273,7 +6279,7 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-t5-CKV" userLabel="PlaceHolder">
-                                                <rect key="frame" x="585" y="33.5" width="15" height="601"/>
+                                                <rect key="frame" x="585" y="34" width="15" height="601"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -6363,13 +6369,13 @@ Was the vagina, anus or mouth penetrated against the will of the Volunteer?  Was
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexual Assault" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-Jb-S7z">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kV-E5-N6U" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">If it is not consensual, then it is a crime.  Consensual means that both people are old enough to consent, have the capacity to consent, and agreed to the sexual contact.  There are two main considerations to help Volunteers judge whether or not a sexual act is consensual.
 
 1. Did both people have the physical, mental, and legal capacity to consent?  Those with diminished capacity – for example, some people with disabilities, some elderly people and people who have been drugged or are unconscious – may not have the ability to consent to have sex.
@@ -6496,13 +6502,13 @@ Even if weeks, months, or years have passed, it is never too late to report an i
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Sexual Harassment?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5u-dA-528">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XN-Md-Mfe" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature.  Sexual harassment is behavior that is unwelcome, offensive, can cause fear or anxiety and can impact job performance.
 
 The actions you may think are within tolerable ranges of acceptability may be offensive to others. People have different thresholds of tolerance for many of these behaviors. The bottom line is that ‘unwelcomed’ is determined by the recipient, not the person displaying the offensive conduct.
@@ -6625,13 +6631,13 @@ Cases of sexual harassment committed by a PCV or Peace Corps Staff member agains
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effects of Sexual Assault on the Victim" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaE-Un-CMf">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU7-kZ-nIK" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Sexual assault can have many effects on the victim – and it affects each person differently. 
 
 Physical/Physiological: 
@@ -6768,13 +6774,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I didn’t physically resist – does that mean it wasn’t rape?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h22-CA-OT0">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQn-dG-8FW" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">People respond to an assault in many different ways. Just because you didn’t resist physically doesn’t mean it wasn’t rape – in fact, many victims experience the survival instinct to “freeze” and do not physically resist due to fear that their attacker might become more violent.  Lack of consent can be expressed (saying “no”) or can be implied through non-verbal cues and reactions by the non-consenting person.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -6807,13 +6813,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I used to date the person who assaulted me – does that mean it isn’t rape?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvf-w4-r1P">
-                                                        <rect key="frame" x="20" y="10" width="500" height="42.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="43"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4q-AU-1my" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
+                                                        <rect key="frame" x="20" y="61" width="500" height="591"/>
                                                         <string key="text">Sexual assault can occur when the offender and the victim have a pre-existing relationship, even if the offender is the victim’s spouse. It does not matter whether the other person is a former romantic partner or a complete stranger. It also doesn’t matter if you ever had sex in the past. If it is nonconsensual this time, it is rape.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -6846,13 +6852,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I was drunk or the other person was drunk – does that mean it isn’t rape?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf9-3D-9B1">
-                                                        <rect key="frame" x="20" y="10" width="500" height="42.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="43"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JY6-5U-5PJ" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
+                                                        <rect key="frame" x="20" y="61" width="500" height="591"/>
                                                         <string key="text">Alcohol and drugs are not an excuse. The key question is still: did you consent or not? Regardless of whether you were drunk or sober, if the sex is nonconsensual, it is rape. However, because each country has different definitions of “nonconsensual,” please contact your PCMO or SSM if you have questions about your specific host country definitions and laws. Peace Corps believes that if you were so intoxicated or drugged that you passed out and/or were unable to consent, it was rape. Both people must be conscious and willing participants.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -6885,13 +6891,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="1695" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I thought “no,” but didn’t say it – is it still rape?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-Mh-wDt">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5y-35-aSQ" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">It depends on the circumstances. If you didn’t say no because you were legitimately scared for your life or safety, then it may be a sexual assault. In some cases it may be unsafe to resist, physically or verbally — for example, when someone has a knife or gun to your head, or threatens you, a fellow PCV, or community member if you say anything.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -6924,13 +6930,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="2250" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I became sexually aroused even though I did not consent – is it still rape?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVZ-3K-6Rf">
-                                                        <rect key="frame" x="20" y="10" width="500" height="42.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="43"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lP1-Gf-Ppr" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="60.5" width="500" height="591.5"/>
+                                                        <rect key="frame" x="20" y="61" width="500" height="591"/>
                                                         <string key="text">Sexual arousal and/or orgasm during rape is extremely common, yet rarely talked about. It is biological. Sexual arousal works from the same autonomic, reflex-driven system associated with heart rate, digestion, and perspiration.  Sexual organs do not think, they are designed to respond to stimulation. Sexual arousal or orgasm during rape does not mean it felt good. It does not mean you enjoyed it. It does not mean you asked for it. It does not mean you consented. Becoming sexually aroused does not equal consent.</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
@@ -7054,13 +7060,13 @@ It is important to recognize that all of the reactions are NORMAL. They are NORM
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helping a Friend or Community Member" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abM-Hz-pGp">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC3-iC-xHS" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Whether they come to you for help first, or you learn of their experience some time down the line, there are things you can do to personally support a friend who is the survivor of sexual assault. 
 
 Some of these tips may seem overly simplistic, but they can have a profound impact on someone who has put their trust in you for support.</string>
@@ -7095,13 +7101,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                 <rect key="frame" x="585" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Believe" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKM-i1-8H7">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE4-5S-73C" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	If a survivor chooses to share their story with you, do not to question their story, judge it, or ask for details about it.
 
 •	Show them and tell them that you believe them, and that they are believed.</string>
@@ -7136,13 +7142,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                 <rect key="frame" x="1140" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respect" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPi-56-d9F">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-Su-KGD" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Listen patiently and allow them to share their story on their own terms. You may be the first and only person your friend tells.
 
 •	Encourage them to take their time, or reassure them that you are there to listen when they are ready. 
@@ -7179,13 +7185,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                 <rect key="frame" x="1695" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No pressure" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzu-aS-fuq">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reF-vF-M8u" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	It is important to not ask/tell a survivor to report their assault to family, loved ones, the police, or the authorities or seek certain help. 
 
 •	Allow a survivor to seek help and heal at their own pace.  Instead, offer to support them, accompany them, or help them seek information at a pace that they want and are comfortable with.</string>
@@ -7220,13 +7226,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                 <rect key="frame" x="2250" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect and Share" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHf-IL-8UH">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBE-P2-3gi" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	A survivor may want additional support and information. You can provide an enormous amount of support by expressing concern and offering to look into resources for them. This could be medical treatment at a hospital, a sexual assault hotline, local advocacy services, counseling, or a local support group. 
 
 •	It could also be as simple as providing a phone number or going with them to an appointment.</string>
@@ -7261,13 +7267,13 @@ Some of these tips may seem overly simplistic, but they can have a profound impa
                                                 <rect key="frame" x="2805" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-Oo-j30">
-                                                        <rect key="frame" x="20" y="10" width="500" height="20.5"/>
+                                                        <rect key="frame" x="20" y="10" width="500" height="21"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLc-In-zpY" customClass="ScrollableTextView" customModule="PCSA" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="38.5" width="500" height="613.5"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">•	Offer to be there for your friend whenever they need you. Encourage them to come back to you for further support when appropriate. Remind them that you will be there to listen when they do.
 
 •	This will help your friend know that you are a safe source of support and that they can rely on when they need it. 
