@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Contacts
 import ContactsUI
 
 class CircleOfTrustEditViewController: MainViewController, CNContactPickerDelegate,UITextFieldDelegate {
@@ -20,9 +21,17 @@ class CircleOfTrustEditViewController: MainViewController, CNContactPickerDelega
     @IBOutlet weak var textFieldNumber6: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    @IBOutlet weak var contactsButton1: UIButton!
+    @IBOutlet weak var contactsButton2: UIButton!
+    @IBOutlet weak var contactsButton3: UIButton!
+    @IBOutlet weak var contactsButton4: UIButton!
+    @IBOutlet weak var contactsButton5: UIButton!
+    @IBOutlet weak var contactsButton6: UIButton!
+
     var numbers = [String]()
     var textFields = [UITextField]()
-    
+    var contactsButtons = [UIButton]()
+
     var selectedTextField:UITextField!
     var activeField:UITextField?
     
@@ -32,8 +41,22 @@ class CircleOfTrustEditViewController: MainViewController, CNContactPickerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         UIUtil.initViewControllerViews(self)
+
+        contactsButtons = [contactsButton1, contactsButton2, contactsButton3,
+                           contactsButton4, contactsButton5, contactsButton6]
+
+        let status = CNContactStore.authorizationStatus(for: CNEntityType.contacts)
+
+        for button in 0...5 {
+            if status == .denied || status == .restricted {
+                contactsButtons[button].isHidden = true
+            } else {
+                contactsButtons[button].isHidden = false
+            }
+        }
+
         textFields += [textFieldNumber1,textFieldNumber2,textFieldNumber3,textFieldNumber4,textFieldNumber5,textFieldNumber6]
         
         if let savedNumbers = loadNumbers() {

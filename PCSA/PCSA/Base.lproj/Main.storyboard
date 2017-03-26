@@ -603,7 +603,7 @@ Volunteers can request additional services at any time, and Volunteers can disco
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wy-Md-L4u" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
+                                                        <rect key="frame" x="20" y="39" width="500" height="613"/>
                                                         <string key="text">Be aware of what is going on around you – be on the lookout for suspicious people and for situations that could pose a danger. 
 
 Be aware of how others perceive you – are your actions or dress inadvertently attracting unwanted attention?  Are you wearing jewelry, using a camera, working on a laptop, or flashing money that might grab the attention of a criminal?
@@ -1701,6 +1701,12 @@ Draw your own imaginary line – set your own personal tripwire. Once the danger
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="contactsButton1" destination="Yh2-sp-l38" id="KzO-Uf-V2H"/>
+                        <outlet property="contactsButton2" destination="1lv-yh-TEq" id="b5T-pw-tJo"/>
+                        <outlet property="contactsButton3" destination="QvG-qL-ac8" id="v51-Ly-Y3s"/>
+                        <outlet property="contactsButton4" destination="es6-rO-Uq9" id="yNW-Rf-B61"/>
+                        <outlet property="contactsButton5" destination="e0a-a2-OBT" id="ucp-Ci-Af7"/>
+                        <outlet property="contactsButton6" destination="znj-OF-RVW" id="nDL-2g-MxX"/>
                         <outlet property="scrollView" destination="Xye-4h-XH5" id="uRs-bG-BJb"/>
                         <outlet property="textFieldNumber1" destination="s34-tE-l6d" id="gml-ms-NXR"/>
                         <outlet property="textFieldNumber2" destination="TGv-jG-adx" id="dK4-WH-Mfk"/>
@@ -3846,8 +3852,7 @@ Email: ocrd@peacecorps.gov</string>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-bZ-SrG" customClass="ScrollableTextView" customModule="PCSA">
-                                                        <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-bZ-SrG" customClass="ScrollableTextView" customModule="PCSA">                                                        <rect key="frame" x="20" y="38.333333333333314" width="500" height="613.66666666666674"/>
                                                         <string key="text">•	To assist you in identifying strategies for mitigating on-going risks 
 
 •	To outline possible responses and resources in instances of potential future harm 
@@ -4526,6 +4531,7 @@ Is there anything that the Peace Corps can do to help you feel safe at work?
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Community" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2Y-ff-zXu">
                                                                 <rect key="frame" x="20" y="10" width="500" height="20.333333333333329"/>
+
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -5168,6 +5174,7 @@ Are there specific things you can think of doing or that Peace Corps might do th
                                                 <rect key="frame" x="30" y="37" width="540" height="662"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Role of Staff" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="th9-kI-rad">
+
                                                         <rect key="frame" x="20" y="10" width="500" height="20.333333333333343"/>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
