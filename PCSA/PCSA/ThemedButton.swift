@@ -17,7 +17,7 @@ class ThemedButton: SimpleButton {
         setBorderWidth(4.0, forState: .highlighted)
         setCornerRadius(3.0)
         
-        setBackgroundColor(UIColor(red: 253/255, green: 203/255, blue: 107/255, alpha: 1.0), forState: .highlighted)
+        setBackgroundColor(UIColor(red: 150/255, green: 100/255, blue: 200/255, alpha: 1.0), forState: .highlighted)
         setBackgroundColor(UIColor(red: 47/255, green: 187/255, blue: 147/255, alpha: 1.0), forState: UIControlState())
         setBorderColor(UIColor.white)
         setScale(1.02, forState: .highlighted)
