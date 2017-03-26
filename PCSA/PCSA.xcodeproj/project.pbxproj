@@ -52,6 +52,8 @@
 		70F6D6BC1D57A5C400EF35D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F6D6BB1D57A5C400EF35D4 /* LoginViewController.swift */; };
 		70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */; };
 		78DE29F5A10DED26ED676982 /* Pods_PCSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F260A636BAAD9A52B81400 /* Pods_PCSAUITests.framework */; };
+		894348D11E2A8D6500A5D7E3 /* GlossaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894348D01E2A8D6500A5D7E3 /* GlossaryViewController.swift */; };
+		896C82C61E28207A00046C77 /* GlossaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896C82C51E28207A00046C77 /* GlossaryTableViewCell.swift */; };
 		C453578560B76180D916C783 /* Pods_PCSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E606191717154E519112C6E /* Pods_PCSA.framework */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +131,8 @@
 		70F6D6BB1D57A5C400EF35D4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		70FF1B031D0A010600B3C145 /* CircleOfTrustEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleOfTrustEditViewController.swift; sourceTree = "<group>"; };
 		82B8598E765A50DE420135B5 /* Pods-PCSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSATests/Pods-PCSATests.debug.xcconfig"; sourceTree = "<group>"; };
+		894348D01E2A8D6500A5D7E3 /* GlossaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryViewController.swift; sourceTree = "<group>"; };
+		896C82C51E28207A00046C77 /* GlossaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlossaryTableViewCell.swift; sourceTree = "<group>"; };
 		9E606191717154E519112C6E /* Pods_PCSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PCSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89A7478D8F96C6FAFD6AC88 /* Pods-PCSAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSAUITests/Pods-PCSAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF52207A1C66A5159E3EA3C /* Pods-PCSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PCSA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PCSA/Pods-PCSA.debug.xcconfig"; sourceTree = "<group>"; };
@@ -316,6 +320,7 @@
 				709CC3101D1F16670088D0E6 /* AfterAssualtViewController.swift */,
 				703FEB1E1D25A6CB00F5CB1C /* GetHelpNowViewController.swift */,
 				70F6D6BB1D57A5C400EF35D4 /* LoginViewController.swift */,
+				894348D01E2A8D6500A5D7E3 /* GlossaryViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				575EF84F1DFFFC20008ADF4C /* ScrollableTextView.swift */,
 				706996AB1D1F9C4600CD02A0 /* BorderedView.swift */,
 				70E0D0EB1D326C9A004BE126 /* SlideView.swift */,
+				896C82C51E28207A00046C77 /* GlossaryTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -730,12 +736,14 @@
 				70EA34EC1CFACC2B000BE4E6 /* AppDelegate.swift in Sources */,
 				70A44C6B1D0495AF001C10B3 /* SimpleButtonControlState.swift in Sources */,
 				705DDEDB1D05FF3C0037ABDE /* AccordionMenuTableViewController.swift in Sources */,
+				896C82C61E28207A00046C77 /* GlossaryTableViewCell.swift in Sources */,
 				70A44C671D049548001C10B3 /* SimpleButton.swift in Sources */,
 				70F6D6BA1D57875700EF35D4 /* Configs.swift in Sources */,
 				70298C101D088FF900D92BC8 /* UIUtil.swift in Sources */,
 				575EF8501DFFFC20008ADF4C /* ScrollableTextView.swift in Sources */,
 				703FEB1F1D25A6CB00F5CB1C /* GetHelpNowViewController.swift in Sources */,
 				705DDEDC1D05FF3C0037ABDE /* Parent.swift in Sources */,
+				894348D11E2A8D6500A5D7E3 /* GlossaryViewController.swift in Sources */,
 				70FF1B041D0A010600B3C145 /* CircleOfTrustEditViewController.swift in Sources */,
 				70298C141D08B2E200D92BC8 /* NumberUtil.swift in Sources */,
 				700C1CC81D16EA330070FACC /* Constants.swift in Sources */,
